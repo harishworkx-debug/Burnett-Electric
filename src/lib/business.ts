@@ -1,0 +1,30 @@
+export const BUSINESS = {
+  name: "Burnett Electric",
+  owner: "Shad Burnett",
+  phone: "205-826-3643",
+  phoneHref: "tel:+12058263643",
+  whatsapp: "https://wa.me/12058263643",
+  email: "info@burnettelectric.com",
+  address: "Buhl, Alabama",
+  areas: ["Tuscaloosa", "Northport", "Birmingham"],
+  hours: "Mon–Sat: 7:00 AM – 7:00 PM • 24/7 Emergency",
+  rating: 4.9,
+  reviews: 128,
+};
+
+export const IMG = {
+  hero: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1920&q=80",
+  panel: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1400&q=80",
+  wiring: "https://images.unsplash.com/photo-1565608087341-404b25492fee?auto=format&fit=crop&w=1400&q=80",
+  electrician: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1400&q=80",
+  outdoor: "https://images.unsplash.com/photo-1609766418204-94aae0ecfdfc?auto=format&fit=crop&w=1400&q=80",
+  commercial: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1400&q=80",
+  repair: "https://images.unsplash.com/photo-1621905252472-e8de10c02b6f?auto=format&fit=crop&w=1400&q=80",
+  tools: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=1400&q=80",
+  home: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=80",
+  worker: "https://images.unsplash.com/photo-1590959651373-a3db0f38a961?auto=format&fit=crop&w=1400&q=80",
+  crew: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1400&q=80",
+  bulb: "https://images.unsplash.com/photo-1550985616-10810253b84d?auto=format&fit=crop&w=1400&q=80",
+  city: "https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?auto=format&fit=crop&w=1400&q=80",
+  night: "https://images.unsplash.com/photo-1519692933481-e162a57d6721?auto=format&fit=crop&w=1400&q=80",
+};
