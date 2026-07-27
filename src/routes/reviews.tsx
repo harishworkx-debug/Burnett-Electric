@@ -12,10 +12,10 @@ import { IMG } from "@/lib/business";
 export const Route = createFileRoute("/reviews")({
   head: () => ({
     meta: [
-      { title: "Reviews | Burnett Electric — Tuscaloosa, AL Electrician" },
-      { name: "description", content: "See what customers across Tuscaloosa, Northport & Birmingham are saying about Burnett Electric. 4.9★ average rating from 128+ Google reviews." },
+      { title: "Customer Reviews | Burnett Electric" },
+      { name: "description", content: "Read real customer reviews and see why local customers choose Burnett Electric." },
       { property: "og:title", content: "Customer Reviews | Burnett Electric" },
-      { property: "og:description", content: "4.9★ average from 128+ reviews across West Alabama." },
+      { property: "og:description", content: "Read real customer reviews and see why local customers choose Burnett Electric." },
       { property: "og:url", content: "/reviews" },
       { property: "og:image", content: IMG.tools },
       { name: "twitter:image", content: IMG.tools },

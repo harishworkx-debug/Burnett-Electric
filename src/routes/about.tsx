@@ -11,10 +11,10 @@ import { IMG } from "@/lib/business";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About Burnett Electric | Local Electrician in Tuscaloosa, AL" },
-      { name: "description", content: "Meet Shad Burnett — owner of Burnett Electric. Locally owned, licensed & insured electrical contractor serving Tuscaloosa, Northport & Birmingham, AL." },
-      { property: "og:title", content: "About Burnett Electric | Local Electrician in Tuscaloosa" },
-      { property: "og:description", content: "Locally owned, licensed & insured electrical contractor serving West Alabama." },
+      { title: "About Burnett Electric" },
+      { name: "description", content: "Learn more about Burnett Electric, our experience, our team and why customers trust us." },
+      { property: "og:title", content: "About Burnett Electric" },
+      { property: "og:description", content: "Learn more about Burnett Electric, our experience, our team and why customers trust us." },
       { property: "og:url", content: "/about" },
       { property: "og:image", content: IMG.crew },
       { name: "twitter:image", content: IMG.crew },

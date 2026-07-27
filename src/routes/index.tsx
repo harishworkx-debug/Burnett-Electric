@@ -41,10 +41,10 @@ const stats = [
 ];
 
 const services = [
-  { icon: Wrench, title: "Electrical Repairs", desc: "Fast, safe fixes for outlets, breakers, panels, flickering lights and dead circuits.", to: "/electrical-repairs-tuscaloosa-al", img: IMG.repair },
-  { icon: Cable, title: "Wiring Upgrades", desc: "Rewires, panel upgrades and modernization for older Tuscaloosa homes.", to: "/wiring-upgrades-tuscaloosa-al", img: IMG.wiring },
-  { icon: Building2, title: "Commercial Electrical", desc: "Offices, retail, restaurants and warehouses — code-compliant and on schedule.", to: "/commercial-electrical-tuscaloosa-al", img: IMG.commercial },
-  { icon: Lamp, title: "Outdoor Wiring", desc: "Landscape lighting, security, EV chargers, generators and outdoor outlets.", to: "/outdoor-wiring-tuscaloosa-al", img: IMG.outdoor },
+  { icon: Wrench, title: "Electrical Repairs", desc: "Fast, safe fixes for outlets, breakers, panels, flickering lights and dead circuits.", to: "/electrical-repairs", img: IMG.repair },
+  { icon: Cable, title: "Wiring Upgrades", desc: "Rewires, panel upgrades and modernization for older Tuscaloosa homes.", to: "/wiring-upgrades", img: IMG.wiring },
+  { icon: Building2, title: "Commercial Electrical", desc: "Offices, retail, restaurants and warehouses — code-compliant and on schedule.", to: "/commercial-electrical", img: IMG.commercial },
+  { icon: Lamp, title: "Outdoor Wiring", desc: "Landscape lighting, security, EV chargers, generators and outdoor outlets.", to: "/outdoor-wiring", img: IMG.outdoor },
 ];
 
 const why = [
@@ -354,9 +354,10 @@ function HomePage() {
           <SectionHeading eyebrow="Service Areas" title="Proudly Serving West & Central Alabama" />
           <div className="mt-12 grid lg:grid-cols-3 gap-6">
             {[
-              { to: "/electrician-tuscaloosa-al", city: "Tuscaloosa, AL", desc: "Homes, businesses & UA-area properties." },
-              { to: "/electrician-northport-al", city: "Northport, AL", desc: "Panel upgrades, rewires and new construction." },
-              { to: "/electrician-birmingham-al", city: "Birmingham, AL", desc: "Commercial fit-outs & residential service." },
+              { to: "/tuscaloosa", city: "Tuscaloosa, AL", desc: "Homes, businesses & UA-area properties." },
+              { to: "/northport", city: "Northport, AL", desc: "Panel upgrades, rewires and new construction." },
+              { to: "/birmingham", city: "Birmingham, AL", desc: "Commercial fit-outs & residential service." },
+              { to: "/buhl", city: "Buhl, AL", desc: "Your hometown electrician. Fast local response." },
             ].map((a) => (
               <Link key={a.to} to={a.to} className="group p-8 rounded-2xl bg-card border border-border shadow-card hover:border-primary hover:shadow-elegant transition-all">
                 <MapPin className="h-6 w-6 text-primary" />
@@ -368,13 +369,7 @@ function HomePage() {
               </Link>
             ))}
           </div>
-          <div className="mt-10 rounded-3xl overflow-hidden shadow-elegant border border-border">
-            <iframe
-              title="Burnett Electric service area map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d426380.68641904515!2d-87.45842549276473!3d33.39457835008891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8886111314f47cd1%3A0x2a15c2f0ec739d61!2sBurnett%20Electric!5e0!3m2!1sen!2sin!4v1784979478932!5m2!1sen!2sin"
-              width="100%" height={480} style={{ border: 0 }} allowFullScreen loading="lazy"
-              referrerPolicy="strict-origin-when-cross-origin"
-            />
+          <div className="mt-10 rounded-3xl overflow-hidden shadow-elegant border border-border" dangerouslySetInnerHTML={{__html: BUSINESS.mapIframe}}>
           </div>
         </div>
       </section>

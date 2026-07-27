@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import type {} from "@tanstack/react-start";
 
-const BASE_URL = "";
+const BASE_URL = "https://www.burnettelectrictuscaloosa.com";
 
 interface SitemapEntry {
   path: string;
@@ -19,13 +19,14 @@ export const Route = createFileRoute("/sitemap.xml")({
           { path: "/about", changefreq: "monthly", priority: "0.7" },
           { path: "/reviews", changefreq: "monthly", priority: "0.7" },
           { path: "/contact", changefreq: "monthly", priority: "0.8" },
-          { path: "/electrical-repairs-tuscaloosa-al", changefreq: "monthly", priority: "0.9" },
-          { path: "/wiring-upgrades-tuscaloosa-al", changefreq: "monthly", priority: "0.9" },
-          { path: "/commercial-electrical-tuscaloosa-al", changefreq: "monthly", priority: "0.9" },
-          { path: "/outdoor-wiring-tuscaloosa-al", changefreq: "monthly", priority: "0.9" },
-          { path: "/electrician-tuscaloosa-al", changefreq: "monthly", priority: "0.9" },
-          { path: "/electrician-northport-al", changefreq: "monthly", priority: "0.9" },
-          { path: "/electrician-birmingham-al", changefreq: "monthly", priority: "0.9" },
+          { path: "/electrical-repairs", changefreq: "monthly", priority: "0.9" },
+          { path: "/wiring-upgrades", changefreq: "monthly", priority: "0.9" },
+          { path: "/commercial-electrical", changefreq: "monthly", priority: "0.9" },
+          { path: "/outdoor-wiring", changefreq: "monthly", priority: "0.9" },
+          { path: "/tuscaloosa", changefreq: "monthly", priority: "0.9" },
+          { path: "/northport", changefreq: "monthly", priority: "0.9" },
+          { path: "/birmingham", changefreq: "monthly", priority: "0.9" },
+          { path: "/buhl", changefreq: "monthly", priority: "0.9" },
         ];
 
         const urls = entries.map((e) =>

@@ -8,6 +8,7 @@ import { SectionHeading } from "@/components/site/SectionHeading";
 import { FAQ } from "@/components/site/FAQ";
 import { CTASection } from "@/components/site/CTASection";
 import { JsonLd } from "@/components/site/JsonLd";
+import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { BUSINESS, IMG } from "@/lib/business";
 
 export function ServicePageLayout({
@@ -69,7 +70,14 @@ export function ServicePageLayout({
           <img src={hero} alt={h1} className="w-full h-full object-cover" loading="eager" />
           <div className="absolute inset-0 hero-overlay" />
         </motion.div>
-        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 text-white">
+        
+        <div className="absolute top-24 left-0 right-0 z-10 pt-4">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <Breadcrumbs items={[{ label: "Services", to: "/services" }, { label: h1 }]} />
+          </div>
+        </div>
+
+        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 text-white mt-12">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full glass-dark text-primary text-xs font-semibold uppercase tracking-widest mb-5">
               <Zap className="h-3.5 w-3.5" /> {eyebrow}

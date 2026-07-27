@@ -27,22 +27,22 @@ export const Route = createFileRoute("/services")({
 
 const services = [
   {
-    icon: Wrench, title: "Electrical Repairs", to: "/electrical-repairs-tuscaloosa-al", img: IMG.repair,
+    icon: Wrench, title: "Electrical Repairs", to: "/electrical-repairs", img: IMG.repair,
     desc: "Fast, safe repairs for breakers, outlets, panels, flickering lights and more.",
     benefits: ["Same-day diagnostic", "Upfront pricing", "Code-compliant fixes", "Warrantied workmanship"],
   },
   {
-    icon: Cable, title: "Wiring Upgrades", to: "/wiring-upgrades-tuscaloosa-al", img: IMG.wiring,
+    icon: Cable, title: "Wiring Upgrades", to: "/wiring-upgrades", img: IMG.wiring,
     desc: "Whole-home rewires, panel upgrades, and modernization for older Tuscaloosa properties.",
     benefits: ["100/200/400A panels", "Aluminum-to-copper", "Smart-home ready", "Insurance approved"],
   },
   {
-    icon: Building2, title: "Commercial Electrical", to: "/commercial-electrical-tuscaloosa-al", img: IMG.commercial,
+    icon: Building2, title: "Commercial Electrical", to: "/commercial-electrical", img: IMG.commercial,
     desc: "Offices, retail, restaurants and warehouses — on-time, on-budget, on-code.",
     benefits: ["Fit-outs & TI work", "LED retrofits", "Emergency lighting", "Backup power & generators"],
   },
   {
-    icon: Lamp, title: "Outdoor Wiring", to: "/outdoor-wiring-tuscaloosa-al", img: IMG.outdoor,
+    icon: Lamp, title: "Outdoor Wiring", to: "/outdoor-wiring", img: IMG.outdoor,
     desc: "Landscape lighting, EV chargers, security lighting, and outdoor outlets that last.",
     benefits: ["Weatherproof installs", "Landscape & security", "EV charger installs", "Pool & spa wiring"],
   },

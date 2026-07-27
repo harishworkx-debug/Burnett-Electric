@@ -2,22 +2,22 @@ import { createFileRoute } from "@tanstack/react-router";
 import { LocationPageLayout } from "@/components/site/LocationPageLayout";
 import { IMG } from "@/lib/business";
 
-export const Route = createFileRoute("/electrician-tuscaloosa-al")({
+export const Route = createFileRoute("/tuscaloosa")({
   head: () => ({
     meta: [
       { title: "Electrician in Tuscaloosa, AL | Burnett Electric" },
       { name: "description", content: "Trusted electrician in Tuscaloosa, AL. Repairs, wiring upgrades, commercial & outdoor electrical. Licensed & insured. Call 205-826-3643 for a free estimate." },
       { property: "og:title", content: "Electrician in Tuscaloosa, AL | Burnett Electric" },
       { property: "og:description", content: "Trusted licensed electrician serving Tuscaloosa, Alabama." },
-      { property: "og:url", content: "/electrician-tuscaloosa-al" },
+      { property: "og:url", content: "/tuscaloosa" },
       { property: "og:image", content: IMG.hero },
       { name: "twitter:image", content: IMG.hero },
     ],
-    links: [{ rel: "canonical", href: "/electrician-tuscaloosa-al" }],
+    links: [{ rel: "canonical", href: "/tuscaloosa" }],
   }),
   component: () => (
     <LocationPageLayout
-      slug="electrician-tuscaloosa-al"
+      slug="tuscaloosa"
       metaDescription="Trusted electrician in Tuscaloosa, AL."
       h1="Trusted Electrician in Tuscaloosa, AL"
       city="Tuscaloosa"
@@ -28,15 +28,15 @@ export const Route = createFileRoute("/electrician-tuscaloosa-al")({
         { title: "Same-Day Service", desc: "Local dispatch means most Tuscaloosa calls get service the same day." },
         { title: "Older-Home Experts", desc: "We know the wiring quirks of Tuscaloosa's historic neighborhoods." },
         { title: "Storm-Ready", desc: "Post-storm repairs, surge protection, and generator installs." },
-        { title: "Rental & Property Mgmt", desc: "Fast turnarounds for landlords and property managers." },
-        { title: "New Construction", desc: "Ground-up wiring for new builds and additions." },
+        { title: "Rental & Property Mgmt", desc: "Fast turnarounds for landlords and property managers near the university." },
+        { title: "New Construction", desc: "Ground-up wiring for new builds and residential additions." },
         { title: "Small Business Support", desc: "Retail, offices, salons and restaurants across Tuscaloosa County." },
       ]}
       faqs={[
-        { q: "Are you licensed to work in Tuscaloosa?", a: "Yes — Burnett Electric is a fully licensed Alabama electrical contractor and pulls all required permits." },
+        { q: "Are you licensed to work in Tuscaloosa?", a: "Yes — Burnett Electric is a fully licensed Alabama electrical contractor and pulls all required permits for work within the city." },
         { q: "Do you work near the University of Alabama?", a: "Absolutely. We regularly service rentals, off-campus housing, and businesses throughout the UA area." },
-        { q: "How fast can you respond in Tuscaloosa?", a: "Most calls same-day. Emergency calls are prioritized immediately." },
-        { q: "Do you handle historic home rewires?", a: "Yes — including knob-and-tube replacement and aluminum-to-copper upgrades." },
+        { q: "How fast can you respond in Tuscaloosa?", a: "Most calls receive same-day service. Emergency calls are prioritized immediately." },
+        { q: "Do you handle historic home rewires?", a: "Yes — including complete knob-and-tube replacements and aluminum-to-copper upgrades for older homes." },
       ]}
     />
   ),

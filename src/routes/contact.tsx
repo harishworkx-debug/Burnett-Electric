@@ -11,10 +11,10 @@ import { BUSINESS, IMG } from "@/lib/business";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact Burnett Electric | Free Estimate — Tuscaloosa, AL" },
-      { name: "description", content: "Call, WhatsApp or request a free electrical estimate from Burnett Electric. Serving Tuscaloosa, Northport & Birmingham. Same-day response, 24/7 emergency service." },
-      { property: "og:title", content: "Contact Burnett Electric | Free Estimate" },
-      { property: "og:description", content: "Call, WhatsApp or message us for a free estimate in Tuscaloosa, AL." },
+      { title: "Contact Burnett Electric" },
+      { name: "description", content: "Get in touch with Burnett Electric for professional services in Tuscaloosa." },
+      { property: "og:title", content: "Contact Burnett Electric" },
+      { property: "og:description", content: "Get in touch with Burnett Electric for professional services in Tuscaloosa." },
       { property: "og:url", content: "/contact" },
       { property: "og:image", content: IMG.worker },
       { name: "twitter:image", content: IMG.worker },
@@ -90,13 +90,7 @@ function ContactPage() {
       <section className="pb-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading eyebrow="Location" title="Find Us on the Map" />
-          <div className="mt-10 rounded-3xl overflow-hidden shadow-elegant border border-border">
-            <iframe
-              title="Burnett Electric map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d426380.68641904515!2d-87.45842549276473!3d33.39457835008891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8886111314f47cd1%3A0x2a15c2f0ec739d61!2sBurnett%20Electric!5e0!3m2!1sen!2sin!4v1784979478932!5m2!1sen!2sin"
-              width="100%" height={500} style={{ border: 0 }} allowFullScreen loading="lazy"
-              referrerPolicy="strict-origin-when-cross-origin"
-            />
+          <div className="mt-10 rounded-3xl overflow-hidden shadow-elegant border border-border" dangerouslySetInnerHTML={{__html: BUSINESS.mapIframe}}>
           </div>
         </div>
       </section>

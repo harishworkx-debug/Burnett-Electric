@@ -8,6 +8,7 @@ import { SectionHeading } from "@/components/site/SectionHeading";
 import { FAQ } from "@/components/site/FAQ";
 import { CTASection } from "@/components/site/CTASection";
 import { JsonLd } from "@/components/site/JsonLd";
+import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { BUSINESS, IMG } from "@/lib/business";
 
 export function LocationPageLayout({
@@ -50,7 +51,13 @@ export function LocationPageLayout({
           <img src={hero} alt={h1} className="w-full h-full object-cover" loading="eager" />
           <div className="absolute inset-0 hero-overlay" />
         </motion.div>
-        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 text-white">
+        <div className="absolute top-24 left-0 right-0 z-10 pt-4">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <Breadcrumbs items={[{ label: "Locations" }, { label: city }]} />
+          </div>
+        </div>
+
+        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 text-white mt-12">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full glass-dark text-primary text-xs font-semibold uppercase tracking-widest mb-5">
               <MapPin className="h-3.5 w-3.5" /> Serving {city}, Alabama
@@ -110,13 +117,7 @@ export function LocationPageLayout({
       <section className="py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading eyebrow="Service map" title={`Where we work in and around ${city}`} />
-          <div className="mt-10 rounded-3xl overflow-hidden shadow-elegant border border-border">
-            <iframe
-              title={`Map of ${city}`}
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d426380.68641904515!2d-87.45842549276473!3d33.39457835008891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8886111314f47cd1%3A0x2a15c2f0ec739d61!2sBurnett%20Electric!5e0!3m2!1sen!2sin!4v1784979478932!5m2!1sen!2sin"
-              width="100%" height={480} style={{ border: 0 }} allowFullScreen loading="lazy"
-              referrerPolicy="strict-origin-when-cross-origin"
-            />
+          <div className="mt-10 rounded-3xl overflow-hidden shadow-elegant border border-border" dangerouslySetInnerHTML={{__html: BUSINESS.mapIframe}}>
           </div>
         </div>
       </section>
