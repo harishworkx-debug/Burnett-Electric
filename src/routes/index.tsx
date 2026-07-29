@@ -41,10 +41,10 @@ const stats = [
 ];
 
 const services = [
-  { icon: Wrench, title: "Electrical Repairs", desc: "Fast, safe fixes for outlets, breakers, panels, flickering lights and dead circuits.", to: "/electrical-repairs", img: IMG.repair },
-  { icon: Cable, title: "Wiring Upgrades", desc: "Rewires, panel upgrades and modernization for older Tuscaloosa homes.", to: "/wiring-upgrades", img: IMG.wiring },
-  { icon: Building2, title: "Commercial Electrical", desc: "Offices, retail, restaurants and warehouses — code-compliant and on schedule.", to: "/commercial-electrical", img: IMG.commercial },
-  { icon: Lamp, title: "Outdoor Wiring", desc: "Landscape lighting, security, EV chargers, generators and outdoor outlets.", to: "/outdoor-wiring", img: IMG.outdoor },
+  { icon: Wrench, title: "Electrical Repairs", desc: "Fast, safe fixes for outlets, breakers, panels, flickering lights and dead circuits.", to: "/electrical-repairs-tuscaloosa-al", img: IMG.repair },
+  { icon: Cable, title: "Wiring Upgrades", desc: "Rewires, panel upgrades and modernization for older Tuscaloosa homes.", to: "/wiring-upgrades-tuscaloosa-al", img: IMG.wiring },
+  { icon: Building2, title: "Commercial Electrical", desc: "Offices, retail, restaurants and warehouses — code-compliant and on schedule.", to: "/commercial-electrical-tuscaloosa-al", img: IMG.commercial },
+  { icon: Lamp, title: "Outdoor Wiring", desc: "Landscape lighting, security, EV chargers, generators and outdoor outlets.", to: "/outdoor-wiring-tuscaloosa-al", img: IMG.outdoor },
 ];
 
 const why = [
@@ -198,7 +198,7 @@ function HomePage() {
                   <h3 className="font-display font-bold text-xl text-secondary">{s.title}</h3>
                   <p className="mt-2 text-muted-foreground">{s.desc}</p>
                   <Link to={s.to} className="mt-4 inline-flex items-center gap-1.5 text-secondary font-semibold group-hover:text-primary transition">
-                    Learn more <ChevronRight className="h-4 w-4" />
+                    {s.title} <ChevronRight className="h-4 w-4" />
                   </Link>
                 </div>
               </motion.div>
@@ -354,10 +354,9 @@ function HomePage() {
           <SectionHeading eyebrow="Service Areas" title="Proudly Serving West & Central Alabama" />
           <div className="mt-12 grid lg:grid-cols-3 gap-6">
             {[
-              { to: "/tuscaloosa", city: "Tuscaloosa, AL", desc: "Homes, businesses & UA-area properties." },
-              { to: "/northport", city: "Northport, AL", desc: "Panel upgrades, rewires and new construction." },
-              { to: "/birmingham", city: "Birmingham, AL", desc: "Commercial fit-outs & residential service." },
-              { to: "/buhl", city: "Buhl, AL", desc: "Your hometown electrician. Fast local response." },
+              { to: "/electrician-northport", city: "Electrician in Northport, AL", desc: "Panel upgrades, rewires and new construction." },
+              { to: "/electrician-birmingham", city: "Electrician in Birmingham, AL", desc: "Commercial fit-outs & residential service." },
+              { to: "/electrician-buhl", city: "Electrician in Buhl, AL", desc: "Your hometown electrician. Fast local response." },
             ].map((a) => (
               <Link key={a.to} to={a.to} className="group p-8 rounded-2xl bg-card border border-border shadow-card hover:border-primary hover:shadow-elegant transition-all">
                 <MapPin className="h-6 w-6 text-primary" />

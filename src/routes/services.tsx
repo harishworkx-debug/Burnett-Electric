@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { motion } from "framer-motion";
-import { ArrowRight, Wrench, Cable, Building2, Lamp, CheckCircle2, Phone } from "lucide-react";
+import { ArrowRight, Wrench, Cable, Building2, Lamp, CheckCircle2, Phone, Zap, ShieldCheck, Plug, Home, Siren, Wifi, Fan, Droplet, Flame, ShieldAlert, Lightbulb, MonitorPlay, Cpu, BatteryCharging, Factory } from "lucide-react";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { FloatingCTA } from "@/components/site/FloatingCTA";
@@ -27,25 +27,55 @@ export const Route = createFileRoute("/services")({
 
 const services = [
   {
-    icon: Wrench, title: "Electrical Repairs", to: "/electrical-repairs", img: IMG.repair,
-    desc: "Fast, safe repairs for breakers, outlets, panels, flickering lights and more.",
-    benefits: ["Same-day diagnostic", "Upfront pricing", "Code-compliant fixes", "Warrantied workmanship"],
+    icon: Wrench, title: "Electrical Repairs", to: "/electrical-repairs-tuscaloosa-al", img: IMG.repair,
+    desc: "Fast, safe repairs for breakers, outlets, panels, flickering lights, and dedicated circuits.",
+    benefits: ["Same-day diagnostic", "GFCI outlet installs", "Code-compliant fixes", "Dedicated circuits"],
   },
   {
-    icon: Cable, title: "Wiring Upgrades", to: "/wiring-upgrades", img: IMG.wiring,
-    desc: "Whole-home rewires, panel upgrades, and modernization for older Tuscaloosa properties.",
-    benefits: ["100/200/400A panels", "Aluminum-to-copper", "Smart-home ready", "Insurance approved"],
+    icon: Cable, title: "Wiring Upgrades", to: "/wiring-upgrades-tuscaloosa-al", img: IMG.wiring,
+    desc: "Whole-home rewires, aluminum wiring replacement, and mobile home electrical upgrades.",
+    benefits: ["Knob & tube removal", "Aluminum-to-copper", "Mobile home wiring", "Insurance approved"],
   },
   {
-    icon: Building2, title: "Commercial Electrical", to: "/commercial-electrical", img: IMG.commercial,
-    desc: "Offices, retail, restaurants and warehouses — on-time, on-budget, on-code.",
-    benefits: ["Fit-outs & TI work", "LED retrofits", "Emergency lighting", "Backup power & generators"],
+    icon: ShieldCheck, title: "Panel Upgrades", to: "/panel-upgrades-tuscaloosa-al", img: IMG.panel,
+    desc: "Upgrade to 200 or 400 amps. Replace dangerous fuse boxes and install whole-home surge protection.",
+    benefits: ["Increased capacity", "Code compliance", "Federal Pacific removal", "Surge protection ready"],
   },
   {
-    icon: Lamp, title: "Outdoor Wiring", to: "/outdoor-wiring", img: IMG.outdoor,
-    desc: "Landscape lighting, EV chargers, security lighting, and outdoor outlets that last.",
-    benefits: ["Weatherproof installs", "Landscape & security", "EV charger installs", "Pool & spa wiring"],
+    icon: Lightbulb, title: "Lighting & Fan Installation", to: "/lighting-installation-tuscaloosa-al", img: IMG.bulb,
+    desc: "Recessed lighting, LED upgrades, ceiling fans, exhaust fans, and smoke detectors.",
+    benefits: ["LED retrofits & cans", "Ceiling & exhaust fans", "Smoke & CO detectors", "Energy savings"],
   },
+  {
+    icon: Lamp, title: "Outdoor Wiring", to: "/outdoor-wiring-tuscaloosa-al", img: IMG.outdoor,
+    desc: "Landscape lighting, security floodlights, pool lighting, and hot tub wiring.",
+    benefits: ["Weatherproof installs", "Landscape & security", "Pool & hot tub wiring", "GFCI protection"],
+  },
+  {
+    icon: Building2, title: "Commercial Electrical", to: "/commercial-electrical-tuscaloosa-al", img: IMG.commercial,
+    desc: "Offices, retail tenant fit-outs, restaurants and warehouses — on-time, on-budget.",
+    benefits: ["Tenant fit-outs", "LED retrofits", "Emergency lighting", "Backup power"],
+  },
+  {
+    icon: Wifi, title: "Smart Home Installation", to: "/smart-home-installation-tuscaloosa-al", img: IMG.home,
+    desc: "Professional installation of smart switches, automated systems, and home theater wiring.",
+    benefits: ["Home theater wiring", "Hardwired cameras", "Smart thermostats", "Seamless integration"],
+  },
+  {
+    icon: Zap, title: "Generator Installation", to: "/generator-installation-tuscaloosa-al", img: IMG.home,
+    desc: "Whole-home standby generators to keep your power on during severe weather outages.",
+    benefits: ["Automatic transfer switch", "Sizing calculation", "Gas coordination", "Turnkey installation"],
+  },
+  {
+    icon: BatteryCharging, title: "EV Charger Installation", to: "/ev-charger-installation-tuscaloosa-al", img: IMG.wiring,
+    desc: "Level 2 charging stations installed at your home or business for fast overnight charging.",
+    benefits: ["Dedicated 240V circuits", "Tesla Wall Connectors", "Load calculations", "Permitted & inspected"],
+  },
+  {
+    icon: Siren, title: "24/7 Emergency Electrician", to: "/emergency-electrician-tuscaloosa-al", img: IMG.repair,
+    desc: "Immediate response for sparking panels, partial power loss, and dangerous electrical faults.",
+    benefits: ["Rapid response", "Fully stocked vans", "Storm damage repair", "Safety prioritized"],
+  }
 ];
 
 function ServicesPage() {

@@ -11,19 +11,29 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AboutRouteImport } from './routes/about'
-import { Route as BirminghamRouteImport } from './routes/birmingham'
-import { Route as BuhlRouteImport } from './routes/buhl'
-import { Route as CommercialElectricalRouteImport } from './routes/commercial-electrical'
+import { Route as CommercialElectricalTuscaloosaAlRouteImport } from './routes/commercial-electrical-tuscaloosa-al'
 import { Route as ContactRouteImport } from './routes/contact'
-import { Route as ElectricalRepairsRouteImport } from './routes/electrical-repairs'
-import { Route as NorthportRouteImport } from './routes/northport'
-import { Route as OutdoorWiringRouteImport } from './routes/outdoor-wiring'
+import { Route as ElectricalRepairsTuscaloosaAlRouteImport } from './routes/electrical-repairs-tuscaloosa-al'
+import { Route as ElectricianBirminghamRouteImport } from './routes/electrician-birmingham'
+import { Route as ElectricianBrookwoodAlRouteImport } from './routes/electrician-brookwood-al'
+import { Route as ElectricianBuhlRouteImport } from './routes/electrician-buhl'
+import { Route as ElectricianCoalingAlRouteImport } from './routes/electrician-coaling-al'
+import { Route as ElectricianCottondaleAlRouteImport } from './routes/electrician-cottondale-al'
+import { Route as ElectricianMoundvilleAlRouteImport } from './routes/electrician-moundville-al'
+import { Route as ElectricianNorthportRouteImport } from './routes/electrician-northport'
+import { Route as ElectricianVanceAlRouteImport } from './routes/electrician-vance-al'
+import { Route as EmergencyElectricianTuscaloosaAlRouteImport } from './routes/emergency-electrician-tuscaloosa-al'
+import { Route as EvChargerInstallationTuscaloosaAlRouteImport } from './routes/ev-charger-installation-tuscaloosa-al'
+import { Route as GeneratorInstallationTuscaloosaAlRouteImport } from './routes/generator-installation-tuscaloosa-al'
+import { Route as LightingInstallationTuscaloosaAlRouteImport } from './routes/lighting-installation-tuscaloosa-al'
+import { Route as OutdoorWiringTuscaloosaAlRouteImport } from './routes/outdoor-wiring-tuscaloosa-al'
+import { Route as PanelUpgradesTuscaloosaAlRouteImport } from './routes/panel-upgrades-tuscaloosa-al'
 import { Route as ReviewsRouteImport } from './routes/reviews'
 import { Route as RobotsDottxtRouteImport } from './routes/robots[.]txt'
 import { Route as ServicesRouteImport } from './routes/services'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
-import { Route as TuscaloosaRouteImport } from './routes/tuscaloosa'
-import { Route as WiringUpgradesRouteImport } from './routes/wiring-upgrades'
+import { Route as SmartHomeInstallationTuscaloosaAlRouteImport } from './routes/smart-home-installation-tuscaloosa-al'
+import { Route as WiringUpgradesTuscaloosaAlRouteImport } from './routes/wiring-upgrades-tuscaloosa-al'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -35,41 +45,99 @@ const AboutRoute = AboutRouteImport.update({
   path: '/about',
   getParentRoute: () => rootRouteImport,
 } as any)
-const BirminghamRoute = BirminghamRouteImport.update({
-  id: '/birmingham',
-  path: '/birmingham',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const BuhlRoute = BuhlRouteImport.update({
-  id: '/buhl',
-  path: '/buhl',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const CommercialElectricalRoute = CommercialElectricalRouteImport.update({
-  id: '/commercial-electrical',
-  path: '/commercial-electrical',
-  getParentRoute: () => rootRouteImport,
-} as any)
+const CommercialElectricalTuscaloosaAlRoute =
+  CommercialElectricalTuscaloosaAlRouteImport.update({
+    id: '/commercial-electrical-tuscaloosa-al',
+    path: '/commercial-electrical-tuscaloosa-al',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const ContactRoute = ContactRouteImport.update({
   id: '/contact',
   path: '/contact',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ElectricalRepairsRoute = ElectricalRepairsRouteImport.update({
-  id: '/electrical-repairs',
-  path: '/electrical-repairs',
+const ElectricalRepairsTuscaloosaAlRoute =
+  ElectricalRepairsTuscaloosaAlRouteImport.update({
+    id: '/electrical-repairs-tuscaloosa-al',
+    path: '/electrical-repairs-tuscaloosa-al',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ElectricianBirminghamRoute = ElectricianBirminghamRouteImport.update({
+  id: '/electrician-birmingham',
+  path: '/electrician-birmingham',
   getParentRoute: () => rootRouteImport,
 } as any)
-const NorthportRoute = NorthportRouteImport.update({
-  id: '/northport',
-  path: '/northport',
+const ElectricianBrookwoodAlRoute = ElectricianBrookwoodAlRouteImport.update({
+  id: '/electrician-brookwood-al',
+  path: '/electrician-brookwood-al',
   getParentRoute: () => rootRouteImport,
 } as any)
-const OutdoorWiringRoute = OutdoorWiringRouteImport.update({
-  id: '/outdoor-wiring',
-  path: '/outdoor-wiring',
+const ElectricianBuhlRoute = ElectricianBuhlRouteImport.update({
+  id: '/electrician-buhl',
+  path: '/electrician-buhl',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ElectricianCoalingAlRoute = ElectricianCoalingAlRouteImport.update({
+  id: '/electrician-coaling-al',
+  path: '/electrician-coaling-al',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ElectricianCottondaleAlRoute = ElectricianCottondaleAlRouteImport.update({
+  id: '/electrician-cottondale-al',
+  path: '/electrician-cottondale-al',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ElectricianMoundvilleAlRoute = ElectricianMoundvilleAlRouteImport.update({
+  id: '/electrician-moundville-al',
+  path: '/electrician-moundville-al',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ElectricianNorthportRoute = ElectricianNorthportRouteImport.update({
+  id: '/electrician-northport',
+  path: '/electrician-northport',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ElectricianVanceAlRoute = ElectricianVanceAlRouteImport.update({
+  id: '/electrician-vance-al',
+  path: '/electrician-vance-al',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EmergencyElectricianTuscaloosaAlRoute =
+  EmergencyElectricianTuscaloosaAlRouteImport.update({
+    id: '/emergency-electrician-tuscaloosa-al',
+    path: '/emergency-electrician-tuscaloosa-al',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const EvChargerInstallationTuscaloosaAlRoute =
+  EvChargerInstallationTuscaloosaAlRouteImport.update({
+    id: '/ev-charger-installation-tuscaloosa-al',
+    path: '/ev-charger-installation-tuscaloosa-al',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const GeneratorInstallationTuscaloosaAlRoute =
+  GeneratorInstallationTuscaloosaAlRouteImport.update({
+    id: '/generator-installation-tuscaloosa-al',
+    path: '/generator-installation-tuscaloosa-al',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const LightingInstallationTuscaloosaAlRoute =
+  LightingInstallationTuscaloosaAlRouteImport.update({
+    id: '/lighting-installation-tuscaloosa-al',
+    path: '/lighting-installation-tuscaloosa-al',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const OutdoorWiringTuscaloosaAlRoute =
+  OutdoorWiringTuscaloosaAlRouteImport.update({
+    id: '/outdoor-wiring-tuscaloosa-al',
+    path: '/outdoor-wiring-tuscaloosa-al',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const PanelUpgradesTuscaloosaAlRoute =
+  PanelUpgradesTuscaloosaAlRouteImport.update({
+    id: '/panel-upgrades-tuscaloosa-al',
+    path: '/panel-upgrades-tuscaloosa-al',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const ReviewsRoute = ReviewsRouteImport.update({
   id: '/reviews',
   path: '/reviews',
@@ -90,139 +158,211 @@ const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
   path: '/sitemap.xml',
   getParentRoute: () => rootRouteImport,
 } as any)
-const TuscaloosaRoute = TuscaloosaRouteImport.update({
-  id: '/tuscaloosa',
-  path: '/tuscaloosa',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const WiringUpgradesRoute = WiringUpgradesRouteImport.update({
-  id: '/wiring-upgrades',
-  path: '/wiring-upgrades',
-  getParentRoute: () => rootRouteImport,
-} as any)
+const SmartHomeInstallationTuscaloosaAlRoute =
+  SmartHomeInstallationTuscaloosaAlRouteImport.update({
+    id: '/smart-home-installation-tuscaloosa-al',
+    path: '/smart-home-installation-tuscaloosa-al',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const WiringUpgradesTuscaloosaAlRoute =
+  WiringUpgradesTuscaloosaAlRouteImport.update({
+    id: '/wiring-upgrades-tuscaloosa-al',
+    path: '/wiring-upgrades-tuscaloosa-al',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
-  '/birmingham': typeof BirminghamRoute
-  '/buhl': typeof BuhlRoute
-  '/commercial-electrical': typeof CommercialElectricalRoute
+  '/commercial-electrical-tuscaloosa-al': typeof CommercialElectricalTuscaloosaAlRoute
   '/contact': typeof ContactRoute
-  '/electrical-repairs': typeof ElectricalRepairsRoute
-  '/northport': typeof NorthportRoute
-  '/outdoor-wiring': typeof OutdoorWiringRoute
+  '/electrical-repairs-tuscaloosa-al': typeof ElectricalRepairsTuscaloosaAlRoute
+  '/electrician-birmingham': typeof ElectricianBirminghamRoute
+  '/electrician-brookwood-al': typeof ElectricianBrookwoodAlRoute
+  '/electrician-buhl': typeof ElectricianBuhlRoute
+  '/electrician-coaling-al': typeof ElectricianCoalingAlRoute
+  '/electrician-cottondale-al': typeof ElectricianCottondaleAlRoute
+  '/electrician-moundville-al': typeof ElectricianMoundvilleAlRoute
+  '/electrician-northport': typeof ElectricianNorthportRoute
+  '/electrician-vance-al': typeof ElectricianVanceAlRoute
+  '/emergency-electrician-tuscaloosa-al': typeof EmergencyElectricianTuscaloosaAlRoute
+  '/ev-charger-installation-tuscaloosa-al': typeof EvChargerInstallationTuscaloosaAlRoute
+  '/generator-installation-tuscaloosa-al': typeof GeneratorInstallationTuscaloosaAlRoute
+  '/lighting-installation-tuscaloosa-al': typeof LightingInstallationTuscaloosaAlRoute
+  '/outdoor-wiring-tuscaloosa-al': typeof OutdoorWiringTuscaloosaAlRoute
+  '/panel-upgrades-tuscaloosa-al': typeof PanelUpgradesTuscaloosaAlRoute
   '/reviews': typeof ReviewsRoute
   '/robots.txt': typeof RobotsDottxtRoute
   '/services': typeof ServicesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
-  '/tuscaloosa': typeof TuscaloosaRoute
-  '/wiring-upgrades': typeof WiringUpgradesRoute
+  '/smart-home-installation-tuscaloosa-al': typeof SmartHomeInstallationTuscaloosaAlRoute
+  '/wiring-upgrades-tuscaloosa-al': typeof WiringUpgradesTuscaloosaAlRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
-  '/birmingham': typeof BirminghamRoute
-  '/buhl': typeof BuhlRoute
-  '/commercial-electrical': typeof CommercialElectricalRoute
+  '/commercial-electrical-tuscaloosa-al': typeof CommercialElectricalTuscaloosaAlRoute
   '/contact': typeof ContactRoute
-  '/electrical-repairs': typeof ElectricalRepairsRoute
-  '/northport': typeof NorthportRoute
-  '/outdoor-wiring': typeof OutdoorWiringRoute
+  '/electrical-repairs-tuscaloosa-al': typeof ElectricalRepairsTuscaloosaAlRoute
+  '/electrician-birmingham': typeof ElectricianBirminghamRoute
+  '/electrician-brookwood-al': typeof ElectricianBrookwoodAlRoute
+  '/electrician-buhl': typeof ElectricianBuhlRoute
+  '/electrician-coaling-al': typeof ElectricianCoalingAlRoute
+  '/electrician-cottondale-al': typeof ElectricianCottondaleAlRoute
+  '/electrician-moundville-al': typeof ElectricianMoundvilleAlRoute
+  '/electrician-northport': typeof ElectricianNorthportRoute
+  '/electrician-vance-al': typeof ElectricianVanceAlRoute
+  '/emergency-electrician-tuscaloosa-al': typeof EmergencyElectricianTuscaloosaAlRoute
+  '/ev-charger-installation-tuscaloosa-al': typeof EvChargerInstallationTuscaloosaAlRoute
+  '/generator-installation-tuscaloosa-al': typeof GeneratorInstallationTuscaloosaAlRoute
+  '/lighting-installation-tuscaloosa-al': typeof LightingInstallationTuscaloosaAlRoute
+  '/outdoor-wiring-tuscaloosa-al': typeof OutdoorWiringTuscaloosaAlRoute
+  '/panel-upgrades-tuscaloosa-al': typeof PanelUpgradesTuscaloosaAlRoute
   '/reviews': typeof ReviewsRoute
   '/robots.txt': typeof RobotsDottxtRoute
   '/services': typeof ServicesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
-  '/tuscaloosa': typeof TuscaloosaRoute
-  '/wiring-upgrades': typeof WiringUpgradesRoute
+  '/smart-home-installation-tuscaloosa-al': typeof SmartHomeInstallationTuscaloosaAlRoute
+  '/wiring-upgrades-tuscaloosa-al': typeof WiringUpgradesTuscaloosaAlRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
-  '/birmingham': typeof BirminghamRoute
-  '/buhl': typeof BuhlRoute
-  '/commercial-electrical': typeof CommercialElectricalRoute
+  '/commercial-electrical-tuscaloosa-al': typeof CommercialElectricalTuscaloosaAlRoute
   '/contact': typeof ContactRoute
-  '/electrical-repairs': typeof ElectricalRepairsRoute
-  '/northport': typeof NorthportRoute
-  '/outdoor-wiring': typeof OutdoorWiringRoute
+  '/electrical-repairs-tuscaloosa-al': typeof ElectricalRepairsTuscaloosaAlRoute
+  '/electrician-birmingham': typeof ElectricianBirminghamRoute
+  '/electrician-brookwood-al': typeof ElectricianBrookwoodAlRoute
+  '/electrician-buhl': typeof ElectricianBuhlRoute
+  '/electrician-coaling-al': typeof ElectricianCoalingAlRoute
+  '/electrician-cottondale-al': typeof ElectricianCottondaleAlRoute
+  '/electrician-moundville-al': typeof ElectricianMoundvilleAlRoute
+  '/electrician-northport': typeof ElectricianNorthportRoute
+  '/electrician-vance-al': typeof ElectricianVanceAlRoute
+  '/emergency-electrician-tuscaloosa-al': typeof EmergencyElectricianTuscaloosaAlRoute
+  '/ev-charger-installation-tuscaloosa-al': typeof EvChargerInstallationTuscaloosaAlRoute
+  '/generator-installation-tuscaloosa-al': typeof GeneratorInstallationTuscaloosaAlRoute
+  '/lighting-installation-tuscaloosa-al': typeof LightingInstallationTuscaloosaAlRoute
+  '/outdoor-wiring-tuscaloosa-al': typeof OutdoorWiringTuscaloosaAlRoute
+  '/panel-upgrades-tuscaloosa-al': typeof PanelUpgradesTuscaloosaAlRoute
   '/reviews': typeof ReviewsRoute
   '/robots.txt': typeof RobotsDottxtRoute
   '/services': typeof ServicesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
-  '/tuscaloosa': typeof TuscaloosaRoute
-  '/wiring-upgrades': typeof WiringUpgradesRoute
+  '/smart-home-installation-tuscaloosa-al': typeof SmartHomeInstallationTuscaloosaAlRoute
+  '/wiring-upgrades-tuscaloosa-al': typeof WiringUpgradesTuscaloosaAlRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
     | '/about'
-    | '/birmingham'
-    | '/buhl'
-    | '/commercial-electrical'
+    | '/commercial-electrical-tuscaloosa-al'
     | '/contact'
-    | '/electrical-repairs'
-    | '/northport'
-    | '/outdoor-wiring'
+    | '/electrical-repairs-tuscaloosa-al'
+    | '/electrician-birmingham'
+    | '/electrician-brookwood-al'
+    | '/electrician-buhl'
+    | '/electrician-coaling-al'
+    | '/electrician-cottondale-al'
+    | '/electrician-moundville-al'
+    | '/electrician-northport'
+    | '/electrician-vance-al'
+    | '/emergency-electrician-tuscaloosa-al'
+    | '/ev-charger-installation-tuscaloosa-al'
+    | '/generator-installation-tuscaloosa-al'
+    | '/lighting-installation-tuscaloosa-al'
+    | '/outdoor-wiring-tuscaloosa-al'
+    | '/panel-upgrades-tuscaloosa-al'
     | '/reviews'
     | '/robots.txt'
     | '/services'
     | '/sitemap.xml'
-    | '/tuscaloosa'
-    | '/wiring-upgrades'
+    | '/smart-home-installation-tuscaloosa-al'
+    | '/wiring-upgrades-tuscaloosa-al'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
     | '/about'
-    | '/birmingham'
-    | '/buhl'
-    | '/commercial-electrical'
+    | '/commercial-electrical-tuscaloosa-al'
     | '/contact'
-    | '/electrical-repairs'
-    | '/northport'
-    | '/outdoor-wiring'
+    | '/electrical-repairs-tuscaloosa-al'
+    | '/electrician-birmingham'
+    | '/electrician-brookwood-al'
+    | '/electrician-buhl'
+    | '/electrician-coaling-al'
+    | '/electrician-cottondale-al'
+    | '/electrician-moundville-al'
+    | '/electrician-northport'
+    | '/electrician-vance-al'
+    | '/emergency-electrician-tuscaloosa-al'
+    | '/ev-charger-installation-tuscaloosa-al'
+    | '/generator-installation-tuscaloosa-al'
+    | '/lighting-installation-tuscaloosa-al'
+    | '/outdoor-wiring-tuscaloosa-al'
+    | '/panel-upgrades-tuscaloosa-al'
     | '/reviews'
     | '/robots.txt'
     | '/services'
     | '/sitemap.xml'
-    | '/tuscaloosa'
-    | '/wiring-upgrades'
+    | '/smart-home-installation-tuscaloosa-al'
+    | '/wiring-upgrades-tuscaloosa-al'
   id:
     | '__root__'
     | '/'
     | '/about'
-    | '/birmingham'
-    | '/buhl'
-    | '/commercial-electrical'
+    | '/commercial-electrical-tuscaloosa-al'
     | '/contact'
-    | '/electrical-repairs'
-    | '/northport'
-    | '/outdoor-wiring'
+    | '/electrical-repairs-tuscaloosa-al'
+    | '/electrician-birmingham'
+    | '/electrician-brookwood-al'
+    | '/electrician-buhl'
+    | '/electrician-coaling-al'
+    | '/electrician-cottondale-al'
+    | '/electrician-moundville-al'
+    | '/electrician-northport'
+    | '/electrician-vance-al'
+    | '/emergency-electrician-tuscaloosa-al'
+    | '/ev-charger-installation-tuscaloosa-al'
+    | '/generator-installation-tuscaloosa-al'
+    | '/lighting-installation-tuscaloosa-al'
+    | '/outdoor-wiring-tuscaloosa-al'
+    | '/panel-upgrades-tuscaloosa-al'
     | '/reviews'
     | '/robots.txt'
     | '/services'
     | '/sitemap.xml'
-    | '/tuscaloosa'
-    | '/wiring-upgrades'
+    | '/smart-home-installation-tuscaloosa-al'
+    | '/wiring-upgrades-tuscaloosa-al'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
-  BirminghamRoute: typeof BirminghamRoute
-  BuhlRoute: typeof BuhlRoute
-  CommercialElectricalRoute: typeof CommercialElectricalRoute
+  CommercialElectricalTuscaloosaAlRoute: typeof CommercialElectricalTuscaloosaAlRoute
   ContactRoute: typeof ContactRoute
-  ElectricalRepairsRoute: typeof ElectricalRepairsRoute
-  NorthportRoute: typeof NorthportRoute
-  OutdoorWiringRoute: typeof OutdoorWiringRoute
+  ElectricalRepairsTuscaloosaAlRoute: typeof ElectricalRepairsTuscaloosaAlRoute
+  ElectricianBirminghamRoute: typeof ElectricianBirminghamRoute
+  ElectricianBrookwoodAlRoute: typeof ElectricianBrookwoodAlRoute
+  ElectricianBuhlRoute: typeof ElectricianBuhlRoute
+  ElectricianCoalingAlRoute: typeof ElectricianCoalingAlRoute
+  ElectricianCottondaleAlRoute: typeof ElectricianCottondaleAlRoute
+  ElectricianMoundvilleAlRoute: typeof ElectricianMoundvilleAlRoute
+  ElectricianNorthportRoute: typeof ElectricianNorthportRoute
+  ElectricianVanceAlRoute: typeof ElectricianVanceAlRoute
+  EmergencyElectricianTuscaloosaAlRoute: typeof EmergencyElectricianTuscaloosaAlRoute
+  EvChargerInstallationTuscaloosaAlRoute: typeof EvChargerInstallationTuscaloosaAlRoute
+  GeneratorInstallationTuscaloosaAlRoute: typeof GeneratorInstallationTuscaloosaAlRoute
+  LightingInstallationTuscaloosaAlRoute: typeof LightingInstallationTuscaloosaAlRoute
+  OutdoorWiringTuscaloosaAlRoute: typeof OutdoorWiringTuscaloosaAlRoute
+  PanelUpgradesTuscaloosaAlRoute: typeof PanelUpgradesTuscaloosaAlRoute
   ReviewsRoute: typeof ReviewsRoute
   RobotsDottxtRoute: typeof RobotsDottxtRoute
   ServicesRoute: typeof ServicesRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
-  TuscaloosaRoute: typeof TuscaloosaRoute
-  WiringUpgradesRoute: typeof WiringUpgradesRoute
+  SmartHomeInstallationTuscaloosaAlRoute: typeof SmartHomeInstallationTuscaloosaAlRoute
+  WiringUpgradesTuscaloosaAlRoute: typeof WiringUpgradesTuscaloosaAlRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -241,25 +381,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AboutRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/birmingham': {
-      id: '/birmingham'
-      path: '/birmingham'
-      fullPath: '/birmingham'
-      preLoaderRoute: typeof BirminghamRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/buhl': {
-      id: '/buhl'
-      path: '/buhl'
-      fullPath: '/buhl'
-      preLoaderRoute: typeof BuhlRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/commercial-electrical': {
-      id: '/commercial-electrical'
-      path: '/commercial-electrical'
-      fullPath: '/commercial-electrical'
-      preLoaderRoute: typeof CommercialElectricalRouteImport
+    '/commercial-electrical-tuscaloosa-al': {
+      id: '/commercial-electrical-tuscaloosa-al'
+      path: '/commercial-electrical-tuscaloosa-al'
+      fullPath: '/commercial-electrical-tuscaloosa-al'
+      preLoaderRoute: typeof CommercialElectricalTuscaloosaAlRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/contact': {
@@ -269,25 +395,109 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ContactRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/electrical-repairs': {
-      id: '/electrical-repairs'
-      path: '/electrical-repairs'
-      fullPath: '/electrical-repairs'
-      preLoaderRoute: typeof ElectricalRepairsRouteImport
+    '/electrical-repairs-tuscaloosa-al': {
+      id: '/electrical-repairs-tuscaloosa-al'
+      path: '/electrical-repairs-tuscaloosa-al'
+      fullPath: '/electrical-repairs-tuscaloosa-al'
+      preLoaderRoute: typeof ElectricalRepairsTuscaloosaAlRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/northport': {
-      id: '/northport'
-      path: '/northport'
-      fullPath: '/northport'
-      preLoaderRoute: typeof NorthportRouteImport
+    '/electrician-birmingham': {
+      id: '/electrician-birmingham'
+      path: '/electrician-birmingham'
+      fullPath: '/electrician-birmingham'
+      preLoaderRoute: typeof ElectricianBirminghamRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/outdoor-wiring': {
-      id: '/outdoor-wiring'
-      path: '/outdoor-wiring'
-      fullPath: '/outdoor-wiring'
-      preLoaderRoute: typeof OutdoorWiringRouteImport
+    '/electrician-brookwood-al': {
+      id: '/electrician-brookwood-al'
+      path: '/electrician-brookwood-al'
+      fullPath: '/electrician-brookwood-al'
+      preLoaderRoute: typeof ElectricianBrookwoodAlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/electrician-buhl': {
+      id: '/electrician-buhl'
+      path: '/electrician-buhl'
+      fullPath: '/electrician-buhl'
+      preLoaderRoute: typeof ElectricianBuhlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/electrician-coaling-al': {
+      id: '/electrician-coaling-al'
+      path: '/electrician-coaling-al'
+      fullPath: '/electrician-coaling-al'
+      preLoaderRoute: typeof ElectricianCoalingAlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/electrician-cottondale-al': {
+      id: '/electrician-cottondale-al'
+      path: '/electrician-cottondale-al'
+      fullPath: '/electrician-cottondale-al'
+      preLoaderRoute: typeof ElectricianCottondaleAlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/electrician-moundville-al': {
+      id: '/electrician-moundville-al'
+      path: '/electrician-moundville-al'
+      fullPath: '/electrician-moundville-al'
+      preLoaderRoute: typeof ElectricianMoundvilleAlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/electrician-northport': {
+      id: '/electrician-northport'
+      path: '/electrician-northport'
+      fullPath: '/electrician-northport'
+      preLoaderRoute: typeof ElectricianNorthportRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/electrician-vance-al': {
+      id: '/electrician-vance-al'
+      path: '/electrician-vance-al'
+      fullPath: '/electrician-vance-al'
+      preLoaderRoute: typeof ElectricianVanceAlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/emergency-electrician-tuscaloosa-al': {
+      id: '/emergency-electrician-tuscaloosa-al'
+      path: '/emergency-electrician-tuscaloosa-al'
+      fullPath: '/emergency-electrician-tuscaloosa-al'
+      preLoaderRoute: typeof EmergencyElectricianTuscaloosaAlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ev-charger-installation-tuscaloosa-al': {
+      id: '/ev-charger-installation-tuscaloosa-al'
+      path: '/ev-charger-installation-tuscaloosa-al'
+      fullPath: '/ev-charger-installation-tuscaloosa-al'
+      preLoaderRoute: typeof EvChargerInstallationTuscaloosaAlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/generator-installation-tuscaloosa-al': {
+      id: '/generator-installation-tuscaloosa-al'
+      path: '/generator-installation-tuscaloosa-al'
+      fullPath: '/generator-installation-tuscaloosa-al'
+      preLoaderRoute: typeof GeneratorInstallationTuscaloosaAlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/lighting-installation-tuscaloosa-al': {
+      id: '/lighting-installation-tuscaloosa-al'
+      path: '/lighting-installation-tuscaloosa-al'
+      fullPath: '/lighting-installation-tuscaloosa-al'
+      preLoaderRoute: typeof LightingInstallationTuscaloosaAlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/outdoor-wiring-tuscaloosa-al': {
+      id: '/outdoor-wiring-tuscaloosa-al'
+      path: '/outdoor-wiring-tuscaloosa-al'
+      fullPath: '/outdoor-wiring-tuscaloosa-al'
+      preLoaderRoute: typeof OutdoorWiringTuscaloosaAlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/panel-upgrades-tuscaloosa-al': {
+      id: '/panel-upgrades-tuscaloosa-al'
+      path: '/panel-upgrades-tuscaloosa-al'
+      fullPath: '/panel-upgrades-tuscaloosa-al'
+      preLoaderRoute: typeof PanelUpgradesTuscaloosaAlRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/reviews': {
@@ -318,18 +528,18 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SitemapDotxmlRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/tuscaloosa': {
-      id: '/tuscaloosa'
-      path: '/tuscaloosa'
-      fullPath: '/tuscaloosa'
-      preLoaderRoute: typeof TuscaloosaRouteImport
+    '/smart-home-installation-tuscaloosa-al': {
+      id: '/smart-home-installation-tuscaloosa-al'
+      path: '/smart-home-installation-tuscaloosa-al'
+      fullPath: '/smart-home-installation-tuscaloosa-al'
+      preLoaderRoute: typeof SmartHomeInstallationTuscaloosaAlRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/wiring-upgrades': {
-      id: '/wiring-upgrades'
-      path: '/wiring-upgrades'
-      fullPath: '/wiring-upgrades'
-      preLoaderRoute: typeof WiringUpgradesRouteImport
+    '/wiring-upgrades-tuscaloosa-al': {
+      id: '/wiring-upgrades-tuscaloosa-al'
+      path: '/wiring-upgrades-tuscaloosa-al'
+      fullPath: '/wiring-upgrades-tuscaloosa-al'
+      preLoaderRoute: typeof WiringUpgradesTuscaloosaAlRouteImport
       parentRoute: typeof rootRouteImport
     }
   }
@@ -338,19 +548,32 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
-  BirminghamRoute: BirminghamRoute,
-  BuhlRoute: BuhlRoute,
-  CommercialElectricalRoute: CommercialElectricalRoute,
+  CommercialElectricalTuscaloosaAlRoute: CommercialElectricalTuscaloosaAlRoute,
   ContactRoute: ContactRoute,
-  ElectricalRepairsRoute: ElectricalRepairsRoute,
-  NorthportRoute: NorthportRoute,
-  OutdoorWiringRoute: OutdoorWiringRoute,
+  ElectricalRepairsTuscaloosaAlRoute: ElectricalRepairsTuscaloosaAlRoute,
+  ElectricianBirminghamRoute: ElectricianBirminghamRoute,
+  ElectricianBrookwoodAlRoute: ElectricianBrookwoodAlRoute,
+  ElectricianBuhlRoute: ElectricianBuhlRoute,
+  ElectricianCoalingAlRoute: ElectricianCoalingAlRoute,
+  ElectricianCottondaleAlRoute: ElectricianCottondaleAlRoute,
+  ElectricianMoundvilleAlRoute: ElectricianMoundvilleAlRoute,
+  ElectricianNorthportRoute: ElectricianNorthportRoute,
+  ElectricianVanceAlRoute: ElectricianVanceAlRoute,
+  EmergencyElectricianTuscaloosaAlRoute: EmergencyElectricianTuscaloosaAlRoute,
+  EvChargerInstallationTuscaloosaAlRoute:
+    EvChargerInstallationTuscaloosaAlRoute,
+  GeneratorInstallationTuscaloosaAlRoute:
+    GeneratorInstallationTuscaloosaAlRoute,
+  LightingInstallationTuscaloosaAlRoute: LightingInstallationTuscaloosaAlRoute,
+  OutdoorWiringTuscaloosaAlRoute: OutdoorWiringTuscaloosaAlRoute,
+  PanelUpgradesTuscaloosaAlRoute: PanelUpgradesTuscaloosaAlRoute,
   ReviewsRoute: ReviewsRoute,
   RobotsDottxtRoute: RobotsDottxtRoute,
   ServicesRoute: ServicesRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
-  TuscaloosaRoute: TuscaloosaRoute,
-  WiringUpgradesRoute: WiringUpgradesRoute,
+  SmartHomeInstallationTuscaloosaAlRoute:
+    SmartHomeInstallationTuscaloosaAlRoute,
+  WiringUpgradesTuscaloosaAlRoute: WiringUpgradesTuscaloosaAlRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

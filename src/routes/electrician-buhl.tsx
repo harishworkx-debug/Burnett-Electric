@@ -2,18 +2,18 @@ import { createFileRoute } from "@tanstack/react-router";
 import { LocationPageLayout } from "@/components/site/LocationPageLayout";
 import { IMG } from "@/lib/business";
 
-export const Route = createFileRoute("/buhl")({
+export const Route = createFileRoute("/electrician-buhl")({
   head: () => ({
     meta: [
       { title: "Electrician in Buhl, AL | Burnett Electric" },
       { name: "description", content: "Your local electrician based in Buhl, AL. Fast repairs, wiring upgrades, and outdoor electrical. Call Burnett Electric at 205-826-3643." },
       { property: "og:title", content: "Electrician in Buhl, AL | Burnett Electric" },
       { property: "og:description", content: "Local licensed electrician based in Buhl, Alabama." },
-      { property: "og:url", content: "/buhl" },
+      { property: "og:url", content: "/electrician-buhl" },
       { property: "og:image", content: IMG.hero },
       { name: "twitter:image", content: IMG.hero },
     ],
-    links: [{ rel: "canonical", href: "/buhl" }],
+    links: [{ rel: "canonical", href: "/electrician-buhl" }],
   }),
   component: () => (
     <LocationPageLayout

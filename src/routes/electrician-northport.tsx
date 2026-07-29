@@ -2,18 +2,18 @@ import { createFileRoute } from "@tanstack/react-router";
 import { LocationPageLayout } from "@/components/site/LocationPageLayout";
 import { IMG } from "@/lib/business";
 
-export const Route = createFileRoute("/northport")({
+export const Route = createFileRoute("/electrician-northport")({
   head: () => ({
     meta: [
       { title: "Electrician in Northport, AL | Burnett Electric" },
       { name: "description", content: "Professional electrical services in Northport, AL. We specialize in residential wiring, panel upgrades, and commercial electrical repairs. Call +1 205-826-3643." },
       { property: "og:title", content: "Electrician in Northport, AL | Burnett Electric" },
       { property: "og:description", content: "Reliable residential and commercial electrician in Northport, Alabama." },
-      { property: "og:url", content: "/northport" },
+      { property: "og:url", content: "/electrician-northport" },
       { property: "og:image", content: IMG.hero },
       { name: "twitter:image", content: IMG.hero },
     ],
-    links: [{ rel: "canonical", href: "/northport" }],
+    links: [{ rel: "canonical", href: "/electrician-northport" }],
   }),
   component: () => (
     <LocationPageLayout
