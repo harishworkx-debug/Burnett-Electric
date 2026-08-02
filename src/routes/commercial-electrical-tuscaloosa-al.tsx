@@ -6,7 +6,7 @@ export const Route = createFileRoute("/commercial-electrical-tuscaloosa-al")({
   head: () => ({
     meta: [
       { title: "Commercial Electrical Services in Tuscaloosa, AL | Burnett Electric" },
-      { name: "description", content: "Professional commercial electrical contractor in Tuscaloosa, AL. We handle tenant fit-outs, LED retrofits, backup power, and complex electrical systems. Call +1 205-826-3643." },
+      { name: "description", content: "Professional commercial electrical contractor in Tuscaloosa, AL. We handle tenant fit-outs, LED retrofits, backup power, and complex electrical systems. Call +1 205-660-6952." },
       { property: "og:title", content: "Commercial Electrical Services | Burnett Electric" },
       { property: "og:description", content: "Reliable commercial electrical solutions, fit-outs, retrofits, and backup power." },
       { property: "og:url", content: "/commercial-electrical-tuscaloosa-al" },

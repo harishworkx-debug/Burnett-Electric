@@ -32,7 +32,7 @@ export function LocationPageLayout({
         {
           "@context": "https://schema.org", "@type": "LocalBusiness",
           "name": `Burnett Electric — Electrician ${city}, AL`,
-          "url": url, "telephone": "+12058263643",
+          "url": url, "telephone": "+12056606952",
           "areaServed": `${city}, AL`,
           "address": { "@type": "PostalAddress", "addressLocality": city, "addressRegion": "AL", "addressCountry": "US" },
           "description": metaDescription,

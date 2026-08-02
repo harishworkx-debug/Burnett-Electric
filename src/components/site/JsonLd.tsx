@@ -14,7 +14,7 @@ export const localBusinessSchema = {
   "image": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1200&q=80",
   "@id": "https://burnettelectric.com/#business",
   "url": "https://burnettelectric.com/",
-  "telephone": "+1-205-826-3643",
+  "telephone": "+1-205-660-6952",
   "priceRange": "$$",
   "address": {
     "@type": "PostalAddress",

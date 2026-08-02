@@ -6,7 +6,7 @@ export const Route = createFileRoute("/electrician-northport")({
   head: () => ({
     meta: [
       { title: "Electrician in Northport, AL | Burnett Electric" },
-      { name: "description", content: "Professional electrical services in Northport, AL. We specialize in residential wiring, panel upgrades, and commercial electrical repairs. Call +1 205-826-3643." },
+      { name: "description", content: "Professional electrical services in Northport, AL. We specialize in residential wiring, panel upgrades, and commercial electrical repairs. Call +1 205-660-6952." },
       { property: "og:title", content: "Electrician in Northport, AL | Burnett Electric" },
       { property: "og:description", content: "Reliable residential and commercial electrician in Northport, Alabama." },
       { property: "og:url", content: "/electrician-northport" },

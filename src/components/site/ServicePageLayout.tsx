@@ -45,7 +45,7 @@ export function ServicePageLayout({
       <JsonLd data={[
         {
           "@context": "https://schema.org", "@type": "Service",
-          "serviceType": h1, "provider": { "@type": "Electrician", "name": BUSINESS.name, "telephone": "+12058263643" },
+          "serviceType": h1, "provider": { "@type": "Electrician", "name": BUSINESS.name, "telephone": "+12056606952" },
           "areaServed": BUSINESS.areas.map(a => a + ", AL"),
           "url": url, "description": metaDescription,
         },

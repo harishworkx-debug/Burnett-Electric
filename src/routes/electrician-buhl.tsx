@@ -6,7 +6,7 @@ export const Route = createFileRoute("/electrician-buhl")({
   head: () => ({
     meta: [
       { title: "Electrician in Buhl, AL | Burnett Electric" },
-      { name: "description", content: "Your local electrician based in Buhl, AL. Fast repairs, wiring upgrades, and outdoor electrical. Call Burnett Electric at 205-826-3643." },
+      { name: "description", content: "Your local electrician based in Buhl, AL. Fast repairs, wiring upgrades, and outdoor electrical. Call Burnett Electric at 205-660-6952." },
       { property: "og:title", content: "Electrician in Buhl, AL | Burnett Electric" },
       { property: "og:description", content: "Local licensed electrician based in Buhl, Alabama." },
       { property: "og:url", content: "/electrician-buhl" },

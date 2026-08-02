@@ -17,7 +17,7 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Burnett Electric | Electrician in Tuscaloosa, AL" },
-      { name: "description", content: "Licensed electrician serving Tuscaloosa, Northport & Birmingham, AL. Repairs, wiring upgrades & commercial electrical. Call 205-826-3643 for a free estimate." },
+      { name: "description", content: "Licensed electrician serving Tuscaloosa, Northport & Birmingham, AL. Repairs, wiring upgrades & commercial electrical. Call 205-660-6952 for a free estimate." },
       { property: "og:title", content: "Burnett Electric | Electrician in Tuscaloosa, AL" },
       { property: "og:description", content: "Licensed & Insured Electrical Services for Homes & Businesses in Tuscaloosa, AL." },
       { property: "og:url", content: "/" },
@@ -79,7 +79,7 @@ const reviews = [
 ];
 
 const faqs = [
-  { q: "Do you offer free estimates?", a: "Yes. Every project starts with a free, no-obligation estimate. Call 205-826-3643 and we'll get you scheduled — often the same day." },
+  { q: "Do you offer free estimates?", a: "Yes. Every project starts with a free, no-obligation estimate. Call 205-660-6952 and we'll get you scheduled — often the same day." },
   { q: "Are you licensed and insured?", a: "Absolutely. Burnett Electric is a fully licensed Alabama electrical contractor with comprehensive liability insurance and workers' comp." },
   { q: "Which areas do you serve?", a: "We serve Tuscaloosa, Northport, Buhl, Birmingham and surrounding communities across west and central Alabama." },
   { q: "Do you handle emergencies?", a: "Yes — 24/7. Sparks, burning smells, partial outages or storm damage — call any time, day or night." },
