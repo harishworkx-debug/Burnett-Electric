@@ -3,7 +3,6 @@ export const BUSINESS = {
   owner: "Shad Burnett",
   phone: "205-660-6952",
   phoneHref: "tel:+12056606952",
-  whatsapp: "https://wa.me/12056606952",
   email: "info@burnettelectrictuscaloosa.com",
   address: "15953 Annie Bell Dr, Buhl, AL 35446",
   domain: "https://www.burnettelectrictuscaloosa.com",

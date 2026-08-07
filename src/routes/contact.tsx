@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { motion } from "framer-motion";
-import { Phone, Mail, MapPin, Clock, MessageCircle, Send } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, Send } from "lucide-react";
 import { useState } from "react";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
@@ -38,7 +38,7 @@ function ContactPage() {
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} className="max-w-3xl">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full glass-dark text-primary text-xs font-semibold uppercase tracking-widest mb-5">Contact Us</div>
             <h1 className="font-display text-5xl md:text-6xl font-bold leading-[1.05]">Talk to a <span className="text-gradient-primary">Real Electrician</span> Today</h1>
-            <p className="mt-5 text-lg text-white/80">Call, WhatsApp or send us a message. Free estimates on every project in Tuscaloosa, Northport and Birmingham, AL.</p>
+            <p className="mt-5 text-lg text-white/80">Call or send us a message. Free estimates on every project in Tuscaloosa, Northport and Birmingham, AL.</p>
           </motion.div>
         </div>
       </section>
@@ -79,7 +79,6 @@ function ContactPage() {
 
           <div className="lg:col-span-2 space-y-4">
             <InfoCard icon={Phone} label="Call Us" value={BUSINESS.phone} href={BUSINESS.phoneHref} />
-            <InfoCard icon={MessageCircle} label="WhatsApp" value="Message on WhatsApp" href={BUSINESS.whatsapp} external />
             <InfoCard icon={Mail} label="Email" value={BUSINESS.email} href={`mailto:${BUSINESS.email}`} />
             <InfoCard icon={MapPin} label="Service Area" value="Buhl, Tuscaloosa, Northport & Birmingham, AL" />
             <InfoCard icon={Clock} label="Hours" value={BUSINESS.hours} />
@@ -110,7 +109,7 @@ function Field({ label, name, type = "text", required, placeholder, className = 
   );
 }
 
-function InfoCard({ icon: Icon, label, value, href, external }: { icon: any; label: string; value: string; href?: string; external?: boolean }) {
+function InfoCard({ icon: Icon, label, value, href }: { icon: any; label: string; value: string; href?: string }) {
   const inner = (
     <div className="flex items-center gap-4 p-5 rounded-2xl bg-card border border-border shadow-card hover:shadow-elegant hover:border-primary/40 transition-all">
       <div className="h-12 w-12 rounded-xl gradient-primary flex items-center justify-center shadow-glow shrink-0">
@@ -123,5 +122,5 @@ function InfoCard({ icon: Icon, label, value, href, external }: { icon: any; lab
     </div>
   );
   if (!href) return inner;
-  return external ? <a href={href} target="_blank" rel="noopener noreferrer">{inner}</a> : <a href={href}>{inner}</a>;
+  return <a href={href}>{inner}</a>;
 }
