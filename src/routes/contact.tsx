@@ -12,9 +12,9 @@ export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
       { title: "Contact Burnett Electric" },
-      { name: "description", content: "Get in touch with Burnett Electric for professional services in Tuscaloosa." },
+      { name: "description", content: "Request help connecting with an independent residential electrical service provider in Tuscaloosa." },
       { property: "og:title", content: "Contact Burnett Electric" },
-      { property: "og:description", content: "Get in touch with Burnett Electric for professional services in Tuscaloosa." },
+      { property: "og:description", content: "Request a residential electrical service connection in Tuscaloosa." },
       { property: "og:url", content: "/contact" },
       { property: "og:image", content: IMG.worker },
       { name: "twitter:image", content: IMG.worker },
@@ -37,8 +37,8 @@ function ContactPage() {
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-white">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} className="max-w-3xl">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full glass-dark text-primary text-xs font-semibold uppercase tracking-widest mb-5">Contact Us</div>
-            <h1 className="font-display text-5xl md:text-6xl font-bold leading-[1.05]">Talk to a <span className="text-gradient-primary">Real Electrician</span> Today</h1>
-            <p className="mt-5 text-lg text-white/80">Call or send us a message. Free estimates on every project in Tuscaloosa, Northport and Birmingham, AL.</p>
+            <h1 className="font-display text-5xl md:text-6xl font-bold leading-[1.05]">Connect With a <span className="text-gradient-primary">Local Provider</span></h1>
+            <p className="mt-5 text-lg text-white/80">Call or send a request for help connecting with an independent residential service provider in Tuscaloosa, Northport, or Birmingham.</p>
           </motion.div>
         </div>
       </section>
@@ -47,12 +47,12 @@ function ContactPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-5 gap-10">
           <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="lg:col-span-3">
             <div className="p-8 md:p-10 rounded-3xl bg-card border border-border shadow-elegant">
-              <h2 className="font-display text-2xl font-bold text-secondary">Request a Free Estimate</h2>
+              <h2 className="font-display text-2xl font-bold text-secondary">Request Help Connecting</h2>
               <p className="mt-2 text-muted-foreground">We'll get back to you within one business hour.</p>
               {sent ? (
                 <div className="mt-8 p-6 rounded-2xl bg-primary/10 border border-primary/30 text-secondary">
                   <div className="font-display font-semibold text-lg">Thanks — your request was sent.</div>
-                  <p className="mt-1 text-sm text-muted-foreground">A Burnett Electric team member will call or text you shortly. For urgent electrical needs, call {BUSINESS.phone}.</p>
+                  <p className="mt-1 text-sm text-muted-foreground">A team member will review your request. For urgent residential electrical needs, call {BUSINESS.phone}.</p>
                 </div>
               ) : (
                 <form onSubmit={(e) => { e.preventDefault(); setSent(true); }} className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">

@@ -5,10 +5,10 @@ import { IMG } from "@/lib/business";
 export const Route = createFileRoute("/electrician-birmingham")({
   head: () => ({
     meta: [
-      { title: "Commercial Electrician in Birmingham, AL | Burnett Electric" },
-      { name: "description", content: "Top-rated commercial and residential electrician serving the greater Birmingham, AL area. Electrical repairs, panel upgrades, and commercial fit-outs." },
+      { title: "Residential Electrician in Birmingham, AL | Burnett Electric" },
+      { name: "description", content: "Residential electrical service connections for homeowners in Birmingham, AL, including repairs, panel upgrades, and wiring." },
       { property: "og:title", content: "Electrician in Birmingham, AL | Burnett Electric" },
-      { property: "og:description", content: "Expert commercial and residential electrical services in Birmingham." },
+      { property: "og:description", content: "Residential electrical service connections for homeowners in Birmingham." },
       { property: "og:url", content: "/electrician-birmingham" },
       { property: "og:image", content: IMG.hero },
       { name: "twitter:image", content: IMG.hero },
@@ -18,25 +18,25 @@ export const Route = createFileRoute("/electrician-birmingham")({
   component: () => (
     <LocationPageLayout
       slug="birmingham"
-      metaDescription="Top-rated commercial and residential electrician in Birmingham, AL."
+      metaDescription="Residential electrical service connections for homeowners in Birmingham, AL."
       h1="Expert Electrician in Birmingham, AL"
       city="Birmingham"
       hero={IMG.hero}
-      intro="From high-rise commercial buildings in the city center to residential neighborhoods in the suburbs, Burnett Electric provides Birmingham with premier electrical repair, installation, and maintenance services."
+      intro="This site helps Birmingham homeowners connect with independent local residential electrical service providers."
       landmarks={["Downtown Birmingham", "Hoover", "Vestavia Hills", "Homewood", "Mountain Brook", "UAB Campus"]}
       benefits={[
-        { title: "Commercial Focus", desc: "We handle large-scale commercial fit-outs, LED retrofits, and electrical maintenance for Birmingham businesses." },
+        { title: "Residential Repairs", desc: "Connect with a provider for home repairs, troubleshooting, and electrical upgrades." },
         { title: "Residential Expertise", desc: "Comprehensive home wiring, panel upgrades, and repairs for homes throughout the metro area." },
-        { title: "Backup Power Solutions", desc: "Keep your operations running with our industrial and residential generator installations." },
-        { title: "Data Cabling", desc: "Structured cabling and low-voltage networking solutions for modern offices." },
-        { title: "Code Compliance", desc: "We ensure all work meets the stringent building codes of Birmingham and surrounding municipalities." },
-        { title: "24/7 Availability", desc: "We are ready to respond to electrical emergencies anytime to minimize your downtime." },
+        { title: "Backup Power Solutions", desc: "Explore residential generator options for storm-related outages." },
+        { title: "Home Wiring", desc: "Request help connecting with a provider for residential wiring and smart-home needs." },
+        { title: "Safety Information", desc: "Review questions to ask a provider about residential electrical safety and code requirements." },
+        { title: "Emergency Help", desc: "Call to request help connecting with a provider for a residential electrical emergency." },
       ]}
       faqs={[
-        { q: "Do you service commercial properties in Downtown Birmingham?", a: "Yes, we regularly perform tenant fit-outs, lighting upgrades, and maintenance for businesses downtown." },
-        { q: "Are you licensed to operate in Birmingham municipalities like Mountain Brook and Homewood?", a: "Absolutely. We carry all necessary licenses and handle the permitting process across the entire Birmingham metro area." },
+        { q: "Can I connect with a residential provider in Birmingham?", a: "Yes. Call to request help connecting with an independent local residential provider." },
+        { q: "How should I verify a provider?", a: "Homeowners should verify that the hired provider furnishes the license and insurance required for the work." },
         { q: "Can you upgrade the electrical panel in my older home?", a: "Yes, we specialize in upgrading electrical panels and rewiring older homes to safely handle modern electrical demands." },
-        { q: "Do you offer emergency electrical repairs for businesses?", a: "Yes, we provide 24/7 emergency response to ensure your business operations are not interrupted by electrical failures." },
+        { q: "Can I request help for a residential emergency?", a: "Yes. Call to request help connecting with a provider; availability varies by provider participation, location, and capacity." },
       ]}
     />
   ),

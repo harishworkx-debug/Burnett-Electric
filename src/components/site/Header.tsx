@@ -7,13 +7,12 @@ import { BUSINESS } from "@/lib/business";
 const services = [
   { to: "/electrical-repairs-tuscaloosa-al", label: "Electrical Repairs" },
   { to: "/wiring-upgrades-tuscaloosa-al", label: "Wiring Upgrades" },
-  { to: "/commercial-electrical-tuscaloosa-al", label: "Commercial Electrical" },
   { to: "/outdoor-wiring-tuscaloosa-al", label: "Outdoor Wiring" },
   { to: "/generator-installation-tuscaloosa-al", label: "Generator Installation" },
   { to: "/panel-upgrades-tuscaloosa-al", label: "Panel Upgrades" },
   { to: "/lighting-installation-tuscaloosa-al", label: "Lighting & Fan Installation" },
   { to: "/ev-charger-installation-tuscaloosa-al", label: "EV Charger Installation" },
-  { to: "/emergency-electrician-tuscaloosa-al", label: "24/7 Emergency Electrician" },
+  { to: "/emergency-electrician-tuscaloosa-al", label: "Emergency Electrical Help" },
   { to: "/smart-home-installation-tuscaloosa-al", label: "Smart Home Installation" },
 ];
 
@@ -62,7 +61,7 @@ export function Header() {
             </div>
             <div className="leading-tight">
               <div className="font-display font-bold text-lg md:text-xl text-white">{BUSINESS.name}</div>
-              <div className="text-[10px] md:text-xs text-muted-foreground -mt-0.5">Licensed • Insured • Tuscaloosa, AL</div>
+              <div className="text-[10px] md:text-xs text-muted-foreground -mt-0.5">Residential electrical connections • Tuscaloosa, AL</div>
             </div>
           </Link>
 

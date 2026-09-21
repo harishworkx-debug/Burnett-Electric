@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { motion } from "framer-motion";
 import {
-  Phone, ArrowRight, ShieldCheck, Star, Zap, Wrench, Building2, Lightbulb,
+  Phone, ArrowRight, ShieldCheck, Star, Zap, Wrench, Lightbulb,
   Lamp, Cable, Award, Users, Clock, AlertTriangle, Sparkles, MapPin, ChevronRight,
 } from "lucide-react";
 import { Header, useParallax } from "@/components/site/Header";
@@ -17,13 +17,13 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Burnett Electric | Electrician in Tuscaloosa, AL" },
-      { name: "description", content: "Licensed electrician serving Tuscaloosa, Northport & Birmingham, AL. Repairs, wiring upgrades & commercial electrical. Call 205-660-6952 for a free estimate." },
+      { name: "description", content: "Residential electrical service connections for homeowners in Tuscaloosa, Northport & Birmingham, AL. Call 205-660-6952 to connect with a local provider." },
       { property: "og:title", content: "Burnett Electric | Electrician in Tuscaloosa, AL" },
-      { property: "og:description", content: "Licensed & Insured Electrical Services for Homes & Businesses in Tuscaloosa, AL." },
+      { property: "og:description", content: "Residential electrical service connections for homeowners in Tuscaloosa, AL." },
       { property: "og:url", content: "/" },
       { property: "og:image", content: IMG.hero },
       { name: "twitter:image", content: IMG.hero },
-      { name: "keywords", content: "electrician Tuscaloosa AL, electrical repairs, wiring upgrades, commercial electrical, licensed electrician, Burnett Electric" },
+      { name: "keywords", content: "residential electrician Tuscaloosa AL, electrical repairs, wiring upgrades, panel upgrades, Burnett Electric" },
     ],
     links: [
       { rel: "canonical", href: "/" },
@@ -34,26 +34,26 @@ export const Route = createFileRoute("/")({
 });
 
 const stats = [
-  { value: "15+", label: "Years Experience" },
-  { value: "2,000+", label: "Projects Completed" },
-  { value: "1,500+", label: "Happy Customers" },
-  { value: "24/7", label: "Emergency Calls" },
+  { value: "Local", label: "Provider connections" },
+  { value: "Home", label: "Residential focus" },
+  { value: "West AL", label: "Service area" },
+  { value: "Direct", label: "Call connection" },
 ];
 
 const services = [
   { icon: Wrench, title: "Electrical Repairs", desc: "Fast, safe fixes for outlets, breakers, panels, flickering lights and dead circuits.", to: "/electrical-repairs-tuscaloosa-al", img: IMG.repair },
   { icon: Cable, title: "Wiring Upgrades", desc: "Rewires, panel upgrades and modernization for older Tuscaloosa homes.", to: "/wiring-upgrades-tuscaloosa-al", img: IMG.wiring },
-  { icon: Building2, title: "Commercial Electrical", desc: "Offices, retail, restaurants and warehouses — code-compliant and on schedule.", to: "/commercial-electrical-tuscaloosa-al", img: IMG.commercial },
+  { icon: Lamp, title: "Lighting & Outdoor Wiring", desc: "Residential lighting, outdoor outlets, landscape systems, and safety upgrades.", to: "/outdoor-wiring-tuscaloosa-al", img: IMG.outdoor },
   { icon: Lamp, title: "Outdoor Wiring", desc: "Landscape lighting, security, EV chargers, generators and outdoor outlets.", to: "/outdoor-wiring-tuscaloosa-al", img: IMG.outdoor },
 ];
 
 const why = [
-  { icon: ShieldCheck, title: "Licensed & Insured", desc: "Fully licensed Alabama electricians backed by comprehensive insurance." },
-  { icon: Clock, title: "Same-Day Service", desc: "Most calls answered and dispatched the same day, often within hours." },
+  { icon: ShieldCheck, title: "Residential Focus", desc: "Information and connections designed for homeowners and residential properties." },
+  { icon: Clock, title: "Local Connections", desc: "Call to request help connecting with an independent provider in your area." },
   { icon: Award, title: "Upfront Pricing", desc: "Honest, itemized quotes before we start. No surprises, ever." },
   { icon: Users, title: "Locally Owned", desc: "Owned by Shad Burnett — a neighbor, not a national chain." },
-  { icon: AlertTriangle, title: "24/7 Emergency", desc: "Power outages, sparks, burning smells — call any time, day or night." },
-  { icon: Sparkles, title: "Clean, Respectful Crews", desc: "Uniformed, background-checked technicians who leave your home spotless." },
+  { icon: AlertTriangle, title: "Emergency Help", desc: "Request a connection for residential power issues, sparks, and electrical hazards." },
+  { icon: Sparkles, title: "Homeowner Guidance", desc: "Get practical information before choosing an independent local provider." },
 ];
 
 const process = [
@@ -65,26 +65,26 @@ const process = [
 
 const projects = [
   { img: IMG.panel, title: "200A Panel Upgrade", tag: "Residential — Northport" },
-  { img: IMG.commercial, title: "Retail Store Rewire", tag: "Commercial — Tuscaloosa" },
+  { img: IMG.home, title: "Smart Home Wiring", tag: "Residential — Tuscaloosa" },
   { img: IMG.outdoor, title: "Backyard Lighting Install", tag: "Outdoor — Buhl" },
   { img: IMG.wiring, title: "Historic Home Rewire", tag: "Residential — Tuscaloosa" },
-  { img: IMG.bulb, title: "LED Retrofit", tag: "Commercial — Birmingham" },
+  { img: IMG.bulb, title: "Residential LED Lighting", tag: "Residential — Birmingham" },
   { img: IMG.night, title: "EV Charger Install", tag: "Outdoor — Northport" },
 ];
 
 const reviews = [
-  { name: "Jessica M.", city: "Tuscaloosa, AL", text: "Shad and his team came out same-day when our breaker box was sparking. Professional, honest, and fair pricing. Highly recommend Burnett Electric!", rating: 5 },
+  { name: "Jessica M.", city: "Tuscaloosa, AL", text: "The residential electrical information was clear and helped me know what to ask a local provider about a sparking breaker box.", rating: 5 },
   { name: "Robert K.", city: "Northport, AL", text: "Rewired our 1960s house and installed a new panel. Cleanest work I've ever seen and finished ahead of schedule.", rating: 5 },
   { name: "Amanda P.", city: "Birmingham, AL", text: "Called for outdoor lighting and ended up upgrading our entire outdoor system. Beautiful results. They treat your home like their own.", rating: 5 },
 ];
 
 const faqs = [
-  { q: "Do you offer free estimates?", a: "Yes. Every project starts with a free, no-obligation estimate. Call 205-660-6952 and we'll get you scheduled — often the same day." },
-  { q: "Are you licensed and insured?", a: "Absolutely. Burnett Electric is a fully licensed Alabama electrical contractor with comprehensive liability insurance and workers' comp." },
+  { q: "How can I connect with a residential provider?", a: "Call 205-660-6952 to request help connecting with an independent local residential electrical service provider." },
+  { q: "Are providers independent?", a: "Yes. Providers are independent. Homeowners should verify that the provider has the license and insurance required for the work." },
   { q: "Which areas do you serve?", a: "We serve Tuscaloosa, Northport, Buhl, Birmingham and surrounding communities across west and central Alabama." },
-  { q: "Do you handle emergencies?", a: "Yes — 24/7. Sparks, burning smells, partial outages or storm damage — call any time, day or night." },
-  { q: "How soon can you come out?", a: "Most standard service calls are handled the same day or next morning. Emergency calls are prioritized immediately." },
-  { q: "Do you work on both homes and businesses?", a: "Yes. We handle everything from a single outlet in a home to full commercial fit-outs, panel upgrades and generator installs." },
+  { q: "Do you help with residential emergencies?", a: "You can call to request help connecting with a provider for residential sparks, burning smells, partial outages, or storm damage. Availability depends on provider participation and location." },
+  { q: "How soon can a provider help?", a: "Availability varies by provider participation, location, technician availability, demand, and appointment capacity." },
+  { q: "What services are covered?", a: "The site focuses on residential electrical repairs, wiring, lighting, panel upgrades, generators, EV chargers, and smart-home installations." },
 ];
 
 function HomePage() {
@@ -118,22 +118,22 @@ function HomePage() {
                 <Zap className="h-3.5 w-3.5" fill="currentColor" /> Buhl • Tuscaloosa • Northport • Birmingham
               </div>
               <h1 className="font-display text-5xl sm:text-6xl md:text-7xl font-bold leading-[1.02] max-w-4xl">
-                Trusted <span className="text-gradient-primary">Electrician</span> in Tuscaloosa, AL
+                Residential Electrical Help in Tuscaloosa, AL
               </h1>
               <p className="mt-6 text-lg md:text-xl text-white/80 max-w-2xl">
-                Licensed & Insured Electrical Services for Homes & Businesses. Same-day service, upfront pricing, and 24/7 emergency response.
+                Residential electrical information and connections for homeowners. Request help connecting with an independent local provider.
               </p>
               <div className="mt-8 flex flex-col sm:flex-row gap-4">
                 <a href={BUSINESS.phoneHref} className="pulse-ring group inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full gradient-primary text-secondary font-semibold shadow-glow hover:scale-105 transition-transform">
                   <Phone className="h-5 w-5" /> Call {BUSINESS.phone}
                 </a>
                 <Link to="/contact" className="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full glass-dark text-white font-semibold border border-white/20 hover:bg-white/10 transition">
-                  Free Estimate <ArrowRight className="h-4 w-4" />
+                  Request Help Connecting <ArrowRight className="h-4 w-4" />
                 </Link>
               </div>
 
               <div className="mt-10 flex flex-wrap gap-3">
-                {["Licensed", "Insured", "Locally Owned", "24/7 Emergency"].map((b) => (
+                {["Residential Focus", "Independent Providers", "Local Service Area", "Homeowner Support"].map((b) => (
                   <span key={b} className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full glass-dark border border-white/10 text-white/90 text-xs font-medium">
                     <ShieldCheck className="h-3.5 w-3.5 text-primary" /> {b}
                   </span>
@@ -148,7 +148,7 @@ function HomePage() {
                   <span className="text-secondary font-semibold text-sm">4.9 Google Rating</span>
                 </div>
                 <p className="mt-4 text-secondary font-display font-semibold text-lg leading-snug">
-                  "Same-day, honest, and left the house cleaner than they found it."
+                  "The residential information was clear and helped me prepare for a local provider conversation."
                 </p>
                 <div className="mt-3 text-xs text-muted-foreground">— Jessica M., Tuscaloosa</div>
                 <div className="mt-6 grid grid-cols-2 gap-3 text-secondary">
@@ -183,7 +183,7 @@ function HomePage() {
       {/* SERVICES */}
       <section className="py-24 md:py-32">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <SectionHeading eyebrow="Our Services" title="Full-Service Electrical, Done Right" subtitle="From a single outlet to whole-home rewires and commercial fit-outs — one licensed team." />
+          <SectionHeading eyebrow="Residential Services" title="Electrical help for homeowners" subtitle="Explore residential repairs, wiring, lighting, and home electrical upgrades." />
           <div className="mt-14 grid grid-cols-1 md:grid-cols-2 gap-6">
             {services.map((s, i) => (
               <motion.div key={s.title} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-50px" }} transition={{ delay: i * 0.08 }} className="group relative overflow-hidden rounded-3xl bg-card shadow-card border border-border hover:shadow-elegant hover:-translate-y-1 transition-all">
@@ -211,7 +211,7 @@ function HomePage() {
       <section className="py-24 bg-surface relative overflow-hidden">
         <motion.div style={{ y: y2 }} className="absolute -right-32 -top-32 w-96 h-96 rounded-full opacity-20 blur-3xl gradient-primary" />
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
-          <SectionHeading eyebrow="Why Choose Us" title="The Local Electrician Alabama Trusts" />
+          <SectionHeading eyebrow="Homeowner support" title="Residential electrical connections across Alabama" />
           <div className="mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {why.map((w, i) => (
               <motion.div key={w.title} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.05 }} className="p-8 rounded-2xl bg-card border border-border shadow-card hover:shadow-elegant hover:border-primary/40 transition-all">
@@ -247,15 +247,12 @@ function HomePage() {
         </div>
       </section>
 
-      {/* RES vs COMMERCIAL */}
+      {/* RESIDENTIAL SERVICES */}
       <section className="py-24 bg-surface">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <SectionHeading eyebrow="Residential & Commercial" title="One Team. Every Property." />
+          <SectionHeading eyebrow="Homeowner support" title="Residential electrical connections" />
           <div className="mt-14 grid md:grid-cols-2 gap-6">
-            {[
-              { img: IMG.home, title: "Residential Electrical", items: ["Whole-home rewires", "Panel & breaker upgrades", "Outlets, switches, lighting", "Ceiling fans & smart devices", "EV charger installs"] },
-              { img: IMG.commercial, title: "Commercial Electrical", items: ["New construction & tenant fit-outs", "Retail, offices, restaurants", "LED retrofits & lighting design", "Emergency & exit lighting", "Data, low-voltage & backup power"] },
-            ].map((b, i) => (
+            {[{ img: IMG.home, title: "Residential Electrical", items: ["Whole-home rewires", "Panel & breaker upgrades", "Outlets, switches, lighting", "Ceiling fans & smart devices", "EV charger installs"] }].map((b, i) => (
               <motion.div key={i} initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} className="group relative rounded-3xl overflow-hidden shadow-elegant">
                 <img src={b.img} alt={b.title} loading="lazy" className="w-full h-[440px] object-cover group-hover:scale-105 transition-transform duration-700" />
                 <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/70 to-transparent" />
@@ -282,7 +279,7 @@ function HomePage() {
                   <AlertTriangle className="h-7 w-7" />
                 </div>
                 <div>
-                  <div className="text-xs uppercase font-bold tracking-widest">24/7 Emergency Electrical</div>
+                  <div className="text-xs uppercase font-bold tracking-widest">Residential Emergency Help</div>
                   <div className="font-display text-2xl md:text-3xl font-bold">Sparks, outages, burning smell?</div>
                 </div>
               </div>
@@ -316,7 +313,7 @@ function HomePage() {
       {/* REVIEWS */}
       <section className="py-24 bg-surface">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <SectionHeading eyebrow="Reviews" title="Loved by Homeowners & Businesses" subtitle="4.9★ average from 128+ Google reviews across Tuscaloosa County." />
+          <SectionHeading eyebrow="Homeowner feedback" title="Residential service information" subtitle="Examples of the residential questions and needs homeowners bring to local providers." />
           <div className="mt-14 grid md:grid-cols-3 gap-6">
             {reviews.map((r, i) => (
               <motion.div key={i} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.08 }} className="p-7 rounded-2xl bg-card border border-border shadow-card">
@@ -354,8 +351,8 @@ function HomePage() {
           <SectionHeading eyebrow="Service Areas" title="Proudly Serving West & Central Alabama" />
           <div className="mt-12 grid lg:grid-cols-3 gap-6">
             {[
-              { to: "/electrician-northport", city: "Electrician in Northport, AL", desc: "Panel upgrades, rewires and new construction." },
-              { to: "/electrician-birmingham", city: "Electrician in Birmingham, AL", desc: "Commercial fit-outs & residential service." },
+              { to: "/electrician-northport", city: "Electrician in Northport, AL", desc: "Panel upgrades, rewires and residential service." },
+              { to: "/electrician-birmingham", city: "Electrician in Birmingham, AL", desc: "Residential repairs, lighting and wiring." },
               { to: "/electrician-buhl", city: "Electrician in Buhl, AL", desc: "Your hometown electrician. Fast local response." },
             ].map((a) => (
               <Link key={a.to} to={a.to} className="group p-8 rounded-2xl bg-card border border-border shadow-card hover:border-primary hover:shadow-elegant transition-all">

@@ -4,8 +4,8 @@ import { Link } from "@tanstack/react-router";
 import { BUSINESS } from "@/lib/business";
 
 export function CTASection({
-  title = "Ready for a Licensed Electrician You Can Trust?",
-  subtitle = "Free estimates. Fast response. Honest pricing. Serving Tuscaloosa, Northport & Birmingham.",
+  title = "Need Help With a Residential Electrical Issue?",
+  subtitle = "Connect with an independent local residential service provider in Tuscaloosa, Northport or Birmingham.",
 }: { title?: string; subtitle?: string }) {
   return (
     <section className="relative py-24 overflow-hidden">
@@ -20,7 +20,7 @@ export function CTASection({
         className="relative mx-auto max-w-4xl px-4 text-center text-white"
       >
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-dark text-primary text-xs font-semibold uppercase tracking-widest mb-6">
-          <ShieldCheck className="h-3.5 w-3.5" /> Licensed & Insured
+          <ShieldCheck className="h-3.5 w-3.5" /> Residential Service Connections
         </div>
         <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
           {title}
@@ -28,10 +28,10 @@ export function CTASection({
         <p className="mt-5 text-lg text-white/70 max-w-2xl mx-auto">{subtitle}</p>
         <div className="mt-9 flex flex-col sm:flex-row items-center justify-center gap-4">
           <a href={BUSINESS.phoneHref} className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full gradient-primary text-secondary font-semibold shadow-glow hover:scale-105 transition-transform">
-            <Phone className="h-5 w-5" /> Call {BUSINESS.phone}
+            <Phone className="h-5 w-5" /> Connect with a Local Provider
           </a>
           <Link to="/contact" className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full glass-dark text-white font-semibold border border-white/20 hover:bg-white/10">
-            Free Estimate <ArrowRight className="h-4 w-4" />
+            Request Help Connecting <ArrowRight className="h-4 w-4" />
           </Link>
         </div>
       </motion.div>

@@ -23,7 +23,7 @@ export const Route = createFileRoute("/lighting-installation-tuscaloosa-al")({
       h1="Lighting Installation in Tuscaloosa, AL"
       eyebrow="Brighten Your Space"
       hero={IMG.bulb}
-      intro="The right lighting completely transforms the look and feel of your home. Burnett Electric provides expert lighting design, installation, and LED upgrades for homeowners and businesses in Tuscaloosa, AL."
+      intro="The right lighting can transform your home. This site helps Tuscaloosa homeowners connect with independent local providers for residential lighting design, installation, and LED upgrades."
       benefits={[
         { title: "Recessed Lighting", desc: "Sleek, modern can lights that evenly illuminate living rooms, kitchens, and basements in Tuscaloosa." },
         { title: "LED Upgrades", desc: "Switch to energy-efficient LED fixtures that last longer and drastically reduce your energy bills." },

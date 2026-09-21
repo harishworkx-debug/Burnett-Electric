@@ -13,9 +13,9 @@ export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
       { title: "Electrical Services in Tuscaloosa | Burnett Electric" },
-      { name: "description", content: "From repairs to wiring upgrades and commercial work, Burnett Electric handles it all in Tuscaloosa, AL. Reliable, licensed & insured. Call 205-660-6952." },
+      { name: "description", content: "Residential electrical repairs, wiring upgrades, lighting, and home installations in Tuscaloosa, AL. Call 205-660-6952 to connect with a local provider." },
       { property: "og:title", content: "Electrical Services in Tuscaloosa | Burnett Electric" },
-      { property: "og:description", content: "Repairs, wiring upgrades, commercial & outdoor electrical services." },
+      { property: "og:description", content: "Residential repairs, wiring upgrades, lighting, and outdoor electrical services." },
       { property: "og:url", content: "/services" },
       { property: "og:image", content: IMG.electrician },
       { name: "twitter:image", content: IMG.electrician },
@@ -29,7 +29,7 @@ const services = [
   {
     icon: Wrench, title: "Electrical Repairs", to: "/electrical-repairs-tuscaloosa-al", img: IMG.repair,
     desc: "Fast, safe repairs for breakers, outlets, panels, flickering lights, and dedicated circuits.",
-    benefits: ["Same-day diagnostic", "GFCI outlet installs", "Code-compliant fixes", "Dedicated circuits"],
+    benefits: ["Residential diagnostics", "GFCI outlet installs", "Electrical troubleshooting", "Dedicated circuits"],
   },
   {
     icon: Cable, title: "Wiring Upgrades", to: "/wiring-upgrades-tuscaloosa-al", img: IMG.wiring,
@@ -52,11 +52,6 @@ const services = [
     benefits: ["Weatherproof installs", "Landscape & security", "Pool & hot tub wiring", "GFCI protection"],
   },
   {
-    icon: Building2, title: "Commercial Electrical", to: "/commercial-electrical-tuscaloosa-al", img: IMG.commercial,
-    desc: "Offices, retail tenant fit-outs, restaurants and warehouses — on-time, on-budget.",
-    benefits: ["Tenant fit-outs", "LED retrofits", "Emergency lighting", "Backup power"],
-  },
-  {
     icon: Wifi, title: "Smart Home Installation", to: "/smart-home-installation-tuscaloosa-al", img: IMG.home,
     desc: "Professional installation of smart switches, automated systems, and home theater wiring.",
     benefits: ["Home theater wiring", "Hardwired cameras", "Smart thermostats", "Seamless integration"],
@@ -68,11 +63,11 @@ const services = [
   },
   {
     icon: BatteryCharging, title: "EV Charger Installation", to: "/ev-charger-installation-tuscaloosa-al", img: IMG.wiring,
-    desc: "Level 2 charging stations installed at your home or business for fast overnight charging.",
+    desc: "Level 2 charging stations installed at your home for convenient overnight charging.",
     benefits: ["Dedicated 240V circuits", "Tesla Wall Connectors", "Load calculations", "Permitted & inspected"],
   },
   {
-    icon: Siren, title: "24/7 Emergency Electrician", to: "/emergency-electrician-tuscaloosa-al", img: IMG.repair,
+    icon: Siren, title: "Emergency Residential Electrical Help", to: "/emergency-electrician-tuscaloosa-al", img: IMG.repair,
     desc: "Immediate response for sparking panels, partial power loss, and dangerous electrical faults.",
     benefits: ["Rapid response", "Fully stocked vans", "Storm damage repair", "Safety prioritized"],
   }
@@ -98,7 +93,7 @@ function ServicesPage() {
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }} className="max-w-3xl">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full glass-dark text-primary text-xs font-semibold uppercase tracking-widest mb-5">Our Services</div>
             <h1 className="font-display text-5xl md:text-6xl font-bold leading-[1.05]">Electrical Services in <span className="text-gradient-primary">Tuscaloosa, AL</span></h1>
-            <p className="mt-5 text-lg text-white/80">Repairs, upgrades, commercial and outdoor electrical — all delivered by one licensed, local team you can trust.</p>
+            <p className="mt-5 text-lg text-white/80">Residential repairs, upgrades, lighting, and outdoor electrical help for homeowners.</p>
           </motion.div>
         </div>
       </section>

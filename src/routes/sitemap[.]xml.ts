@@ -21,7 +21,6 @@ export const Route = createFileRoute("/sitemap.xml")({
           { path: "/contact", changefreq: "monthly", priority: "0.8" },
           { path: "/electrical-repairs-tuscaloosa-al", changefreq: "monthly", priority: "0.9" },
           { path: "/wiring-upgrades-tuscaloosa-al", changefreq: "monthly", priority: "0.9" },
-          { path: "/commercial-electrical-tuscaloosa-al", changefreq: "monthly", priority: "0.9" },
           { path: "/outdoor-wiring-tuscaloosa-al", changefreq: "monthly", priority: "0.9" },
           { path: "/generator-installation-tuscaloosa-al", changefreq: "monthly", priority: "0.9" },
           { path: "/panel-upgrades-tuscaloosa-al", changefreq: "monthly", priority: "0.9" },

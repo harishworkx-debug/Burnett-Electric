@@ -8,7 +8,7 @@ export const Route = createFileRoute("/ev-charger-installation-tuscaloosa-al")({
       { title: "EV Charger Installation in Tuscaloosa, AL | Burnett Electric" },
       { name: "description", content: "Fast, safe Level 2 EV charger installation in Tuscaloosa, AL. Charge your electric vehicle at home overnight with a dedicated charging station." },
       { property: "og:title", content: "EV Charger Installation in Tuscaloosa, AL | Burnett Electric" },
-      { property: "og:description", content: "Professional Level 2 EV charger installation for homes and businesses in Tuscaloosa." },
+      { property: "og:description", content: "Residential Level 2 EV charger installation connections in Tuscaloosa." },
       { property: "og:url", content: "/ev-charger-installation-tuscaloosa-al" },
       { property: "og:image", content: IMG.wiring },
       { name: "twitter:image", content: IMG.wiring },
@@ -29,7 +29,7 @@ export const Route = createFileRoute("/ev-charger-installation-tuscaloosa-al")({
         { title: "Universal Compatibility", desc: "We install chargers for all major brands, including Tesla, Ford, Rivian, Chevy, and more." },
         { title: "Dedicated Circuits", desc: "We run a dedicated 240V circuit to ensure your charger operates safely without tripping breakers." },
         { title: "Load Management", desc: "We assess your Tuscaloosa home's electrical capacity and install energy management systems if needed." },
-        { title: "Commercial Installations", desc: "Attract customers and employees by installing EV charging stations at your Tuscaloosa business." },
+        { title: "Home Installation", desc: "Request help connecting with a provider for an EV charger at your Tuscaloosa home." },
         { title: "Permitted & Inspected", desc: "Every installation is permitted and inspected to guarantee safety and code compliance." },
       ]}
       problems={[
@@ -38,13 +38,13 @@ export const Route = createFileRoute("/ev-charger-installation-tuscaloosa-al")({
         "Tripping breakers when you plug your EV into an existing garage outlet",
         "Worrying about the fire hazard of using extension cords to charge your car",
         "Needing a panel upgrade before you can safely install a home charger",
-        "Commercial properties wanting to add charging amenities for tenants or staff",
+        "Needing a residential EV charging setup for your home",
       ]}
       process={[
         { title: "Load Calculation", desc: "We evaluate your current electrical panel to ensure it can handle the extra load of a Level 2 charger." },
-        { title: "Charger Selection", desc: "You provide the charger, or we can recommend and supply top-rated models." },
+        { title: "Charger Selection", desc: "Discuss charger compatibility and options with the independent provider." },
         { title: "Installation", desc: "We run the dedicated 240V line to your garage or driveway and securely mount the charging station." },
-        { title: "Testing", desc: "We test the unit and show you the best practices for safe charging at your Tuscaloosa home." },
+        { title: "Testing", desc: "The provider can test the unit and explain safe charging practices for your home." },
       ]}
       faqs={[
         { q: "Do I need a panel upgrade to install an EV charger?", a: "It depends on your current panel size (100 amp vs 200 amp) and what gas/electric appliances you currently run. We do a load calculation to find out." },

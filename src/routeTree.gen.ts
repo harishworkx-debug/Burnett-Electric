@@ -11,7 +11,6 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AboutRouteImport } from './routes/about'
-import { Route as CommercialElectricalTuscaloosaAlRouteImport } from './routes/commercial-electrical-tuscaloosa-al'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as ElectricalRepairsTuscaloosaAlRouteImport } from './routes/electrical-repairs-tuscaloosa-al'
 import { Route as ElectricianBirminghamRouteImport } from './routes/electrician-birmingham'
@@ -45,12 +44,6 @@ const AboutRoute = AboutRouteImport.update({
   path: '/about',
   getParentRoute: () => rootRouteImport,
 } as any)
-const CommercialElectricalTuscaloosaAlRoute =
-  CommercialElectricalTuscaloosaAlRouteImport.update({
-    id: '/commercial-electrical-tuscaloosa-al',
-    path: '/commercial-electrical-tuscaloosa-al',
-    getParentRoute: () => rootRouteImport,
-  } as any)
 const ContactRoute = ContactRouteImport.update({
   id: '/contact',
   path: '/contact',
@@ -174,7 +167,6 @@ const WiringUpgradesTuscaloosaAlRoute =
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
-  '/commercial-electrical-tuscaloosa-al': typeof CommercialElectricalTuscaloosaAlRoute
   '/contact': typeof ContactRoute
   '/electrical-repairs-tuscaloosa-al': typeof ElectricalRepairsTuscaloosaAlRoute
   '/electrician-birmingham': typeof ElectricianBirminghamRoute
@@ -201,7 +193,6 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
-  '/commercial-electrical-tuscaloosa-al': typeof CommercialElectricalTuscaloosaAlRoute
   '/contact': typeof ContactRoute
   '/electrical-repairs-tuscaloosa-al': typeof ElectricalRepairsTuscaloosaAlRoute
   '/electrician-birmingham': typeof ElectricianBirminghamRoute
@@ -229,7 +220,6 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
-  '/commercial-electrical-tuscaloosa-al': typeof CommercialElectricalTuscaloosaAlRoute
   '/contact': typeof ContactRoute
   '/electrical-repairs-tuscaloosa-al': typeof ElectricalRepairsTuscaloosaAlRoute
   '/electrician-birmingham': typeof ElectricianBirminghamRoute
@@ -258,7 +248,6 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/about'
-    | '/commercial-electrical-tuscaloosa-al'
     | '/contact'
     | '/electrical-repairs-tuscaloosa-al'
     | '/electrician-birmingham'
@@ -285,7 +274,6 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/about'
-    | '/commercial-electrical-tuscaloosa-al'
     | '/contact'
     | '/electrical-repairs-tuscaloosa-al'
     | '/electrician-birmingham'
@@ -312,7 +300,6 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/about'
-    | '/commercial-electrical-tuscaloosa-al'
     | '/contact'
     | '/electrical-repairs-tuscaloosa-al'
     | '/electrician-birmingham'
@@ -340,7 +327,6 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
-  CommercialElectricalTuscaloosaAlRoute: typeof CommercialElectricalTuscaloosaAlRoute
   ContactRoute: typeof ContactRoute
   ElectricalRepairsTuscaloosaAlRoute: typeof ElectricalRepairsTuscaloosaAlRoute
   ElectricianBirminghamRoute: typeof ElectricianBirminghamRoute
@@ -379,13 +365,6 @@ declare module '@tanstack/react-router' {
       path: '/about'
       fullPath: '/about'
       preLoaderRoute: typeof AboutRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/commercial-electrical-tuscaloosa-al': {
-      id: '/commercial-electrical-tuscaloosa-al'
-      path: '/commercial-electrical-tuscaloosa-al'
-      fullPath: '/commercial-electrical-tuscaloosa-al'
-      preLoaderRoute: typeof CommercialElectricalTuscaloosaAlRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/contact': {
@@ -548,7 +527,6 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
-  CommercialElectricalTuscaloosaAlRoute: CommercialElectricalTuscaloosaAlRoute,
   ContactRoute: ContactRoute,
   ElectricalRepairsTuscaloosaAlRoute: ElectricalRepairsTuscaloosaAlRoute,
   ElectricianBirminghamRoute: ElectricianBirminghamRoute,

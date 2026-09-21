@@ -69,12 +69,12 @@ export function LocationPageLayout({
                 <Phone className="h-4 w-4" /> Call {BUSINESS.phone}
               </a>
               <Link to="/contact" className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full glass-dark text-white font-semibold border border-white/20 hover:bg-white/10">
-                Free Estimate <ArrowRight className="h-4 w-4" />
+                Request Help Connecting <ArrowRight className="h-4 w-4" />
               </Link>
             </div>
             <div className="mt-6 flex items-center gap-4 text-sm text-white/70">
               <div className="flex items-center gap-1">{[...Array(5)].map((_, i) => <Star key={i} className="h-4 w-4 fill-primary text-primary" />)}</div>
-              4.9 rating • 128+ reviews from {city} homeowners & businesses
+              Local residential service connections in {city}
             </div>
           </motion.div>
         </div>
@@ -85,7 +85,7 @@ export function LocationPageLayout({
           <div>
             <SectionHeading center={false} eyebrow={`${city}, AL`} title={`Your local electrician in ${city}`} />
             <p className="mt-6 text-muted-foreground leading-relaxed">
-              Burnett Electric proudly serves homes and businesses across {city} — from historic neighborhoods to newer developments. Our licensed electricians live in the community and know the codes, wiring standards, and challenges that come with {city}'s mix of older and modern structures.
+              This site helps {city} homeowners connect with independent local residential electrical service providers for homes, apartments, and other residential properties.
             </p>
             <div className="mt-8">
               <div className="text-sm font-semibold uppercase tracking-widest text-primary mb-3">Nearby landmarks we serve</div>
@@ -102,7 +102,7 @@ export function LocationPageLayout({
 
       <section className="py-20 bg-surface">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <SectionHeading eyebrow="Coverage" title={`Full-service electrical in ${city}`} subtitle="Residential, commercial, emergency and upgrade services — all in one licensed team." />
+          <SectionHeading eyebrow="Residential coverage" title={`Electrical help for homeowners in ${city}`} subtitle="Connect with an independent local provider for residential repairs, upgrades, and installations." />
           <div className="mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {benefits.map((b, i) => (
               <motion.div key={i} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.05 }} className="p-7 rounded-2xl bg-card shadow-card border border-border hover:border-primary/40 hover:-translate-y-1 transition-all">

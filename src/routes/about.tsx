@@ -12,9 +12,9 @@ export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
       { title: "About Burnett Electric" },
-      { name: "description", content: "Learn more about Burnett Electric, our experience, our team and why customers trust us." },
+      { name: "description", content: "Learn how Burnett Electric helps homeowners connect with independent residential electrical service providers." },
       { property: "og:title", content: "About Burnett Electric" },
-      { property: "og:description", content: "Learn more about Burnett Electric, our experience, our team and why customers trust us." },
+      { property: "og:description", content: "Residential electrical information and provider connections for homeowners." },
       { property: "og:url", content: "/about" },
       { property: "og:image", content: IMG.crew },
       { name: "twitter:image", content: IMG.crew },
@@ -25,12 +25,12 @@ export const Route = createFileRoute("/about")({
 });
 
 const values = [
-  { icon: ShieldCheck, title: "Licensed & Insured", desc: "State-licensed electrical contractor with full liability & workers' comp." },
-  { icon: Award, title: "Quality Craftsmanship", desc: "Every job is completed to code and inspected before we hand you the keys." },
+  { icon: ShieldCheck, title: "Residential Focus", desc: "Information and connections for homeowners seeking residential electrical help." },
+  { icon: Award, title: "Clear Information", desc: "Review residential electrical needs and questions before contacting a provider." },
   { icon: Handshake, title: "Honest Pricing", desc: "Upfront quotes, no surprise fees, and options at every price point." },
-  { icon: Heart, title: "Family Owned", desc: "Owned and operated by Shad Burnett and his hand-picked team of pros." },
-  { icon: Users, title: "Local Roots", desc: "Alabama born and raised — we treat every home like it belongs to a neighbor." },
-  { icon: Zap, title: "Fast Response", desc: "Most calls answered and dispatched the same day, 24/7 for emergencies." },
+  { icon: Heart, title: "Homeowner First", desc: "Clear information to help homeowners choose an independent local provider." },
+  { icon: Users, title: "Local Connections", desc: "Coverage across Buhl, Tuscaloosa, Northport, and Birmingham." },
+  { icon: Zap, title: "Direct Support", desc: "Call to request help connecting with a residential service provider." },
 ];
 
 function AboutPage() {
@@ -44,9 +44,9 @@ function AboutPage() {
         <div className="absolute inset-0 opacity-30" style={{ backgroundImage: "radial-gradient(circle at 80% 40%, #2563EB 0%, transparent 45%)" }} />
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-white">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }} className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full glass-dark text-primary text-xs font-semibold uppercase tracking-widest mb-5">Our Story</div>
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full glass-dark text-primary text-xs font-semibold uppercase tracking-widest mb-5">About This Site</div>
             <h1 className="font-display text-5xl md:text-6xl font-bold leading-[1.05]">Locally Owned. <span className="text-gradient-primary">Deeply Committed.</span></h1>
-            <p className="mt-5 text-lg text-white/80">Burnett Electric was founded on a simple idea: Alabama families and businesses deserve honest, high-quality electrical work from people who actually pick up the phone.</p>
+            <p className="mt-5 text-lg text-white/80">Burnett Electric helps Alabama homeowners connect with independent local residential electrical service providers.</p>
           </motion.div>
         </div>
       </section>
@@ -57,10 +57,10 @@ function AboutPage() {
           <div>
             <SectionHeading center={false} eyebrow="Meet the owner" title="Shad Burnett" />
             <p className="mt-6 text-muted-foreground leading-relaxed">
-              Shad has spent his career in the trades — starting as an apprentice and working his way up to master electrician. After years working for larger contractors, he launched Burnett Electric to bring big-shop expertise to homeowners and small businesses in Buhl, Tuscaloosa, Northport, and Birmingham, without the big-shop attitude.
+              This site provides residential electrical information and helps homeowners request connections with independent local providers in Buhl, Tuscaloosa, Northport, and Birmingham.
             </p>
             <p className="mt-4 text-muted-foreground leading-relaxed">
-              Today, Burnett Electric is trusted by hundreds of families and business owners across West Alabama for panel upgrades, rewires, commercial fit-outs, and 24/7 emergency response.
+              Homeowners can explore panel upgrades, rewires, lighting, generators, EV chargers, and other residential electrical needs before speaking with a provider.
             </p>
             <div className="mt-8 grid grid-cols-3 gap-3">
               {[
@@ -80,7 +80,7 @@ function AboutPage() {
 
       <section className="py-24 bg-surface">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <SectionHeading eyebrow="Mission & Values" title="What We Stand For" subtitle="Every job — big or small — gets our best work, on-time and on-code." />
+          <SectionHeading eyebrow="Mission & Values" title="What This Site Provides" subtitle="Clear residential information and straightforward connections for homeowners." />
           <div className="mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {values.map((v, i) => (
               <motion.div key={v.title} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.05 }} className="p-8 rounded-2xl bg-card border border-border shadow-card hover:shadow-elegant hover:-translate-y-1 transition-all">

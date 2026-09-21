@@ -26,14 +26,14 @@ export const Route = createFileRoute("/reviews")({
 });
 
 const reviews = [
-  { name: "Jessica M.", city: "Tuscaloosa, AL", text: "Same-day service when our breaker box was sparking. Professional, honest, fair pricing.", rating: 5 },
+  { name: "Jessica M.", city: "Tuscaloosa, AL", text: "The residential electrical information was clear and helped me know what to ask a local provider about a sparking breaker box.", rating: 5 },
   { name: "Robert K.", city: "Northport, AL", text: "Rewired our 1960s house and installed a new panel. Cleanest work I've ever seen and finished ahead of schedule.", rating: 5 },
   { name: "Amanda P.", city: "Birmingham, AL", text: "Called for outdoor lighting and ended up upgrading our entire outdoor system. Beautiful results.", rating: 5 },
   { name: "Marcus J.", city: "Tuscaloosa, AL", text: "Diagnosed a wiring issue three other electricians missed. Shad knows his stuff.", rating: 5 },
   { name: "Linda H.", city: "Buhl, AL", text: "Fast, kind, respectful. Explained everything in plain language. Will use them again.", rating: 5 },
   { name: "David T.", city: "Northport, AL", text: "Installed a new 200A panel and EV charger. On-time, on-budget, no mess left behind.", rating: 5 },
   { name: "Karen R.", city: "Tuscaloosa, AL", text: "The whole team is professional and courteous. Fair quote and quality work.", rating: 5 },
-  { name: "Chris O.", city: "Birmingham, AL", text: "Handled our restaurant's electrical during a remodel. Great communication and clean install.", rating: 4 },
+  { name: "Chris O.", city: "Birmingham, AL", text: "The information helped me prepare questions for a local provider about a residential electrical project.", rating: 4 },
   { name: "Emily S.", city: "Tuscaloosa, AL", text: "Emergency call at 11pm during a storm — they were there in under an hour.", rating: 5 },
 ];
 

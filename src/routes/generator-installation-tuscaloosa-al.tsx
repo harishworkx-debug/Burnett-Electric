@@ -6,9 +6,9 @@ export const Route = createFileRoute("/generator-installation-tuscaloosa-al")({
   head: () => ({
     meta: [
       { title: "Generator Installation in Tuscaloosa, AL | Burnett Electric" },
-      { name: "description", content: "Professional whole-home and commercial generator installation in Tuscaloosa, AL. Never lose power during storms with a reliable standby generator." },
+      { name: "description", content: "Residential whole-home generator installation connections in Tuscaloosa, AL for storm-related backup power." },
       { property: "og:title", content: "Generator Installation in Tuscaloosa, AL | Burnett Electric" },
-      { property: "og:description", content: "Reliable standby generator installations for homes and businesses in Tuscaloosa." },
+      { property: "og:description", content: "Residential standby generator installation connections in Tuscaloosa." },
       { property: "og:url", content: "/generator-installation-tuscaloosa-al" },
       { property: "og:image", content: IMG.home },
       { name: "twitter:image", content: IMG.home },
@@ -28,7 +28,7 @@ export const Route = createFileRoute("/generator-installation-tuscaloosa-al")({
         { title: "Automatic Transfer", desc: "Your generator turns on automatically within seconds of a power outage in your Tuscaloosa home." },
         { title: "Whole-Home Power", desc: "We size generators to keep your AC, refrigerator, and essential circuits running perfectly." },
         { title: "Increased Home Value", desc: "A standby generator is a premium addition that increases the resale value of your property." },
-        { title: "Commercial Solutions", desc: "Keep your business operations running smoothly with heavy-duty commercial generators." },
+        { title: "Residential Backup", desc: "Request help connecting with a provider for whole-home backup power." },
         { title: "Expert Installation", desc: "Our licensed electricians handle the concrete pad, electrical connections, and gas coordination." },
         { title: "Routine Maintenance", desc: "We offer ongoing service plans to ensure your generator is always ready for the next storm." },
       ]}
@@ -36,12 +36,12 @@ export const Route = createFileRoute("/generator-installation-tuscaloosa-al")({
         "Losing power frequently during severe Alabama thunderstorms or hurricanes",
         "Spoiled food in refrigerators and freezers due to prolonged outages",
         "Needing continuous power for critical medical equipment at home",
-        "Business downtime leading to lost revenue when the grid fails",
+        "Home routines being disrupted when the grid fails",
         "Manually hauling out a portable generator and dealing with messy gas cans",
         "Worrying about frozen or burst pipes if heating systems fail in winter",
       ]}
       process={[
-        { title: "Site Assessment", desc: "We visit your Tuscaloosa property to evaluate your electrical load and find the best generator location." },
+        { title: "Home Assessment", desc: "Discuss your home's electrical load and a suitable generator location with the provider." },
         { title: "Custom Sizing", desc: "We recommend the exact wattage and brand that fits your specific backup power needs." },
         { title: "Permitting", desc: "We handle all local permits and coordinate with Tuscaloosa gas and utility providers." },
         { title: "Installation", desc: "We install the transfer switch, set the generator, and perform a full simulated power outage test." },

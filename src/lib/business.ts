@@ -8,7 +8,7 @@ export const BUSINESS = {
   domain: "https://www.burnettelectrictuscaloosa.com",
   mapIframe: '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d426380.6775516534!2d-87.45774256860149!3d33.39458015757777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8886111314f47cd1%3A0x2a15c2f0ec739d61!2sBurnett%20Electric!5e0!3m2!1sen!2sin!4v1785143067527!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>',
   areas: ["Tuscaloosa", "Buhl", "Northport", "Birmingham"],
-  hours: "Mon–Sat: 7:00 AM – 7:00 PM • 24/7 Emergency",
+  hours: "Mon–Sat: 7:00 AM – 7:00 PM",
   rating: 4.9,
   reviews: 128,
 };
@@ -19,13 +19,12 @@ export const IMG = {
   wiring: "/img/wiring_upgrade_1785243034101.png",
   electrician: "/img/hero_electrician_1785243009616.png",
   outdoor: "/img/outdoor_lighting_1785243057489.png",
-  commercial: "/img/commercial_electrical_1785243044756.png",
   repair: "/img/electrical_repair_1785243068294.png",
   tools: "/img/electrical_repair_1785243068294.png",
   home: "/img/smart_home_1785243080392.png",
   worker: "/img/electrician_van_1785243092743.png",
   crew: "/img/electrician_van_1785243092743.png",
   bulb: "/img/electrical_repair_1785243068294.png",
-  city: "/img/commercial_electrical_1785243044756.png",
+  city: "/img/hero_electrician_1785243009616.png",
   night: "/img/smart_home_1785243080392.png",
 };

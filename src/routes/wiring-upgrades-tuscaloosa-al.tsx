@@ -54,7 +54,7 @@ export const Route = createFileRoute("/wiring-upgrades-tuscaloosa-al")({
       ]}
       related={[
         { to: "/electrical-repairs-tuscaloosa-al", label: "Electrical Repairs" },
-        { to: "/commercial-electrical-tuscaloosa-al", label: "Commercial Electrical" },
+        { to: "/panel-upgrades-tuscaloosa-al", label: "Panel Upgrades" },
       ]}
     />
   ),

@@ -6,9 +6,9 @@ export const Route = createFileRoute("/electrician-cottondale-al")({
   head: () => ({
     meta: [
       { title: "Electrician in Cottondale, AL | Burnett Electric" },
-      { name: "description", content: "Trusted electrician in Cottondale, AL. Repairs, wiring upgrades, commercial & outdoor electrical. Licensed & insured." },
+      { name: "description", content: "Residential electrical service connections in Cottondale, AL for repairs, wiring upgrades, and outdoor electrical needs." },
       { property: "og:title", content: "Electrician in Cottondale, AL | Burnett Electric" },
-      { property: "og:description", content: "Trusted licensed electrician serving Cottondale, Alabama." },
+      { property: "og:description", content: "Residential electrical service connections for homeowners in Cottondale, Alabama." },
       { property: "og:url", content: "/electrician-cottondale-al" },
       { property: "og:image", content: IMG.hero },
       { name: "twitter:image", content: IMG.hero },
@@ -18,23 +18,23 @@ export const Route = createFileRoute("/electrician-cottondale-al")({
   component: () => (
     <LocationPageLayout
       slug="cottondale-al"
-      metaDescription="Trusted electrician in Cottondale, AL."
-      h1="Trusted Electrician in Cottondale, AL"
+      metaDescription="Residential electrical service connections in Cottondale, AL."
+      h1="Residential Electrical Help in Cottondale, AL"
       city="Cottondale"
       hero={IMG.hero}
-      intro="Homeowners and businesses across Cottondale, AL trust Burnett Electric for fast, honest, and reliable electrical work."
+      intro="This site helps Cottondale homeowners connect with independent local residential electrical service providers."
       landmarks={["University Mall Area", "Cottondale Elementary", "Hurricane Creek Park"]}
       benefits={[
-        { title: "Same-Day Service", desc: "Local dispatch means most Cottondale calls get service the same day." },
-        { title: "Older-Home Experts", desc: "We know the wiring quirks of Cottondale's established neighborhoods." },
+        { title: "Residential Service", desc: "Request help connecting with a provider for Cottondale home electrical needs." },
+        { title: "Older-Home Guidance", desc: "Review common wiring questions for Cottondale's established neighborhoods." },
         { title: "Storm-Ready", desc: "Post-storm repairs, surge protection, and generator installs." },
-        { title: "New Construction", desc: "Ground-up wiring for new builds and residential additions." },
-        { title: "Small Business Support", desc: "Retail, offices, salons and restaurants across Cottondale." },
+        { title: "Home Wiring", desc: "Explore rewiring and electrical upgrades for existing residential properties." },
+        { title: "Homeowner Support", desc: "Get information before selecting an independent local provider." },
       ]}
       faqs={[
-        { q: "Are you licensed to work in Cottondale?", a: "Yes — Burnett Electric is a fully licensed Alabama electrical contractor." },
-        { q: "How fast can you respond in Cottondale?", a: "Most calls receive same-day service. Emergency calls are prioritized immediately." },
-        { q: "Do you offer free estimates?", a: "Yes, we offer upfront free estimates for all electrical jobs." },
+        { q: "How should I verify a provider in Cottondale?", a: "Homeowners should verify that the hired provider furnishes the license and insurance required for the work." },
+        { q: "How can I connect with a provider in Cottondale?", a: "Call to request help connecting with an independent local residential provider." },
+        { q: "How quickly can a provider help?", a: "Availability varies by provider participation, location, technician availability, demand, and appointment capacity." },
       ]}
     />
   ),

@@ -17,7 +17,7 @@ export function Footer() {
               <div className="font-display font-bold text-xl">Burnett Electric</div>
             </div>
             <p className="text-white/70 text-sm leading-relaxed">
-              Licensed & insured electricians serving Tuscaloosa, Northport & Birmingham with fast, honest, code-compliant work since day one.
+              Helping homeowners connect with independent local residential electrical service providers in Tuscaloosa, Northport & Birmingham.
             </p>
             <div className="flex gap-3 mt-5">
               <a href="#" aria-label="Facebook" className="h-9 w-9 rounded-full glass-dark flex items-center justify-center hover:bg-primary hover:text-secondary transition"><Facebook className="h-4 w-4" /></a>
@@ -30,13 +30,12 @@ export function Footer() {
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-y-2.5 gap-x-4 text-white/80 text-sm">
               <li><Link to="/electrical-repairs-tuscaloosa-al" className="hover:text-primary">Electrical Repairs</Link></li>
               <li><Link to="/wiring-upgrades-tuscaloosa-al" className="hover:text-primary">Wiring Upgrades</Link></li>
-              <li><Link to="/commercial-electrical-tuscaloosa-al" className="hover:text-primary">Commercial Electrical</Link></li>
               <li><Link to="/outdoor-wiring-tuscaloosa-al" className="hover:text-primary">Outdoor Wiring</Link></li>
               <li><Link to="/generator-installation-tuscaloosa-al" className="hover:text-primary">Generator Installation</Link></li>
               <li><Link to="/panel-upgrades-tuscaloosa-al" className="hover:text-primary">Panel Upgrades</Link></li>
               <li><Link to="/lighting-installation-tuscaloosa-al" className="hover:text-primary">Lighting & Fan Installation</Link></li>
               <li><Link to="/ev-charger-installation-tuscaloosa-al" className="hover:text-primary">EV Charger Installation</Link></li>
-              <li><Link to="/emergency-electrician-tuscaloosa-al" className="hover:text-primary">24/7 Emergency Electrician</Link></li>
+              <li><Link to="/emergency-electrician-tuscaloosa-al" className="hover:text-primary">Emergency Electrical Help</Link></li>
               <li><Link to="/smart-home-installation-tuscaloosa-al" className="hover:text-primary">Smart Home Installation</Link></li>
             </ul>
           </div>
@@ -67,12 +66,15 @@ export function Footer() {
         </div>
 
         <div className="mt-14 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/50">
-          <div>© {new Date().getFullYear()} Burnett Electric. All rights reserved. Licensed & Insured Electrical Contractor.</div>
+          <div>© {new Date().getFullYear()} Burnett Electric. All rights reserved.</div>
           <div className="flex gap-5">
             <a href="#" className="hover:text-primary">Privacy</a>
             <a href="#" className="hover:text-primary">Terms</a>
             <a href="#" className="hover:text-primary">Sitemap</a>
           </div>
+        </div>
+        <div className="mt-8 border-t border-white/10 pt-6 text-sm leading-relaxed text-white/70">
+          Disclaimer: Burnett Electric is a free service to assist homeowners in connecting with local service providers. All contractors/providers are independent and Burnett Electric does not warrant or guarantee any work performed. It is the responsibility of the homeowner to verify that the hired contractor furnishes the necessary license and insurance required for the work being performed. All persons depicted in a photo or video are actors or models and not contractors listed on Burnett Electric.
         </div>
       </div>
     </footer>
