@@ -17,7 +17,7 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Burnett Electric | Electrician in Tuscaloosa, AL" },
-      { name: "description", content: "Residential electrical service connections for homeowners in Tuscaloosa, Northport & Birmingham, AL. Call 205-660-6952 to connect with a local provider." },
+      { name: "description", content: "Residential electrical service connections for homeowners in Tuscaloosa, Northport & Birmingham, AL. Call 205-634-8185 to connect with a local provider." },
       { property: "og:title", content: "Burnett Electric | Electrician in Tuscaloosa, AL" },
       { property: "og:description", content: "Residential electrical service connections for homeowners in Tuscaloosa, AL." },
       { property: "og:url", content: "/" },
@@ -79,7 +79,7 @@ const reviews = [
 ];
 
 const faqs = [
-  { q: "How can I connect with a residential provider?", a: "Call 205-660-6952 to request help connecting with an independent local residential electrical service provider." },
+  { q: "How can I connect with a residential provider?", a: "Call 205-634-8185 to request help connecting with an independent local residential electrical service provider." },
   { q: "Are providers independent?", a: "Yes. Providers are independent. Homeowners should verify that the provider has the license and insurance required for the work." },
   { q: "Which areas do you serve?", a: "We serve Tuscaloosa, Northport, Buhl, Birmingham and surrounding communities across west and central Alabama." },
   { q: "Do you help with residential emergencies?", a: "You can call to request help connecting with a provider for residential sparks, burning smells, partial outages, or storm damage. Availability depends on provider participation and location." },
