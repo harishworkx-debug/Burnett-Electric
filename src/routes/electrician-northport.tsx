@@ -73,4 +73,5 @@ export const Route = createFileRoute("/electrician-northport")({
         Our service area extends beyond the immediate city limits. We provide fast, reliable electrical troubleshooting and repair to homeowners in the surrounding communities of Samantha, Coker, and out toward the rural areas of Tuscaloosa County. We know the local codes and work closely with local utility companies to ensure all permits and inspections are handled smoothly.
       </p>
     </LocationPageLayout>
+  )
 });

@@ -62,4 +62,5 @@ export const Route = createFileRoute("/electrician-birmingham")({
         Severe thunderstorms and occasional tornadoes are a reality in the Birmingham valley. Power outages can last for hours or even days. We help Birmingham homeowners prepare for the worst by installing reliable, whole-home standby generators and whole-home surge protectors. When the grid goes down, we make sure your family stays comfortable and secure.
       </p>
     </LocationPageLayout>
+  )
 });
