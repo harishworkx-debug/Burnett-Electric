@@ -37,6 +37,7 @@ export function ServicePageLayout({
   process: { title: string; desc: string }[];
   faqs: { q: string; a: string }[];
   related: { to: string; label: string }[];
+  children?: React.ReactNode;
 }) {
   const url = `https://burnettelectric.com/${slug}`;
   const y = useParallax(80);
@@ -49,11 +50,12 @@ export function ServicePageLayout({
           "areaServed": BUSINESS.areas.map(a => a + ", AL"),
           "url": url, "description": metaDescription,
         },
+        { "@context": "https://schema.org", "@type": "WebPage", "name": h1, "url": url },
         {
           "@context": "https://schema.org", "@type": "BreadcrumbList",
           "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://burnettelectric.com/" },
-            { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://burnettelectric.com/services" },
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.burnettelectrictuscaloosa.com/" },
+            { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.burnettelectrictuscaloosa.com/services" },
             { "@type": "ListItem", "position": 3, "name": h1, "item": url },
           ]
         },
@@ -89,16 +91,24 @@ export function ServicePageLayout({
                 <Phone className="h-4 w-4" /> Call {BUSINESS.phone}
               </a>
               <Link to="/contact" className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full glass-dark text-white font-semibold border border-white/20 hover:bg-white/10">
-                Request Help Connecting <ArrowRight className="h-4 w-4" />
+                Request Service Now <ArrowRight className="h-4 w-4" />
               </Link>
             </div>
           </motion.div>
         </div>
       </section>
 
+      {children && (
+        <section className="py-20 bg-surface">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 prose prose-lg prose-headings:font-display prose-headings:font-bold prose-headings:text-secondary prose-a:text-primary hover:prose-a:text-primary/80 prose-p:text-muted-foreground prose-li:text-muted-foreground prose-strong:text-secondary max-w-none">
+            {children}
+          </div>
+        </section>
+      )}
+
       <section className="py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <SectionHeading eyebrow="Residential support" title="Help connecting with a local provider" />
+          <SectionHeading eyebrow="Residential support" title="Why Homeowners Choose Our Expert Electricians" />
           <div className="mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {benefits.map((b, i) => (
               <motion.div key={i} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.05 }} className="p-7 rounded-2xl bg-card shadow-card border border-border hover:shadow-elegant hover:-translate-y-1 transition-all">

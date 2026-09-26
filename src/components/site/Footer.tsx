@@ -17,7 +17,7 @@ export function Footer() {
               <div className="font-display font-bold text-xl">Burnett Electric</div>
             </div>
             <p className="text-white/70 text-sm leading-relaxed">
-              Helping homeowners connect with independent local residential electrical service providers in Tuscaloosa, Northport & Birmingham.
+              Providing expert residential electrical services to homeowners in Tuscaloosa, Northport & Birmingham.
             </p>
             <div className="flex gap-3 mt-5">
               <a href="#" aria-label="Facebook" className="h-9 w-9 rounded-full glass-dark flex items-center justify-center hover:bg-primary hover:text-secondary transition"><Facebook className="h-4 w-4" /></a>
@@ -56,12 +56,24 @@ export function Footer() {
 
           <div>
             <h4 className="font-display font-semibold text-sm uppercase tracking-widest text-primary mb-4">Contact</h4>
-            <ul className="space-y-3 text-white/80 text-sm">
-              <li className="flex items-start gap-3"><Phone className="h-4 w-4 mt-0.5 text-primary" /><a href={BUSINESS.phoneHref} className="hover:text-primary">{BUSINESS.phone}</a></li>
-              <li className="flex items-start gap-3"><Mail className="h-4 w-4 mt-0.5 text-primary" /><a href={`mailto:${BUSINESS.email}`} className="hover:text-primary">{BUSINESS.email}</a></li>
-              <li className="flex items-start gap-3"><MapPin className="h-4 w-4 mt-0.5 text-primary" />{BUSINESS.address}</li>
-              <li className="flex items-start gap-3"><Clock className="h-4 w-4 mt-0.5 text-primary" />{BUSINESS.hours}</li>
-            </ul>
+            <div className="text-white/80 text-sm leading-relaxed" itemScope itemType="https://schema.org/LocalBusiness">
+              <strong className="block text-white" itemProp="name">Burnett Electric</strong>
+              <div itemProp="address" itemScope itemType="https://schema.org/PostalAddress">
+                <span className="block" itemProp="streetAddress">15953 Annie Bell Dr</span>
+                <span className="block"><span itemProp="addressLocality">Buhl</span>, <span itemProp="addressRegion">AL</span> <span itemProp="postalCode">35446</span></span>
+              </div>
+              <div className="mt-4">
+                <span className="block">Phone: <a href={BUSINESS.phoneHref} className="hover:text-primary" itemProp="telephone">{BUSINESS.phone}</a></span>
+                <span className="block">Email: <a href={`mailto:${BUSINESS.email}`} className="hover:text-primary" itemProp="email">{BUSINESS.email}</a></span>
+              </div>
+              <div className="mt-4">
+                <strong className="block text-white">Serving:</strong>
+                <span className="block">Tuscaloosa, AL</span>
+                <span className="block">Northport, AL</span>
+                <span className="block">Buhl, AL</span>
+                <span className="block">Birmingham, AL</span>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -73,9 +85,7 @@ export function Footer() {
             <a href="#" className="hover:text-primary">Sitemap</a>
           </div>
         </div>
-        <div className="mt-8 border-t border-white/10 pt-6 text-sm leading-relaxed text-white/70">
-          Disclaimer: Burnett Electric is a free service to assist homeowners in connecting with local service providers. All contractors/providers are independent and Burnett Electric does not warrant or guarantee any work performed. It is the responsibility of the homeowner to verify that the hired contractor furnishes the necessary license and insurance required for the work being performed. All persons depicted in a photo or video are actors or models and not contractors listed on Burnett Electric.
-        </div>
+        
       </div>
     </footer>
   );

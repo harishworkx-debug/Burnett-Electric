@@ -1,7 +1,7 @@
 export const BUSINESS = {
   name: "Burnett Electric",
   owner: "Shad Burnett",
-  phone: "205-634-8185",
+  phone: "(205) 634-8185",
   phoneHref: "tel:+12056348185",
   email: "info@burnettelectrictuscaloosa.com",
   address: "15953 Annie Bell Dr, Buhl, AL 35446",
@@ -14,17 +14,17 @@ export const BUSINESS = {
 };
 
 export const IMG = {
-  hero: "/img/hero_electrician_1785243009616.png",
-  panel: "/img/panel_upgrade_1785243024445.png",
-  wiring: "/img/wiring_upgrade_1785243034101.png",
-  electrician: "/img/hero_electrician_1785243009616.png",
+  hero: "/img/real_crew_1790407082115.jpg",
+  panel: "/img/real_panel_1790407053269.jpg",
+  wiring: "/img/real_wiring_1790407068586.jpg",
+  electrician: "/img/real_crew_1790407082115.jpg",
   outdoor: "/img/outdoor_lighting_1785243057489.png",
-  repair: "/img/electrical_repair_1785243068294.png",
-  tools: "/img/electrical_repair_1785243068294.png",
+  repair: "/img/real_repair_1790407104389.jpg",
+  tools: "/img/real_repair_1790407104389.jpg",
   home: "/img/smart_home_1785243080392.png",
-  worker: "/img/electrician_van_1785243092743.png",
-  crew: "/img/electrician_van_1785243092743.png",
+  worker: "/img/real_crew_1790407082115.jpg",
+  crew: "/img/real_crew_1790407082115.jpg",
   bulb: "/img/electrical_repair_1785243068294.png",
-  city: "/img/hero_electrician_1785243009616.png",
+  city: "/img/real_crew_1790407082115.jpg",
   night: "/img/smart_home_1785243080392.png",
 };

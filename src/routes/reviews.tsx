@@ -26,15 +26,11 @@ export const Route = createFileRoute("/reviews")({
 });
 
 const reviews = [
-  { name: "Jessica M.", city: "Tuscaloosa, AL", text: "The residential electrical information was clear and helped me know what to ask a local provider about a sparking breaker box.", rating: 5 },
-  { name: "Robert K.", city: "Northport, AL", text: "Rewired our 1960s house and installed a new panel. Cleanest work I've ever seen and finished ahead of schedule.", rating: 5 },
-  { name: "Amanda P.", city: "Birmingham, AL", text: "Called for outdoor lighting and ended up upgrading our entire outdoor system. Beautiful results.", rating: 5 },
-  { name: "Marcus J.", city: "Tuscaloosa, AL", text: "Diagnosed a wiring issue three other electricians missed. Shad knows his stuff.", rating: 5 },
-  { name: "Linda H.", city: "Buhl, AL", text: "Fast, kind, respectful. Explained everything in plain language. Will use them again.", rating: 5 },
-  { name: "David T.", city: "Northport, AL", text: "Installed a new 200A panel and EV charger. On-time, on-budget, no mess left behind.", rating: 5 },
-  { name: "Karen R.", city: "Tuscaloosa, AL", text: "The whole team is professional and courteous. Fair quote and quality work.", rating: 5 },
-  { name: "Chris O.", city: "Birmingham, AL", text: "The information helped me prepare questions for a local provider about a residential electrical project.", rating: 4 },
-  { name: "Emily S.", city: "Tuscaloosa, AL", text: "Emergency call at 11pm during a storm — they were there in under an hour.", rating: 5 },
+  { name: "Juanita Green", city: "Local Guide", text: "Shad was my electrian. He was very professional, courteous and kind.I will call him all times for any electrical work. He cared about the safety of me and my grandchildren. May God continue to bless him and his company.", rating: 5 },
+  { name: "keith Traywick", city: "Customer", text: "This Company was hired to wire my house ..Did not complete the job . The work that they did was good but failed to complete. Not to mention their employees left the front and back door open over night while new appliances and other materials was in the house. Had to repaint the living room due to moisture spots along the living room walls.", rating: 1 },
+  { name: "Gena Kilgore", city: "Customer", text: "Shad was very responsive to my call. He did what he said he would and did a great job! Would definitely use him again and will recommend him to others!", rating: 5 },
+  { name: "terrell mckinney", city: "Local Guide", text: "Does great work and do it at a fast paste. Would highly recommend them. They’re a life saver", rating: 5 },
+  { name: "senea tubbs", city: "Local Guide", text: "best prices,on time,reliable", rating: 5 },
 ];
 
 function ReviewsPage() {
@@ -60,8 +56,8 @@ function ReviewsPage() {
             <div className="mt-6 inline-flex items-center gap-3 glass-dark px-6 py-4 rounded-2xl">
               <div className="flex gap-1">{[...Array(5)].map((_, i) => <Star key={i} className="h-6 w-6 fill-primary text-primary" />)}</div>
               <div className="text-left">
-                <div className="font-display font-bold text-2xl">4.9 / 5.0</div>
-                <div className="text-xs text-white/70">Based on 128+ Google reviews</div>
+                <div className="font-display font-bold text-xl leading-tight">Highly Rated</div>
+                <div className="text-xs text-white/70">By our local customers</div>
               </div>
             </div>
           </motion.div>

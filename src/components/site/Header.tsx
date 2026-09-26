@@ -61,7 +61,7 @@ export function Header() {
             </div>
             <div className="leading-tight">
               <div className="font-display font-bold text-lg md:text-xl text-white">{BUSINESS.name}</div>
-              <div className="text-[10px] md:text-xs text-muted-foreground -mt-0.5">Residential electrical connections • Tuscaloosa, AL</div>
+              <div className="text-[10px] md:text-xs text-muted-foreground -mt-0.5">residential electrical services • Tuscaloosa, AL</div>
             </div>
           </Link>
 

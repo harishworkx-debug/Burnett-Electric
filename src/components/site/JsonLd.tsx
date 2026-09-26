@@ -28,12 +28,7 @@ export const localBusinessSchema = {
     "@type": "OpeningHoursSpecification",
     "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
     "opens": "07:00", "closes": "19:00"
-  }],
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "reviewCount": "128"
-  }
+  }]
 };
 
 export const organizationSchema = {

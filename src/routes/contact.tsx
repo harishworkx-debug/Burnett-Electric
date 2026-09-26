@@ -12,7 +12,7 @@ export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
       { title: "Contact Burnett Electric" },
-      { name: "description", content: "Request help connecting with an independent residential electrical service provider in Tuscaloosa." },
+      { name: "description", content: "Contact our expert residential electrical service team in Tuscaloosa." },
       { property: "og:title", content: "Contact Burnett Electric" },
       { property: "og:description", content: "Request a residential electrical service connection in Tuscaloosa." },
       { property: "og:url", content: "/contact" },
@@ -37,8 +37,8 @@ function ContactPage() {
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-white">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} className="max-w-3xl">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full glass-dark text-primary text-xs font-semibold uppercase tracking-widest mb-5">Contact Us</div>
-            <h1 className="font-display text-5xl md:text-6xl font-bold leading-[1.05]">Connect With a <span className="text-gradient-primary">Local Provider</span></h1>
-            <p className="mt-5 text-lg text-white/80">Call or send a request for help connecting with an independent residential service provider in Tuscaloosa, Northport, or Birmingham.</p>
+            <h1 className="font-display text-5xl md:text-6xl font-bold leading-[1.05]">Connect With a <span className="text-gradient-primary">expert electrician</span></h1>
+            <p className="mt-5 text-lg text-white/80">Call or send a request to schedule an expert residential electrician in Tuscaloosa, Northport, or Birmingham.</p>
           </motion.div>
         </div>
       </section>
@@ -47,7 +47,7 @@ function ContactPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-5 gap-10">
           <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="lg:col-span-3">
             <div className="p-8 md:p-10 rounded-3xl bg-card border border-border shadow-elegant">
-              <h2 className="font-display text-2xl font-bold text-secondary">Request Help Connecting</h2>
+              <h2 className="font-display text-2xl font-bold text-secondary">Request Service Now</h2>
               <p className="mt-2 text-muted-foreground">We'll get back to you within one business hour.</p>
               {sent ? (
                 <div className="mt-8 p-6 rounded-2xl bg-primary/10 border border-primary/30 text-secondary">
@@ -77,11 +77,28 @@ function ContactPage() {
             </div>
           </motion.div>
 
-          <div className="lg:col-span-2 space-y-4">
-            <InfoCard icon={Phone} label="Call Us" value={BUSINESS.phone} href={BUSINESS.phoneHref} />
-            <InfoCard icon={Mail} label="Email" value={BUSINESS.email} href={`mailto:${BUSINESS.email}`} />
-            <InfoCard icon={MapPin} label="Service Area" value="Buhl, Tuscaloosa, Northport & Birmingham, AL" />
-            <InfoCard icon={Clock} label="Hours" value={BUSINESS.hours} />
+          <div className="lg:col-span-2">
+            <div className="p-8 rounded-3xl bg-card border border-border shadow-elegant">
+              <h3 className="font-display font-semibold text-lg uppercase tracking-widest text-primary mb-4">Contact Info</h3>
+              <div className="text-secondary text-sm leading-relaxed" itemScope itemType="https://schema.org/LocalBusiness">
+                <strong className="block text-secondary text-base mb-1" itemProp="name">Burnett Electric</strong>
+                <div itemProp="address" itemScope itemType="https://schema.org/PostalAddress">
+                  <span className="block" itemProp="streetAddress">15953 Annie Bell Dr</span>
+                  <span className="block"><span itemProp="addressLocality">Buhl</span>, <span itemProp="addressRegion">AL</span> <span itemProp="postalCode">35446</span></span>
+                </div>
+                <div className="mt-5">
+                  <span className="block font-medium">Phone: <a href={BUSINESS.phoneHref} className="font-normal text-primary hover:underline" itemProp="telephone">{BUSINESS.phone}</a></span>
+                  <span className="block font-medium mt-1">Email: <a href={`mailto:${BUSINESS.email}`} className="font-normal text-primary hover:underline" itemProp="email">{BUSINESS.email}</a></span>
+                </div>
+                <div className="mt-5">
+                  <strong className="block text-secondary mb-1">Serving:</strong>
+                  <span className="block">Tuscaloosa, AL</span>
+                  <span className="block">Northport, AL</span>
+                  <span className="block">Buhl, AL</span>
+                  <span className="block">Birmingham, AL</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -109,18 +126,3 @@ function Field({ label, name, type = "text", required, placeholder, className = 
   );
 }
 
-function InfoCard({ icon: Icon, label, value, href }: { icon: any; label: string; value: string; href?: string }) {
-  const inner = (
-    <div className="flex items-center gap-4 p-5 rounded-2xl bg-card border border-border shadow-card hover:shadow-elegant hover:border-primary/40 transition-all">
-      <div className="h-12 w-12 rounded-xl gradient-primary flex items-center justify-center shadow-glow shrink-0">
-        <Icon className="h-5 w-5 text-secondary" />
-      </div>
-      <div>
-        <div className="text-xs uppercase tracking-widest text-muted-foreground">{label}</div>
-        <div className="font-semibold text-secondary">{value}</div>
-      </div>
-    </div>
-  );
-  if (!href) return inner;
-  return <a href={href}>{inner}</a>;
-}

@@ -6,7 +6,7 @@ export const Route = createFileRoute("/emergency-electrician-tuscaloosa-al")({
   head: () => ({
     meta: [
       { title: "Emergency Residential Electrical Help in Tuscaloosa, AL | Burnett Electric" },
-      { name: "description", content: "Request help connecting with a residential electrical provider in Tuscaloosa for outages, sparking outlets, and electrical hazards." },
+      { name: "description", content: "Request help scheduling a residential electrician in Tuscaloosa for outages, sparking outlets, and electrical hazards." },
       { property: "og:title", content: "Emergency Residential Electrical Help in Tuscaloosa, AL | Burnett Electric" },
       { property: "og:description", content: "Residential emergency electrical connection requests in Tuscaloosa." },
       { property: "og:url", content: "/emergency-electrician-tuscaloosa-al" },
@@ -23,10 +23,10 @@ export const Route = createFileRoute("/emergency-electrician-tuscaloosa-al")({
       h1="Emergency Residential Electrical Help in Tuscaloosa, AL"
       eyebrow="Fast Response When You Need It"
       hero={IMG.repair}
-      intro="For a sparking panel, sudden power loss, or storm damage, call to request help connecting with an independent local residential provider."
+      intro="For a sparking panel, sudden power loss, or storm damage, call to request help hiring an expert residential electrician."
       benefits={[
-        { title: "Connection Request", desc: "Call to request help connecting with a residential provider in Tuscaloosa." },
-        { title: "Availability Varies", desc: "Provider participation, location, technician availability, demand, and appointment capacity affect availability." },
+        { title: "Connection Request", desc: "Call to request help scheduling a residential electrician in Tuscaloosa." },
+        { title: "Availability Varies", desc: "Availability varies by location, technician availability, and demand, but we always strive to respond as quickly as possible." },
         { title: "Fully Stocked Vans", desc: "We arrive with the necessary parts to resolve the most common electrical emergencies on the first visit." },
         { title: "Safety Focused", desc: "Our primary goal during an emergency call is to eliminate fire hazards and make your home safe." },
         { title: "Upfront Pricing", desc: "Even in an emergency, we diagnose the issue and provide a clear price before making the repair." },
@@ -41,7 +41,7 @@ export const Route = createFileRoute("/emergency-electrician-tuscaloosa-al")({
         "Outlets sparking or smoking when you try to plug something in",
       ]}
       process={[
-        { title: "Call for Connection Help", desc: "Call to request help connecting with an independent local residential provider." },
+        { title: "Call for Connection Help", desc: "Call to request help hiring an expert residential electrician." },
         { title: "Safety Guidance", desc: "We will instruct you on how to shut off power safely if necessary while we are en route." },
         { title: "Immediate Diagnosis", desc: "Upon arrival, we immediately identify the danger and isolate the faulty circuit." },
         { title: "Permanent Fix", desc: "We perform a safe, code-compliant repair so you can sleep peacefully." },

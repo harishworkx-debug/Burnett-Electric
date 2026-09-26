@@ -29,7 +29,7 @@ export const Route = createFileRoute("/ev-charger-installation-tuscaloosa-al")({
         { title: "Universal Compatibility", desc: "We install chargers for all major brands, including Tesla, Ford, Rivian, Chevy, and more." },
         { title: "Dedicated Circuits", desc: "We run a dedicated 240V circuit to ensure your charger operates safely without tripping breakers." },
         { title: "Load Management", desc: "We assess your Tuscaloosa home's electrical capacity and install energy management systems if needed." },
-        { title: "Home Installation", desc: "Request help connecting with a provider for an EV charger at your Tuscaloosa home." },
+        { title: "Home Installation", desc: "Request help getting professional service for an EV charger at your Tuscaloosa home." },
         { title: "Permitted & Inspected", desc: "Every installation is permitted and inspected to guarantee safety and code compliance." },
       ]}
       problems={[
@@ -42,9 +42,9 @@ export const Route = createFileRoute("/ev-charger-installation-tuscaloosa-al")({
       ]}
       process={[
         { title: "Load Calculation", desc: "We evaluate your current electrical panel to ensure it can handle the extra load of a Level 2 charger." },
-        { title: "Charger Selection", desc: "Discuss charger compatibility and options with the independent provider." },
+        { title: "Charger Selection", desc: "Discuss charger compatibility and options with the expert electrician." },
         { title: "Installation", desc: "We run the dedicated 240V line to your garage or driveway and securely mount the charging station." },
-        { title: "Testing", desc: "The provider can test the unit and explain safe charging practices for your home." },
+        { title: "Testing", desc: "our electrician can test the unit and explain safe charging practices for your home." },
       ]}
       faqs={[
         { q: "Do I need a panel upgrade to install an EV charger?", a: "It depends on your current panel size (100 amp vs 200 amp) and what gas/electric appliances you currently run. We do a load calculation to find out." },

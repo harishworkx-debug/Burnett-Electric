@@ -12,9 +12,9 @@ export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
       { title: "About Burnett Electric" },
-      { name: "description", content: "Learn how Burnett Electric helps homeowners connect with independent residential electrical service providers." },
+      { name: "description", content: "Learn how Burnett Electric provides expert residential electrical services to homeowners." },
       { property: "og:title", content: "About Burnett Electric" },
-      { property: "og:description", content: "Residential electrical information and provider connections for homeowners." },
+      { property: "og:description", content: "Residential electrical information and electrical services for homeowners." },
       { property: "og:url", content: "/about" },
       { property: "og:image", content: IMG.crew },
       { name: "twitter:image", content: IMG.crew },
@@ -26,11 +26,11 @@ export const Route = createFileRoute("/about")({
 
 const values = [
   { icon: ShieldCheck, title: "Residential Focus", desc: "Information and connections for homeowners seeking residential electrical help." },
-  { icon: Award, title: "Clear Information", desc: "Review residential electrical needs and questions before contacting a provider." },
+  { icon: Award, title: "Clear Information", desc: "Review residential electrical needs and questions before contacting an expert electrician." },
   { icon: Handshake, title: "Honest Pricing", desc: "Upfront quotes, no surprise fees, and options at every price point." },
-  { icon: Heart, title: "Homeowner First", desc: "Clear information to help homeowners choose an independent local provider." },
+  { icon: Heart, title: "Homeowner First", desc: "Clear information to help homeowners choose an expert electrician." },
   { icon: Users, title: "Local Connections", desc: "Coverage across Buhl, Tuscaloosa, Northport, and Birmingham." },
-  { icon: Zap, title: "Direct Support", desc: "Call to request help connecting with a residential service provider." },
+  { icon: Zap, title: "Direct Support", desc: "Call to request help connecting with a residential electrician." },
 ];
 
 function AboutPage() {
@@ -46,7 +46,7 @@ function AboutPage() {
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }} className="max-w-3xl">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full glass-dark text-primary text-xs font-semibold uppercase tracking-widest mb-5">About This Site</div>
             <h1 className="font-display text-5xl md:text-6xl font-bold leading-[1.05]">Locally Owned. <span className="text-gradient-primary">Deeply Committed.</span></h1>
-            <p className="mt-5 text-lg text-white/80">Burnett Electric helps Alabama homeowners connect with independent local residential electrical service providers.</p>
+            <p className="mt-5 text-lg text-white/80">Burnett Electric provides Alabama homeowners with expert residential electrical services.</p>
           </motion.div>
         </div>
       </section>
@@ -57,16 +57,16 @@ function AboutPage() {
           <div>
             <SectionHeading center={false} eyebrow="Meet the owner" title="Shad Burnett" />
             <p className="mt-6 text-muted-foreground leading-relaxed">
-              This site provides residential electrical information and helps homeowners request connections with independent local providers in Buhl, Tuscaloosa, Northport, and Birmingham.
+              Burnett Electric is a locally owned and operated electrical contractor providing expert residential and commercial services to Tuscaloosa, Northport, Buhl, and Birmingham.
             </p>
             <p className="mt-4 text-muted-foreground leading-relaxed">
-              Homeowners can explore panel upgrades, rewires, lighting, generators, EV chargers, and other residential electrical needs before speaking with a provider.
+              Led by Shad Burnett, our team is dedicated to safety, honesty, and high-quality workmanship. Whether you need a simple outlet repaired or a full historic home rewire, we bring the same level of care to every project.
             </p>
             <div className="mt-8 grid grid-cols-3 gap-3">
               {[
-                { v: "15+", l: "Years in trade" },
-                { v: "2,000+", l: "Projects delivered" },
-                { v: "4.9★", l: "Google rating" },
+                { v: "Local", l: "Owned & Operated" },
+                { v: "Expert", l: "Licensed & Insured" },
+                { v: "100%", l: "Upfront Pricing" },
               ].map((s) => (
                 <div key={s.l} className="p-4 rounded-2xl bg-surface border border-border text-center">
                   <div className="font-display font-bold text-2xl text-secondary">{s.v}</div>

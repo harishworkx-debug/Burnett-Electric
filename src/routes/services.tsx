@@ -13,7 +13,7 @@ export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
       { title: "Electrical Services in Tuscaloosa | Burnett Electric" },
-      { name: "description", content: "Residential electrical repairs, wiring upgrades, lighting, and home installations in Tuscaloosa, AL. Call 205-634-8185 to connect with a local provider." },
+      { name: "description", content: "Residential electrical repairs, wiring upgrades, lighting, and home installations in Tuscaloosa, AL. Call (205) 634-8185 to schedule an expert electrician." },
       { property: "og:title", content: "Electrical Services in Tuscaloosa | Burnett Electric" },
       { property: "og:description", content: "Residential repairs, wiring upgrades, lighting, and outdoor electrical services." },
       { property: "og:url", content: "/services" },

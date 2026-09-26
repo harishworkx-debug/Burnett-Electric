@@ -42,7 +42,7 @@ export const Route = createFileRoute("/wiring-upgrades-tuscaloosa-al")({
       ]}
       process={[
         { title: "Assess", desc: "We perform a thorough load calculation to determine your Tuscaloosa home's actual power needs." },
-        { title: "Permit", desc: "We pull all necessary local permits and coordinate with your utility provider." },
+        { title: "Permit", desc: "We pull all necessary local permits and coordinate with your utility company." },
         { title: "Execute", desc: "We perform the upgrade with minimal disruption to your daily life." },
         { title: "Inspect", desc: "We arrange for the final Tuscaloosa city inspection to ensure 100% compliance." },
       ]}

@@ -28,7 +28,7 @@ export const Route = createFileRoute("/generator-installation-tuscaloosa-al")({
         { title: "Automatic Transfer", desc: "Your generator turns on automatically within seconds of a power outage in your Tuscaloosa home." },
         { title: "Whole-Home Power", desc: "We size generators to keep your AC, refrigerator, and essential circuits running perfectly." },
         { title: "Increased Home Value", desc: "A standby generator is a premium addition that increases the resale value of your property." },
-        { title: "Residential Backup", desc: "Request help connecting with a provider for whole-home backup power." },
+        { title: "Residential Backup", desc: "Request help getting professional service for whole-home backup power." },
         { title: "Expert Installation", desc: "Our licensed electricians handle the concrete pad, electrical connections, and gas coordination." },
         { title: "Routine Maintenance", desc: "We offer ongoing service plans to ensure your generator is always ready for the next storm." },
       ]}
@@ -41,9 +41,9 @@ export const Route = createFileRoute("/generator-installation-tuscaloosa-al")({
         "Worrying about frozen or burst pipes if heating systems fail in winter",
       ]}
       process={[
-        { title: "Home Assessment", desc: "Discuss your home's electrical load and a suitable generator location with the provider." },
+        { title: "Home Assessment", desc: "Discuss your home's electrical load and a suitable generator location with our electrician." },
         { title: "Custom Sizing", desc: "We recommend the exact wattage and brand that fits your specific backup power needs." },
-        { title: "Permitting", desc: "We handle all local permits and coordinate with Tuscaloosa gas and utility providers." },
+        { title: "Permitting", desc: "We handle all local permits and coordinate with Tuscaloosa gas and utility companies." },
         { title: "Installation", desc: "We install the transfer switch, set the generator, and perform a full simulated power outage test." },
       ]}
       faqs={[
