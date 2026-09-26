@@ -24,6 +24,7 @@ export function ServicePageLayout({
   process,
   faqs,
   related,
+  children,
 }: {
   slug: string;
   h1: string;

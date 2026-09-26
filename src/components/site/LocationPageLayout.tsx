@@ -12,7 +12,7 @@ import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { BUSINESS, IMG } from "@/lib/business";
 
 export function LocationPageLayout({
-  slug, h1, metaDescription, city, intro, landmarks, benefits, faqs, hero,
+  slug, h1, metaDescription, city, intro, landmarks, benefits, faqs, hero, children
 }: {
   slug: string;
   h1: string;
