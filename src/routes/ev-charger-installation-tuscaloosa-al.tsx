@@ -8,7 +8,7 @@ export const Route = createFileRoute("/ev-charger-installation-tuscaloosa-al")({
       { title: "EV Charger Installation in Tuscaloosa, AL | Burnett Electric" },
       { name: "description", content: "Fast, safe Level 2 EV charger installation in Tuscaloosa, AL. Charge your electric vehicle at home overnight with a dedicated charging station." },
       { property: "og:title", content: "EV Charger Installation in Tuscaloosa, AL | Burnett Electric" },
-      { property: "og:description", content: "Residential Level 2 EV charger installation connections in Tuscaloosa." },
+      { property: "og:description", content: "Residential Level 2 EV charger installations in Tuscaloosa." },
       { property: "og:url", content: "/ev-charger-installation-tuscaloosa-al" },
       { property: "og:image", content: IMG.wiring },
       { name: "twitter:image", content: IMG.wiring },
@@ -29,7 +29,7 @@ export const Route = createFileRoute("/ev-charger-installation-tuscaloosa-al")({
         { title: "Universal Compatibility", desc: "We install chargers for all major brands, including Tesla, Ford, Rivian, Chevy, and more." },
         { title: "Dedicated Circuits", desc: "We run a dedicated 240V circuit to ensure your charger operates safely without tripping breakers." },
         { title: "Load Management", desc: "We assess your Tuscaloosa home's electrical capacity and install energy management systems if needed." },
-        { title: "Home Installation", desc: "Request help getting professional service for an EV charger at your Tuscaloosa home." },
+        { title: "Home Installation", desc: "Schedule an expert residential electrician for an EV charger at your Tuscaloosa home." },
         { title: "Permitted & Inspected", desc: "Every installation is permitted and inspected to guarantee safety and code compliance." },
       ]}
       problems={[

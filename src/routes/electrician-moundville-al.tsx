@@ -19,13 +19,13 @@ export const Route = createFileRoute("/electrician-moundville-al")({
     <LocationPageLayout
       slug="moundville-al"
       metaDescription="residential electrical services in Moundville, AL."
-      h1="Residential Electrical Help in Moundville, AL"
+      h1="Residential Electrical Services in Moundville, AL"
       city="Moundville"
       hero={IMG.hero}
       intro="This site provides Moundville homeowners with expert residential electrical services."
       landmarks={["Moundville Archaeological Park", "Black Warrior River", "Downtown Moundville"]}
       benefits={[
-        { title: "Residential Service", desc: "Request help getting professional service for Moundville home electrical needs." },
+        { title: "Residential Service", desc: "schedule an expert residential electrician for Moundville home electrical needs." },
         { title: "Older-Home Guidance", desc: "Review common wiring questions for Moundville's established neighborhoods." },
         { title: "Storm-Ready", desc: "Post-storm repairs, surge protection, and generator installs." },
         { title: "Home Wiring", desc: "Explore rewiring and electrical upgrades for existing residential properties." },
@@ -33,7 +33,7 @@ export const Route = createFileRoute("/electrician-moundville-al")({
       ]}
       faqs={[
         { q: "How should I verify an expert electrician in Moundville?", a: "Yes, our electricians are fully licensed, insured, and highly trained for all residential electrical work." },
-        { q: "How can I get professional service in Moundville?", a: "Call to request help hiring an expert residential electrician." },
+        { q: "How can I schedule an electrician in Moundville?", a: "Call us today to schedule an expert residential electrician." },
         { q: "How quickly can an electrician help?", a: "Availability varies by location, technician availability, and demand, but we always strive to respond as quickly as possible." },
       ]}
     />

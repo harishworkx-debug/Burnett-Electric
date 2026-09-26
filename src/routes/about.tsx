@@ -25,12 +25,12 @@ export const Route = createFileRoute("/about")({
 });
 
 const values = [
-  { icon: ShieldCheck, title: "Residential Focus", desc: "Information and connections for homeowners seeking residential electrical help." },
+  { icon: ShieldCheck, title: "Residential Focus", desc: "Expert electrical services and solutions for homeowners.." },
   { icon: Award, title: "Clear Information", desc: "Review residential electrical needs and questions before contacting an expert electrician." },
   { icon: Handshake, title: "Honest Pricing", desc: "Upfront quotes, no surprise fees, and options at every price point." },
   { icon: Heart, title: "Homeowner First", desc: "Clear information to help homeowners choose an expert electrician." },
-  { icon: Users, title: "Local Connections", desc: "Coverage across Buhl, Tuscaloosa, Northport, and Birmingham." },
-  { icon: Zap, title: "Direct Support", desc: "Call to request help connecting with a residential electrician." },
+  { icon: Users, title: "Local Service Area", desc: "Coverage across Buhl, Tuscaloosa, Northport, and Birmingham." },
+  { icon: Zap, title: "Direct Service", desc: "Call us today to schedule a residential electrician." },
 ];
 
 function AboutPage() {
@@ -80,7 +80,7 @@ function AboutPage() {
 
       <section className="py-24 bg-surface">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <SectionHeading eyebrow="Mission & Values" title="What This Site Provides" subtitle="Clear residential information and straightforward connections for homeowners." />
+          <SectionHeading eyebrow="Mission & Values" title="What This Site Provides" subtitle="Clear residential information and reliable electrical services for homeowners." />
           <div className="mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {values.map((v, i) => (
               <motion.div key={v.title} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.05 }} className="p-8 rounded-2xl bg-card border border-border shadow-card hover:shadow-elegant hover:-translate-y-1 transition-all">

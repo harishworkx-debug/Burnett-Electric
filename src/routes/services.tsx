@@ -67,7 +67,7 @@ const services = [
     benefits: ["Dedicated 240V circuits", "Tesla Wall Connectors", "Load calculations", "Permitted & inspected"],
   },
   {
-    icon: Siren, title: "Emergency Residential Electrical Help", to: "/emergency-electrician-tuscaloosa-al", img: IMG.repair,
+    icon: Siren, title: "Emergency Residential Electrical Services", to: "/emergency-electrician-tuscaloosa-al", img: IMG.repair,
     desc: "Immediate response for sparking panels, partial power loss, and dangerous electrical faults.",
     benefits: ["Rapid response", "Fully stocked vans", "Storm damage repair", "Safety prioritized"],
   }
@@ -93,7 +93,7 @@ function ServicesPage() {
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }} className="max-w-3xl">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full glass-dark text-primary text-xs font-semibold uppercase tracking-widest mb-5">Our Services</div>
             <h1 className="font-display text-5xl md:text-6xl font-bold leading-[1.05]">Electrical Services in <span className="text-gradient-primary">Tuscaloosa, AL</span></h1>
-            <p className="mt-5 text-lg text-white/80">Residential repairs, upgrades, lighting, and outdoor electrical help for homeowners.</p>
+            <p className="mt-5 text-lg text-white/80">Residential repairs, upgrades, lighting, and outdoor electrical services for homeowners.</p>
           </motion.div>
         </div>
       </section>

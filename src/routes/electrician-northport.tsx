@@ -27,7 +27,7 @@ export const Route = createFileRoute("/electrician-northport")({
       benefits={[
         { title: "Residential Experts", desc: "We excel in troubleshooting and upgrading the electrical systems in Northport's varied home styles." },
         { title: "Fast Dispatch", desc: "Located just across the river, we provide rapid response times to all Northport neighborhoods." },
-        { title: "Residential Wiring", desc: "Request help getting professional service for wiring, lighting, and electrical upgrades at home." },
+        { title: "Residential Wiring", desc: "schedule an expert residential electrician for wiring, lighting, and electrical upgrades at home." },
         { title: "Panel Upgrades", desc: "Bringing older Northport homes up to modern safety and capacity standards." },
         { title: "Safety Inspections", desc: "Thorough electrical safety checks for peace of mind or real estate transactions." },
         { title: "Outdoor Lighting", desc: "Enhancing curb appeal and security with custom outdoor and landscape lighting." },

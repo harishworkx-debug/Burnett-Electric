@@ -116,7 +116,7 @@ export function LocationPageLayout({
 
       <section className="py-20 bg-surface">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <SectionHeading eyebrow="Residential coverage" title={`Electrical help for homeowners in ${city}`} subtitle="Connect with an expert electrician for residential repairs, upgrades, and installations." />
+          <SectionHeading eyebrow="Residential coverage" title={`electrical services for homeowners in ${city}`} subtitle="Hire an expert electrician for residential repairs, upgrades, and installations." />
           <div className="mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {benefits.map((b, i) => (
               <motion.div key={i} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.05 }} className="p-7 rounded-2xl bg-card shadow-card border border-border hover:border-primary/40 hover:-translate-y-1 transition-all">

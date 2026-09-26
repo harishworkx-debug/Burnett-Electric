@@ -88,7 +88,7 @@ const faqs = [
   { q: "How can I schedule a residential electrician?", a: "Call (205) 634-8185 to schedule an expert local residential electrician." },
   { q: "Are your electricians licensed and insured?", a: "Yes, our electricians are fully licensed, insured, and trained to handle all residential electrical work safely." },
   { q: "Which areas do you serve?", a: "We serve Tuscaloosa, Northport, Buhl, Birmingham and surrounding communities across west and central Alabama." },
-  { q: "Do you help with residential emergencies?", a: "You can call to request help getting professional service for residential sparks, burning smells, partial outages, or storm damage. Availability depends on technician availability and location." },
+  { q: "Do you help with residential emergencies?", a: "You can call to schedule an expert residential electrician for residential sparks, burning smells, partial outages, or storm damage. Availability depends on technician availability and location." },
   { q: "How soon can an expert electrician help?", a: "Availability varies by location, technician availability, and demand, but we always strive to respond as quickly as possible." },
   { q: "What services are covered?", a: "The site focuses on residential electrical repairs, wiring, lighting, panel upgrades, generators, EV chargers, and smart-home installations." },
 ];

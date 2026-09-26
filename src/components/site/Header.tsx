@@ -12,7 +12,7 @@ const services = [
   { to: "/panel-upgrades-tuscaloosa-al", label: "Panel Upgrades" },
   { to: "/lighting-installation-tuscaloosa-al", label: "Lighting & Fan Installation" },
   { to: "/ev-charger-installation-tuscaloosa-al", label: "EV Charger Installation" },
-  { to: "/emergency-electrician-tuscaloosa-al", label: "Emergency Electrical Help" },
+  { to: "/emergency-electrician-tuscaloosa-al", label: "Emergency Electrical Services" },
   { to: "/smart-home-installation-tuscaloosa-al", label: "Smart Home Installation" },
 ];
 

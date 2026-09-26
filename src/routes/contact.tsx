@@ -14,7 +14,7 @@ export const Route = createFileRoute("/contact")({
       { title: "Contact Burnett Electric" },
       { name: "description", content: "Contact our expert residential electrical service team in Tuscaloosa." },
       { property: "og:title", content: "Contact Burnett Electric" },
-      { property: "og:description", content: "Request a residential electrical service connection in Tuscaloosa." },
+      { property: "og:description", content: "Request residential electrical service in Tuscaloosa." },
       { property: "og:url", content: "/contact" },
       { property: "og:image", content: IMG.worker },
       { name: "twitter:image", content: IMG.worker },
@@ -37,7 +37,7 @@ function ContactPage() {
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-white">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} className="max-w-3xl">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full glass-dark text-primary text-xs font-semibold uppercase tracking-widest mb-5">Contact Us</div>
-            <h1 className="font-display text-5xl md:text-6xl font-bold leading-[1.05]">Connect With a <span className="text-gradient-primary">expert electrician</span></h1>
+            <h1 className="font-display text-5xl md:text-6xl font-bold leading-[1.05]">Contact an <span className="text-gradient-primary">expert electrician</span></h1>
             <p className="mt-5 text-lg text-white/80">Call or send a request to schedule an expert residential electrician in Tuscaloosa, Northport, or Birmingham.</p>
           </motion.div>
         </div>

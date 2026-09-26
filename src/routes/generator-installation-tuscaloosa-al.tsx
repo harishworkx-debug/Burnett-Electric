@@ -6,9 +6,9 @@ export const Route = createFileRoute("/generator-installation-tuscaloosa-al")({
   head: () => ({
     meta: [
       { title: "Generator Installation in Tuscaloosa, AL | Burnett Electric" },
-      { name: "description", content: "Residential whole-home generator installation connections in Tuscaloosa, AL for storm-related backup power." },
+      { name: "description", content: "Residential whole-home generator installations in Tuscaloosa, AL for storm-related backup power." },
       { property: "og:title", content: "Generator Installation in Tuscaloosa, AL | Burnett Electric" },
-      { property: "og:description", content: "Residential standby generator installation connections in Tuscaloosa." },
+      { property: "og:description", content: "Residential standby generator installations in Tuscaloosa." },
       { property: "og:url", content: "/generator-installation-tuscaloosa-al" },
       { property: "og:image", content: IMG.home },
       { name: "twitter:image", content: IMG.home },
@@ -28,7 +28,7 @@ export const Route = createFileRoute("/generator-installation-tuscaloosa-al")({
         { title: "Automatic Transfer", desc: "Your generator turns on automatically within seconds of a power outage in your Tuscaloosa home." },
         { title: "Whole-Home Power", desc: "We size generators to keep your AC, refrigerator, and essential circuits running perfectly." },
         { title: "Increased Home Value", desc: "A standby generator is a premium addition that increases the resale value of your property." },
-        { title: "Residential Backup", desc: "Request help getting professional service for whole-home backup power." },
+        { title: "Residential Backup", desc: "Schedule an expert residential electrician for whole-home backup power." },
         { title: "Expert Installation", desc: "Our licensed electricians handle the concrete pad, electrical connections, and gas coordination." },
         { title: "Routine Maintenance", desc: "We offer ongoing service plans to ensure your generator is always ready for the next storm." },
       ]}

@@ -35,7 +35,7 @@ export function Footer() {
               <li><Link to="/panel-upgrades-tuscaloosa-al" className="hover:text-primary">Panel Upgrades</Link></li>
               <li><Link to="/lighting-installation-tuscaloosa-al" className="hover:text-primary">Lighting & Fan Installation</Link></li>
               <li><Link to="/ev-charger-installation-tuscaloosa-al" className="hover:text-primary">EV Charger Installation</Link></li>
-              <li><Link to="/emergency-electrician-tuscaloosa-al" className="hover:text-primary">Emergency Electrical Help</Link></li>
+              <li><Link to="/emergency-electrician-tuscaloosa-al" className="hover:text-primary">Emergency Electrical Services</Link></li>
               <li><Link to="/smart-home-installation-tuscaloosa-al" className="hover:text-primary">Smart Home Installation</Link></li>
             </ul>
           </div>
