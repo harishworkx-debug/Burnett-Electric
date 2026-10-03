@@ -9,11 +9,11 @@ export const Route = createFileRoute("/generator-installation-tuscaloosa-al")({
       { name: "description", content: "Residential whole-home generator installations in Tuscaloosa, AL for storm-related backup power." },
       { property: "og:title", content: "Generator Installation in Tuscaloosa, AL | Burnett Electric" },
       { property: "og:description", content: "Residential standby generator installations in Tuscaloosa." },
-      { property: "og:url", content: "/generator-installation-tuscaloosa-al" },
-      { property: "og:image", content: IMG.home },
-      { name: "twitter:image", content: IMG.home },
+      { property: "og:url", content: "https://www.burnettelectrictuscaloosa.com/generator-installation-tuscaloosa-al" },
+      { property: "og:image", content: `https://www.burnettelectrictuscaloosa.com${IMG.home}` },
+      { name: "twitter:image", content: `https://www.burnettelectrictuscaloosa.com${IMG.home}` },
     ],
-    links: [{ rel: "canonical", href: "/generator-installation-tuscaloosa-al" }],
+    links: [{ rel: "canonical", href: "https://www.burnettelectrictuscaloosa.com/generator-installation-tuscaloosa-al" }],
   }),
   component: () => (
     <ServicePageLayout

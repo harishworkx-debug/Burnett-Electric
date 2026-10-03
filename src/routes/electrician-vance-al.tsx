@@ -9,15 +9,15 @@ export const Route = createFileRoute("/electrician-vance-al")({
       { name: "description", content: "residential electrical services in Vance, AL for repairs, wiring upgrades, and outdoor electrical needs." },
       { property: "og:title", content: "Electrician in Vance, AL | Burnett Electric" },
       { property: "og:description", content: "Residential electrical services for homeowners in Vance, Alabama." },
-      { property: "og:url", content: "/electrician-vance-al" },
-      { property: "og:image", content: IMG.hero },
-      { name: "twitter:image", content: IMG.hero },
+      { property: "og:url", content: "https://www.burnettelectrictuscaloosa.com/electrician-vance-al" },
+      { property: "og:image", content: `https://www.burnettelectrictuscaloosa.com${IMG.hero}` },
+      { name: "twitter:image", content: `https://www.burnettelectrictuscaloosa.com${IMG.hero}` },
     ],
-    links: [{ rel: "canonical", href: "/electrician-vance-al" }],
+    links: [{ rel: "canonical", href: "https://www.burnettelectrictuscaloosa.com/electrician-vance-al" }],
   }),
   component: () => (
     <LocationPageLayout
-      slug="vance-al"
+      slug="electrician-vance-al"
       metaDescription="residential electrical services in Vance, AL."
       h1="Residential Electrical Services in Vance, AL"
       city="Vance"

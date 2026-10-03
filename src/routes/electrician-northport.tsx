@@ -9,15 +9,15 @@ export const Route = createFileRoute("/electrician-northport")({
       { name: "description", content: "residential electrical services in Northport, AL for wiring, panel upgrades, and repairs. Call (205) 634-8185." },
       { property: "og:title", content: "Electrician in Northport, AL | Burnett Electric" },
       { property: "og:description", content: "Residential electrical services for homeowners in Northport, Alabama." },
-      { property: "og:url", content: "/electrician-northport" },
-      { property: "og:image", content: IMG.hero },
-      { name: "twitter:image", content: IMG.hero },
+      { property: "og:url", content: "https://www.burnettelectrictuscaloosa.com/electrician-northport" },
+      { property: "og:image", content: `https://www.burnettelectrictuscaloosa.com${IMG.hero}` },
+      { name: "twitter:image", content: `https://www.burnettelectrictuscaloosa.com${IMG.hero}` },
     ],
-    links: [{ rel: "canonical", href: "/electrician-northport" }],
+    links: [{ rel: "canonical", href: "https://www.burnettelectrictuscaloosa.com/electrician-northport" }],
   }),
   component: () => (
     <LocationPageLayout
-      slug="northport"
+      slug="electrician-northport"
       metaDescription="Professional electrical services in Northport, AL."
       h1="Professional Electrician in Northport, AL"
       city="Northport"

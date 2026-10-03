@@ -40,7 +40,7 @@ export function ServicePageLayout({
   related: { to: string; label: string }[];
   children?: React.ReactNode;
 }) {
-  const url = `https://burnettelectric.com/${slug}`;
+  const url = `${BUSINESS.domain}/${slug}`;
   const y = useParallax(80);
   return (
     <div className="bg-background text-foreground">

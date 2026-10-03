@@ -9,15 +9,15 @@ export const Route = createFileRoute("/electrician-coaling-al")({
       { name: "description", content: "residential electrical services in Coaling, AL for repairs, wiring upgrades, and outdoor electrical needs." },
       { property: "og:title", content: "Electrician in Coaling, AL | Burnett Electric" },
       { property: "og:description", content: "Residential electrical services for homeowners in Coaling, Alabama." },
-      { property: "og:url", content: "/electrician-coaling-al" },
-      { property: "og:image", content: IMG.hero },
-      { name: "twitter:image", content: IMG.hero },
+      { property: "og:url", content: "https://www.burnettelectrictuscaloosa.com/electrician-coaling-al" },
+      { property: "og:image", content: `https://www.burnettelectrictuscaloosa.com${IMG.hero}` },
+      { name: "twitter:image", content: `https://www.burnettelectrictuscaloosa.com${IMG.hero}` },
     ],
-    links: [{ rel: "canonical", href: "/electrician-coaling-al" }],
+    links: [{ rel: "canonical", href: "https://www.burnettelectrictuscaloosa.com/electrician-coaling-al" }],
   }),
   component: () => (
     <LocationPageLayout
-      slug="coaling-al"
+      slug="electrician-coaling-al"
       metaDescription="residential electrical services in Coaling, AL."
       h1="Residential Electrical Services in Coaling, AL"
       city="Coaling"

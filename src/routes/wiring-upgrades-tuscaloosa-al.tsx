@@ -9,11 +9,11 @@ export const Route = createFileRoute("/wiring-upgrades-tuscaloosa-al")({
       { name: "description", content: "Expert electrical panel upgrades, whole-home rewiring, and surge protection in Tuscaloosa, AL. Update your older home to meet modern electrical demands safely." },
       { property: "og:title", content: "Wiring & Panel Upgrades in Tuscaloosa, AL | Burnett Electric" },
       { property: "og:description", content: "Safe and reliable panel upgrades and whole-home rewiring in Tuscaloosa." },
-      { property: "og:url", content: "/wiring-upgrades-tuscaloosa-al" },
-      { property: "og:image", content: IMG.wiring },
-      { name: "twitter:image", content: IMG.wiring },
+      { property: "og:url", content: "https://www.burnettelectrictuscaloosa.com/wiring-upgrades-tuscaloosa-al" },
+      { property: "og:image", content: `https://www.burnettelectrictuscaloosa.com${IMG.wiring}` },
+      { name: "twitter:image", content: `https://www.burnettelectrictuscaloosa.com${IMG.wiring}` },
     ],
-    links: [{ rel: "canonical", href: "/wiring-upgrades-tuscaloosa-al" }],
+    links: [{ rel: "canonical", href: "https://www.burnettelectrictuscaloosa.com/wiring-upgrades-tuscaloosa-al" }],
   }),
   component: () => (
     <ServicePageLayout

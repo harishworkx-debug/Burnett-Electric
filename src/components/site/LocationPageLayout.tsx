@@ -25,7 +25,7 @@ export function LocationPageLayout({
   hero: string;
   children?: React.ReactNode;
 }) {
-  const url = `https://burnettelectric.com/${slug}`;
+  const url = slug.startsWith("http") ? slug : `${BUSINESS.domain}/${slug}`;
   const y = useParallax(80);
   return (
     <div className="bg-background text-foreground">

@@ -9,11 +9,11 @@ export const Route = createFileRoute("/smart-home-installation-tuscaloosa-al")({
       { name: "description", content: "Professional smart home installation in Tuscaloosa, AL. We install smart switches, thermostats, video doorbells, and automated lighting systems." },
       { property: "og:title", content: "Smart Home Installation in Tuscaloosa, AL | Burnett Electric" },
       { property: "og:description", content: "Expert installation of smart switches, lighting, and home automation in Tuscaloosa." },
-      { property: "og:url", content: "/smart-home-installation-tuscaloosa-al" },
-      { property: "og:image", content: IMG.home },
-      { name: "twitter:image", content: IMG.home },
+      { property: "og:url", content: "https://www.burnettelectrictuscaloosa.com/smart-home-installation-tuscaloosa-al" },
+      { property: "og:image", content: `https://www.burnettelectrictuscaloosa.com${IMG.home}` },
+      { name: "twitter:image", content: `https://www.burnettelectrictuscaloosa.com${IMG.home}` },
     ],
-    links: [{ rel: "canonical", href: "/smart-home-installation-tuscaloosa-al" }],
+    links: [{ rel: "canonical", href: "https://www.burnettelectrictuscaloosa.com/smart-home-installation-tuscaloosa-al" }],
   }),
   component: () => (
     <ServicePageLayout

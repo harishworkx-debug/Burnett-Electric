@@ -9,15 +9,15 @@ export const Route = createFileRoute("/electrician-cottondale-al")({
       { name: "description", content: "residential electrical services in Cottondale, AL for repairs, wiring upgrades, and outdoor electrical needs." },
       { property: "og:title", content: "Electrician in Cottondale, AL | Burnett Electric" },
       { property: "og:description", content: "Residential electrical services for homeowners in Cottondale, Alabama." },
-      { property: "og:url", content: "/electrician-cottondale-al" },
-      { property: "og:image", content: IMG.hero },
-      { name: "twitter:image", content: IMG.hero },
+      { property: "og:url", content: "https://www.burnettelectrictuscaloosa.com/electrician-cottondale-al" },
+      { property: "og:image", content: `https://www.burnettelectrictuscaloosa.com${IMG.hero}` },
+      { name: "twitter:image", content: `https://www.burnettelectrictuscaloosa.com${IMG.hero}` },
     ],
-    links: [{ rel: "canonical", href: "/electrician-cottondale-al" }],
+    links: [{ rel: "canonical", href: "https://www.burnettelectrictuscaloosa.com/electrician-cottondale-al" }],
   }),
   component: () => (
     <LocationPageLayout
-      slug="cottondale-al"
+      slug="electrician-cottondale-al"
       metaDescription="residential electrical services in Cottondale, AL."
       h1="Residential Electrical Services in Cottondale, AL"
       city="Cottondale"

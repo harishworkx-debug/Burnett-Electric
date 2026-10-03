@@ -9,11 +9,11 @@ export const Route = createFileRoute("/electrical-repairs-tuscaloosa-al")({
       { name: "description", content: "Residential electrical repairs in Tuscaloosa, AL for flickering lights, breaker trips, outlets, and home wiring issues." },
       { property: "og:title", content: "Expert Electrical Repairs in Tuscaloosa, AL | Burnett Electric" },
       { property: "og:description", content: "Residential troubleshooting and electrical repairs in Tuscaloosa." },
-      { property: "og:url", content: "/electrical-repairs-tuscaloosa-al" },
-      { property: "og:image", content: IMG.repair },
-      { name: "twitter:image", content: IMG.repair },
+      { property: "og:url", content: "https://www.burnettelectrictuscaloosa.com/electrical-repairs-tuscaloosa-al" },
+      { property: "og:image", content: `https://www.burnettelectrictuscaloosa.com${IMG.repair}` },
+      { name: "twitter:image", content: `https://www.burnettelectrictuscaloosa.com${IMG.repair}` },
     ],
-    links: [{ rel: "canonical", href: "/electrical-repairs-tuscaloosa-al" }],
+    links: [{ rel: "canonical", href: "https://www.burnettelectrictuscaloosa.com/electrical-repairs-tuscaloosa-al" }],
   }),
   component: () => (
     <ServicePageLayout

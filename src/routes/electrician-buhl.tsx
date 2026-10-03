@@ -9,15 +9,15 @@ export const Route = createFileRoute("/electrician-buhl")({
       { name: "description", content: "Your local electrician based in Buhl, AL. Fast repairs, wiring upgrades, and outdoor electrical. Call Burnett Electric at (205) 634-8185." },
       { property: "og:title", content: "Electrician in Buhl, AL | Burnett Electric" },
       { property: "og:description", content: "Local licensed electrician based in Buhl, Alabama." },
-      { property: "og:url", content: "/electrician-buhl" },
-      { property: "og:image", content: IMG.hero },
-      { name: "twitter:image", content: IMG.hero },
+      { property: "og:url", content: "https://www.burnettelectrictuscaloosa.com/electrician-buhl" },
+      { property: "og:image", content: `https://www.burnettelectrictuscaloosa.com${IMG.hero}` },
+      { name: "twitter:image", content: `https://www.burnettelectrictuscaloosa.com${IMG.hero}` },
     ],
-    links: [{ rel: "canonical", href: "/electrician-buhl" }],
+    links: [{ rel: "canonical", href: "https://www.burnettelectrictuscaloosa.com/electrician-buhl" }],
   }),
   component: () => (
     <LocationPageLayout
-      slug="buhl"
+      slug="electrician-buhl"
       metaDescription="Your local electrician in Buhl, AL."
       h1="Your Local Electrician in Buhl, AL"
       city="Buhl"

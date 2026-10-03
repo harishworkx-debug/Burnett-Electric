@@ -9,11 +9,11 @@ export const Route = createFileRoute("/emergency-electrician-tuscaloosa-al")({
       { name: "description", content: "Schedule a residential electrician in Tuscaloosa for outages, sparking outlets, and electrical hazards." },
       { property: "og:title", content: "Emergency Residential Electrical Services in Tuscaloosa, AL | Burnett Electric" },
       { property: "og:description", content: "Residential emergency electrical services in Tuscaloosa." },
-      { property: "og:url", content: "/emergency-electrician-tuscaloosa-al" },
-      { property: "og:image", content: IMG.repair },
-      { name: "twitter:image", content: IMG.repair },
+      { property: "og:url", content: "https://www.burnettelectrictuscaloosa.com/emergency-electrician-tuscaloosa-al" },
+      { property: "og:image", content: `https://www.burnettelectrictuscaloosa.com${IMG.repair}` },
+      { name: "twitter:image", content: `https://www.burnettelectrictuscaloosa.com${IMG.repair}` },
     ],
-    links: [{ rel: "canonical", href: "/emergency-electrician-tuscaloosa-al" }],
+    links: [{ rel: "canonical", href: "https://www.burnettelectrictuscaloosa.com/emergency-electrician-tuscaloosa-al" }],
   }),
   component: () => (
     <ServicePageLayout

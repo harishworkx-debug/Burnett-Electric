@@ -9,11 +9,11 @@ export const Route = createFileRoute("/ev-charger-installation-tuscaloosa-al")({
       { name: "description", content: "Fast, safe Level 2 EV charger installation in Tuscaloosa, AL. Charge your electric vehicle at home overnight with a dedicated charging station." },
       { property: "og:title", content: "EV Charger Installation in Tuscaloosa, AL | Burnett Electric" },
       { property: "og:description", content: "Residential Level 2 EV charger installations in Tuscaloosa." },
-      { property: "og:url", content: "/ev-charger-installation-tuscaloosa-al" },
-      { property: "og:image", content: IMG.wiring },
-      { name: "twitter:image", content: IMG.wiring },
+      { property: "og:url", content: "https://www.burnettelectrictuscaloosa.com/ev-charger-installation-tuscaloosa-al" },
+      { property: "og:image", content: `https://www.burnettelectrictuscaloosa.com${IMG.wiring}` },
+      { name: "twitter:image", content: `https://www.burnettelectrictuscaloosa.com${IMG.wiring}` },
     ],
-    links: [{ rel: "canonical", href: "/ev-charger-installation-tuscaloosa-al" }],
+    links: [{ rel: "canonical", href: "https://www.burnettelectrictuscaloosa.com/ev-charger-installation-tuscaloosa-al" }],
   }),
   component: () => (
     <ServicePageLayout

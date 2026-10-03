@@ -9,11 +9,11 @@ export const Route = createFileRoute("/lighting-installation-tuscaloosa-al")({
       { name: "description", content: "Expert lighting installation in Tuscaloosa, AL. From recessed lighting to outdoor security lights, we brighten up your home and reduce energy costs." },
       { property: "og:title", content: "Lighting Installation in Tuscaloosa, AL | Burnett Electric" },
       { property: "og:description", content: "Professional indoor and outdoor lighting installations in Tuscaloosa." },
-      { property: "og:url", content: "/lighting-installation-tuscaloosa-al" },
-      { property: "og:image", content: IMG.bulb },
-      { name: "twitter:image", content: IMG.bulb },
+      { property: "og:url", content: "https://www.burnettelectrictuscaloosa.com/lighting-installation-tuscaloosa-al" },
+      { property: "og:image", content: `https://www.burnettelectrictuscaloosa.com${IMG.bulb}` },
+      { name: "twitter:image", content: `https://www.burnettelectrictuscaloosa.com${IMG.bulb}` },
     ],
-    links: [{ rel: "canonical", href: "/lighting-installation-tuscaloosa-al" }],
+    links: [{ rel: "canonical", href: "https://www.burnettelectrictuscaloosa.com/lighting-installation-tuscaloosa-al" }],
   }),
   component: () => (
     <ServicePageLayout

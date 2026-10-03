@@ -9,15 +9,15 @@ export const Route = createFileRoute("/electrician-brookwood-al")({
       { name: "description", content: "residential electrical services in Brookwood, AL for repairs, wiring upgrades, and outdoor electrical needs." },
       { property: "og:title", content: "Electrician in Brookwood, AL | Burnett Electric" },
       { property: "og:description", content: "Residential electrical services for homeowners in Brookwood, Alabama." },
-      { property: "og:url", content: "/electrician-brookwood-al" },
-      { property: "og:image", content: IMG.hero },
-      { name: "twitter:image", content: IMG.hero },
+      { property: "og:url", content: "https://www.burnettelectrictuscaloosa.com/electrician-brookwood-al" },
+      { property: "og:image", content: `https://www.burnettelectrictuscaloosa.com${IMG.hero}` },
+      { name: "twitter:image", content: `https://www.burnettelectrictuscaloosa.com${IMG.hero}` },
     ],
-    links: [{ rel: "canonical", href: "/electrician-brookwood-al" }],
+    links: [{ rel: "canonical", href: "https://www.burnettelectrictuscaloosa.com/electrician-brookwood-al" }],
   }),
   component: () => (
     <LocationPageLayout
-      slug="brookwood-al"
+      slug="electrician-brookwood-al"
       metaDescription="residential electrical services in Brookwood, AL."
       h1="Residential Electrical Services in Brookwood, AL"
       city="Brookwood"

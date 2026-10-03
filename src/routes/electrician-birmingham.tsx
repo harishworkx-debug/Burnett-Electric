@@ -9,15 +9,15 @@ export const Route = createFileRoute("/electrician-birmingham")({
       { name: "description", content: "Residential electrical services for homeowners in Birmingham, AL, including repairs, panel upgrades, and wiring." },
       { property: "og:title", content: "Electrician in Birmingham, AL | Burnett Electric" },
       { property: "og:description", content: "Residential electrical services for homeowners in Birmingham." },
-      { property: "og:url", content: "/electrician-birmingham" },
-      { property: "og:image", content: IMG.hero },
-      { name: "twitter:image", content: IMG.hero },
+      { property: "og:url", content: "https://www.burnettelectrictuscaloosa.com/electrician-birmingham" },
+      { property: "og:image", content: `https://www.burnettelectrictuscaloosa.com${IMG.hero}` },
+      { name: "twitter:image", content: `https://www.burnettelectrictuscaloosa.com${IMG.hero}` },
     ],
-    links: [{ rel: "canonical", href: "/electrician-birmingham" }],
+    links: [{ rel: "canonical", href: "https://www.burnettelectrictuscaloosa.com/electrician-birmingham" }],
   }),
   component: () => (
     <LocationPageLayout
-      slug="birmingham"
+      slug="electrician-birmingham"
       metaDescription="Residential electrical services for homeowners in Birmingham, AL."
       h1="Expert Electrician in Birmingham, AL"
       city="Birmingham"

@@ -9,15 +9,15 @@ export const Route = createFileRoute("/electrician-moundville-al")({
       { name: "description", content: "residential electrical services in Moundville, AL for repairs, wiring upgrades, and outdoor electrical needs." },
       { property: "og:title", content: "Electrician in Moundville, AL | Burnett Electric" },
       { property: "og:description", content: "Residential electrical services for homeowners in Moundville, Alabama." },
-      { property: "og:url", content: "/electrician-moundville-al" },
-      { property: "og:image", content: IMG.hero },
-      { name: "twitter:image", content: IMG.hero },
+      { property: "og:url", content: "https://www.burnettelectrictuscaloosa.com/electrician-moundville-al" },
+      { property: "og:image", content: `https://www.burnettelectrictuscaloosa.com${IMG.hero}` },
+      { name: "twitter:image", content: `https://www.burnettelectrictuscaloosa.com${IMG.hero}` },
     ],
-    links: [{ rel: "canonical", href: "/electrician-moundville-al" }],
+    links: [{ rel: "canonical", href: "https://www.burnettelectrictuscaloosa.com/electrician-moundville-al" }],
   }),
   component: () => (
     <LocationPageLayout
-      slug="moundville-al"
+      slug="electrician-moundville-al"
       metaDescription="residential electrical services in Moundville, AL."
       h1="Residential Electrical Services in Moundville, AL"
       city="Moundville"

@@ -16,11 +16,11 @@ export const Route = createFileRoute("/services")({
       { name: "description", content: "Residential electrical repairs, wiring upgrades, lighting, and home installations in Tuscaloosa, AL. Call (205) 634-8185 to schedule an expert electrician." },
       { property: "og:title", content: "Electrical Services in Tuscaloosa | Burnett Electric" },
       { property: "og:description", content: "Residential repairs, wiring upgrades, lighting, and outdoor electrical services." },
-      { property: "og:url", content: "/services" },
-      { property: "og:image", content: IMG.electrician },
-      { name: "twitter:image", content: IMG.electrician },
+      { property: "og:url", content: "https://www.burnettelectrictuscaloosa.com/services" },
+      { property: "og:image", content: `https://www.burnettelectrictuscaloosa.com${IMG.electrician}` },
+      { name: "twitter:image", content: `https://www.burnettelectrictuscaloosa.com${IMG.electrician}` },
     ],
-    links: [{ rel: "canonical", href: "/services" }],
+    links: [{ rel: "canonical", href: "https://www.burnettelectrictuscaloosa.com/services" }],
   }),
   component: ServicesPage,
 });
@@ -79,8 +79,8 @@ function ServicesPage() {
       <JsonLd data={{
         "@context": "https://schema.org", "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://burnettelectric.com/" },
-          { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://burnettelectric.com/services" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.burnettelectrictuscaloosa.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.burnettelectrictuscaloosa.com/services" },
         ]
       }} />
       <Header />

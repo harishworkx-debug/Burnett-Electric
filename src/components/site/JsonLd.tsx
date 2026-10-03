@@ -11,9 +11,9 @@ export const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "Electrician",
   "name": "Burnett Electric",
-  "image": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1200&q=80",
-  "@id": "https://burnettelectric.com/#business",
-  "url": "https://burnettelectric.com/",
+  "image": "https://www.burnettelectrictuscaloosa.com/img/real_crew_1790407082115.jpg",
+  "@id": "https://www.burnettelectrictuscaloosa.com/#business",
+  "url": "https://www.burnettelectrictuscaloosa.com/",
   "telephone": "+1-205-634-8185",
   "priceRange": "$$",
   "address": {
@@ -35,7 +35,7 @@ export const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "Burnett Electric",
-  "url": "https://burnettelectric.com/",
-  "logo": "https://burnettelectric.com/favicon.ico",
+  "url": "https://www.burnettelectrictuscaloosa.com/",
+  "logo": "https://www.burnettelectrictuscaloosa.com/favicon.ico",
   "sameAs": []
 };
