@@ -47,6 +47,18 @@ function isH3SwallowedErrorBody(body: string): boolean {
 export default {
   async fetch(request: Request, env: unknown, ctx: unknown) {
     try {
+      const url = new URL(request.url);
+      if (url.pathname.length > 1 && url.pathname.endsWith("/")) {
+        const cleanUrl = url.origin + url.pathname.slice(0, -1) + url.search;
+        return new Response(null, {
+          status: 301,
+          headers: {
+            Location: cleanUrl,
+            "Cache-Control": "public, max-age=31536000, immutable",
+          },
+        });
+      }
+
       const handler = await getServerEntry();
       const response = await handler.fetch(request, env, ctx);
       return await normalizeCatastrophicSsrResponse(response);

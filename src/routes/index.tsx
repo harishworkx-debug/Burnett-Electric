@@ -42,15 +42,14 @@ const stats = [
 
 const services = [
   { icon: Wrench, title: "Electrical Repair", desc: "Fast, safe fixes for outlets, breakers, panels, flickering lights and dead circuits.", to: "/electrical-repairs-tuscaloosa-al", img: IMG.repair },
-  { icon: Zap, title: "Residential Electrician", desc: "Comprehensive home wiring, appliance circuits, and general electrical upgrades.", to: "/services", img: IMG.home },
-  { icon: AlertTriangle, title: "Emergency Electrician", desc: "Rapid response for sparking panels, power outages, and electrical hazards.", to: "/emergency-electrician-tuscaloosa-al", img: IMG.night },
-  { icon: ShieldCheck, title: "Electrical Panel Upgrades", desc: "Replacing outdated fuse boxes and installing high-capacity breaker panels.", to: "/panel-upgrades-tuscaloosa-al", img: IMG.panel },
-  { icon: Cable, title: "Wiring & Rewiring", desc: "Whole-home rewires and safe modernization for older properties.", to: "/wiring-upgrades-tuscaloosa-al", img: IMG.wiring },
+  { icon: Cable, title: "Wiring Upgrades", desc: "Whole-home rewires and safe modernization for older properties.", to: "/wiring-upgrades-tuscaloosa-al", img: IMG.wiring },
+  { icon: Lamp, title: "Outdoor Wiring", desc: "Landscape lighting, security floods, and dedicated outdoor circuits.", to: "/outdoor-wiring-tuscaloosa-al", img: IMG.outdoor },
   { icon: Zap, title: "Generator Installation", desc: "Whole-home standby generators to keep your power on during severe storms.", to: "/generator-installation-tuscaloosa-al", img: IMG.outdoor },
-  { icon: Zap, title: "EV Charger Installation", desc: "Level 2 electric vehicle charging stations for your garage or driveway.", to: "/ev-charger-installation-tuscaloosa-al", img: IMG.home },
-  { icon: Lightbulb, title: "Lighting Installation", desc: "Indoor recessed lighting, ceiling fans, and custom lighting design.", to: "/lighting-installation-tuscaloosa-al", img: IMG.bulb },
-  { icon: Award, title: "Commercial Electrical", desc: "Reliable electrical build-outs, maintenance, and repairs for local businesses.", to: "/services", img: IMG.panel },
-  { icon: Lamp, title: "Outdoor Electrical", desc: "Landscape lighting, security floods, and dedicated outdoor circuits.", to: "/outdoor-wiring-tuscaloosa-al", img: IMG.outdoor },
+  { icon: ShieldCheck, title: "Panel Upgrades", desc: "Replacing outdated fuse boxes and installing high-capacity breaker panels.", to: "/panel-upgrades-tuscaloosa-al", img: IMG.panel },
+  { icon: Lightbulb, title: "Lighting & Fans", desc: "Indoor recessed lighting, ceiling fans, and custom lighting design.", to: "/lighting-installation-tuscaloosa-al", img: IMG.bulb },
+  { icon: Zap, title: "EV Charger Install", desc: "Level 2 electric vehicle charging stations for your garage or driveway.", to: "/ev-charger-installation-tuscaloosa-al", img: IMG.home },
+  { icon: AlertTriangle, title: "Emergency Electrician", desc: "Rapid response for sparking panels, power outages, and electrical hazards.", to: "/emergency-electrician-tuscaloosa-al", img: IMG.night },
+  { icon: Lightbulb, title: "Smart Home Install", desc: "Modern smart switches, thermostats, and automated home lighting controls.", to: "/smart-home-installation-tuscaloosa-al", img: IMG.home },
 ];
 
 const why = [
@@ -356,18 +355,25 @@ function HomePage() {
       <section className="py-24 bg-surface">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading eyebrow="Service Areas" title="Proudly Serving West & Central Alabama" />
-          <div className="mt-12 grid lg:grid-cols-3 gap-6">
+          <div className="mt-12 grid lg:grid-cols-4 md:grid-cols-2 gap-6">
             {[
-              { to: "/electrician-northport", city: "Electrician in Northport, AL", desc: "Panel upgrades, rewires and residential service." },
-              { to: "/electrician-birmingham", city: "Electrician in Birmingham, AL", desc: "Residential repairs, lighting and wiring." },
-              { to: "/electrician-buhl", city: "Electrician in Buhl, AL", desc: "Your hometown electrician. Fast local response." },
+              { to: "/electrician-northport", city: "Northport", desc: "Panel upgrades & rewires." },
+              { to: "/electrician-birmingham", city: "Birmingham", desc: "Residential lighting & wiring." },
+              { to: "/electrician-buhl", city: "Buhl", desc: "Your hometown electrician." },
+              { to: "/electrician-cottondale-al", city: "Cottondale", desc: "Fast local response." },
+              { to: "/electrician-vance-al", city: "Vance", desc: "Expert home repairs." },
+              { to: "/electrician-coaling-al", city: "Coaling", desc: "Safe electrical upgrades." },
+              { to: "/electrician-moundville-al", city: "Moundville", desc: "Licensed & insured." },
+              { to: "/electrician-brookwood-al", city: "Brookwood", desc: "Honest upfront pricing." },
             ].map((a) => (
-              <Link key={a.to} to={a.to} className="group p-8 rounded-2xl bg-card border border-border shadow-card hover:border-primary hover:shadow-elegant transition-all">
-                <MapPin className="h-6 w-6 text-primary" />
-                <div className="mt-4 font-display font-bold text-xl text-secondary group-hover:text-primary transition">{a.city}</div>
-                <p className="mt-2 text-muted-foreground">{a.desc}</p>
-                <div className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-secondary group-hover:text-primary">
-                  Explore area <ChevronRight className="h-4 w-4" />
+              <Link key={a.to} to={a.to} className="group p-6 rounded-2xl bg-card border border-border shadow-card hover:border-primary hover:shadow-elegant transition-all flex flex-col justify-between">
+                <div>
+                  <MapPin className="h-6 w-6 text-primary" />
+                  <div className="mt-4 font-display font-bold text-lg text-secondary group-hover:text-primary transition">{a.city}</div>
+                  <p className="mt-2 text-sm text-muted-foreground">{a.desc}</p>
+                </div>
+                <div className="mt-5 text-sm font-semibold text-secondary group-hover:text-primary flex items-center gap-1 transition">
+                  Visit <ChevronRight className="h-4 w-4" />
                 </div>
               </Link>
             ))}
