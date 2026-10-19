@@ -5,10 +5,10 @@ import { IMG } from "@/lib/business";
 export const Route = createFileRoute("/smart-home-installation-tuscaloosa-al")({
   head: () => ({
     meta: [
-      { title: "Smart Home & Automation Installation in Tuscaloosa, AL | Burnett Electric" },
-      { name: "description", content: "Professional smart home installation in Tuscaloosa, AL. We install smart switches, thermostats, video doorbells, and automated lighting systems." },
-      { property: "og:title", content: "Smart Home Installation in Tuscaloosa, AL | Burnett Electric" },
-      { property: "og:description", content: "Expert installation of smart switches, lighting, and home automation in Tuscaloosa." },
+      { title: "Smart Home Electrical Installation in Tuscaloosa, AL | Burnett Electric" },
+      { name: "description", content: "Professional smart home electrical installation in Tuscaloosa, AL. Smart switches, smart thermostats, video doorbells, and automated lighting." },
+      { property: "og:title", content: "Smart Home Electrical Installation in Tuscaloosa, AL | Burnett Electric" },
+      { property: "og:description", content: "Expert installation of smart switches, lighting, and home automation in Tuscaloosa, AL." },
       { property: "og:url", content: "https://www.burnettelectrictuscaloosa.com/smart-home-installation-tuscaloosa-al" },
       { property: "og:image", content: `https://www.burnettelectrictuscaloosa.com${IMG.home}` },
       { name: "twitter:image", content: `https://www.burnettelectrictuscaloosa.com${IMG.home}` },
@@ -18,9 +18,9 @@ export const Route = createFileRoute("/smart-home-installation-tuscaloosa-al")({
   component: () => (
     <ServicePageLayout
       slug="smart-home-installation-tuscaloosa-al"
-      metaTitle="Smart Home Installation in Tuscaloosa, AL"
-      metaDescription="Professional smart home automation and installation in Tuscaloosa, AL."
-      h1="Smart Home Installation in Tuscaloosa, AL"
+      metaTitle="Smart Home Electrical Installation in Tuscaloosa, AL | Burnett Electric"
+      metaDescription="Professional smart home automation and electrical installation in Tuscaloosa, AL."
+      h1="Smart Home Electrical Installation in Tuscaloosa, AL"
       eyebrow="Modern Home Automation"
       hero={IMG.home}
       intro="Upgrade your Tuscaloosa home with modern convenience. Burnett Electric provides expert installation of smart home devices, ensuring they are wired correctly, connected securely, and ready to make your life easier."

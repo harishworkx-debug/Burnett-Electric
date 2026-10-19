@@ -5,10 +5,10 @@ import { IMG } from "@/lib/business";
 export const Route = createFileRoute("/wiring-upgrades-tuscaloosa-al")({
   head: () => ({
     meta: [
-      { title: "Home Wiring & Panel Upgrades in Tuscaloosa, AL | Burnett Electric" },
-      { name: "description", content: "Expert electrical panel upgrades, whole-home rewiring, and surge protection in Tuscaloosa, AL. Update your older home to meet modern electrical demands safely." },
-      { property: "og:title", content: "Wiring & Panel Upgrades in Tuscaloosa, AL | Burnett Electric" },
-      { property: "og:description", content: "Safe and reliable panel upgrades and whole-home rewiring in Tuscaloosa." },
+      { title: "Wiring & Rewiring in Tuscaloosa, AL | Burnett Electric" },
+      { name: "description", content: "Safe whole-home rewiring, knob-and-tube removal, and aluminum wiring updates in Tuscaloosa, AL. Modernize your home safely. Call (205) 634-8185." },
+      { property: "og:title", content: "Wiring & Rewiring in Tuscaloosa, AL | Burnett Electric" },
+      { property: "og:description", content: "Safe and reliable whole-home rewiring and electrical updates in Tuscaloosa, AL." },
       { property: "og:url", content: "https://www.burnettelectrictuscaloosa.com/wiring-upgrades-tuscaloosa-al" },
       { property: "og:image", content: `https://www.burnettelectrictuscaloosa.com${IMG.wiring}` },
       { name: "twitter:image", content: `https://www.burnettelectrictuscaloosa.com${IMG.wiring}` },
@@ -18,10 +18,10 @@ export const Route = createFileRoute("/wiring-upgrades-tuscaloosa-al")({
   component: () => (
     <ServicePageLayout
       slug="wiring-upgrades-tuscaloosa-al"
-      metaTitle="Home Wiring & Panel Upgrades in Tuscaloosa, AL"
-      metaDescription="Expert electrical panel upgrades and home rewiring in Tuscaloosa, AL."
-      h1="Wiring & Panel Upgrades in Tuscaloosa, AL"
-      eyebrow="Modernize Your Power"
+      metaTitle="Wiring & Rewiring in Tuscaloosa, AL | Burnett Electric"
+      metaDescription="Safe whole-home rewiring, knob-and-tube removal, and aluminum wiring updates in Tuscaloosa, AL."
+      h1="Wiring & Rewiring in Tuscaloosa, AL"
+      eyebrow="Modernize Your Wiring"
       hero={IMG.wiring}
       intro="Modern appliances, EVs, and home entertainment systems require more power than older electrical panels can safely provide. We specialize in bringing older Tuscaloosa homes up to code with safe, efficient wiring and high-capacity panel upgrades."
       benefits={[

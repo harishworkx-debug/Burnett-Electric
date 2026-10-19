@@ -38,13 +38,14 @@ export const Route = createFileRoute("/sitemap.xml")({
           { path: "/electrician-brookwood-al", changefreq: "weekly", priority: "0.8" },
         ];
 
-        const today = new Date().toISOString().split("T")[0];
+        // Use actual meaningful content update date instead of request-time new Date()
+        const LASTMOD_DATE = "2026-10-19";
         const xml = [
           `<?xml version="1.0" encoding="UTF-8"?>`,
           `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">`,
           ...entries.map(
             (e) =>
-              `  <url>\n    <loc>${BASE_URL}${e.path}</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>${e.changefreq}</changefreq>\n    <priority>${e.priority}</priority>\n  </url>`,
+              `  <url>\n    <loc>${BASE_URL}${e.path}</loc>\n    <lastmod>${LASTMOD_DATE}</lastmod>\n    <changefreq>${e.changefreq}</changefreq>\n    <priority>${e.priority}</priority>\n  </url>`,
           ),
           `</urlset>`,
         ].join("\n");

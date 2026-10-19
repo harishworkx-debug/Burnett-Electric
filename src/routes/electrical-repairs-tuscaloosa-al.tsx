@@ -6,9 +6,9 @@ export const Route = createFileRoute("/electrical-repairs-tuscaloosa-al")({
   head: () => ({
     meta: [
       { title: "Electrical Repairs in Tuscaloosa, AL | Burnett Electric" },
-      { name: "description", content: "Residential electrical repairs in Tuscaloosa, AL for flickering lights, breaker trips, outlets, and home wiring issues." },
-      { property: "og:title", content: "Expert Electrical Repairs in Tuscaloosa, AL | Burnett Electric" },
-      { property: "og:description", content: "Residential troubleshooting and electrical repairs in Tuscaloosa." },
+      { name: "description", content: "Fast, licensed residential electrical repairs in Tuscaloosa, AL. Safe fixes for tripping breakers, flickering lights, GFCI outlets, and wiring. Call (205) 634-8185." },
+      { property: "og:title", content: "Electrical Repairs in Tuscaloosa, AL | Burnett Electric" },
+      { property: "og:description", content: "Residential troubleshooting, breaker repair, and outlet repairs in Tuscaloosa, AL." },
       { property: "og:url", content: "https://www.burnettelectrictuscaloosa.com/electrical-repairs-tuscaloosa-al" },
       { property: "og:image", content: `https://www.burnettelectrictuscaloosa.com${IMG.repair}` },
       { name: "twitter:image", content: `https://www.burnettelectrictuscaloosa.com${IMG.repair}` },
@@ -18,44 +18,45 @@ export const Route = createFileRoute("/electrical-repairs-tuscaloosa-al")({
   component: () => (
     <ServicePageLayout
       slug="electrical-repairs-tuscaloosa-al"
-      metaTitle="Electrical Repairs in Tuscaloosa, AL | Residential Electrician"
-      metaDescription="Need fast and reliable electrical repairs in Tuscaloosa, AL? We offer expert breaker repair, outlet repair, and troubleshooting for residential electrical emergencies."
+      metaTitle="Electrical Repairs in Tuscaloosa, AL | Burnett Electric"
+      metaDescription="Need fast, code-compliant electrical repairs in Tuscaloosa, AL? We offer expert breaker replacement, outlet repair, and troubleshooting for residential homes."
       h1="Electrical Repairs in Tuscaloosa, AL"
-      eyebrow="Residential Repairs"
+      eyebrow="Residential Electrical Repairs"
       hero={IMG.repair}
-      intro="Electrical issues can be dangerous and disruptive. Burnett Electric provides Tuscaloosa homeowners with expert residential electrical services. Whether you need electrical troubleshooting, breaker repair, or a fix for flickering lights, our licensed electricians are here to help."
+      intro="Electrical issues can be disruptive and dangerous. Burnett Electric provides Tuscaloosa homeowners with licensed residential electrical repair. Whether you need precise fault troubleshooting, breaker replacement, or a fix for flickering lights, our experienced electricians are here to restore your safety."
       benefits={[
-        { title: "Accurate Troubleshooting", desc: "We don't just guess. We use advanced diagnostic tools to trace faults down to the wire in your Tuscaloosa property, ensuring the repair is done right the first time." },
-        { title: "Transparent Pricing", desc: "You'll always know the cost of the electrical repair before we start cutting or drilling. No hidden fees, ever." },
-        { title: "Fully Stocked Trucks", desc: "Our vans arrive in Tuscaloosa with the parts needed to fix 90% of common residential electrical issues on the spot, saving you time." },
-        { title: "Safety First", desc: "Every electrical repair includes a complimentary safety check of your main electrical panel to prevent future hazards." },
-        { title: "Emergency Help", desc: "We provide swift response times for residential electrical emergencies. When you lose power or smell burning plastic, we are ready to assist." },
-        { title: "Licensed Professionals", desc: "Our electricians are fully licensed, insured, and highly trained for all your residential electrical repair needs." },
+        { title: "Accurate Diagnostic Troubleshooting", desc: "We don't guess. We use precision diagnostic meters and circuit tracers to pinpoint faults behind walls, saving you unnecessary drywall repairs." },
+        { title: "Upfront Itemized Pricing", desc: "You'll always receive a clear, written quote after our diagnostic evaluation before any physical repairs begin. No surprise travel fees, ever." },
+        { title: "Fully Stocked Service Vans", desc: "Our vans arrive stocked with standard residential circuit breakers, GFCI outlets, diagnostic meters, and supplies to resolve most common issues in a single visit." },
+        { title: "Circuit & Panel Safety Check", desc: "Every repair includes a thorough diagnostic inspection of the affected circuit and breaker connection to ensure long-term home safety." },
+        { title: "Priority Emergency Response", desc: "We provide priority same-day response for dangerous residential emergencies: sparking panels, burning plastic odors, or total power loss." },
+        { title: "Licensed & Insured Electricians", desc: "Our electricians are fully licensed in Alabama, background-checked, and strictly adhere to the latest National Electrical Code (NEC) standards." },
       ]}
       problems={[
-        "Lights flickering or dimming unexpectedly in your home, especially when major appliances turn on.",
-        "Outlets that are warm to the touch, sparking, or have scorch marks around the faceplate.",
-        "Breakers that constantly trip when you use everyday appliances like microwaves or hair dryers.",
-        "Buzzing, crackling, or humming sounds coming from the electrical panel or inside the walls.",
-        "Half of the house abruptly losing power while the rest of the home remains completely unaffected.",
-        "GFCI outlets in the kitchen or bathroom that refuse to reset or trip repeatedly.",
+        "Lights flickering or dimming unexpectedly when major appliances like central AC or dryers kick on.",
+        "Outlets that are warm to the touch, sparking when plugged in, or show scorch marks around faceplates.",
+        "Circuit breakers that trip repeatedly under normal everyday household appliance use.",
+        "Buzzing, crackling, or humming sounds originating from the breaker panel or wall switches.",
+        "Half of the house abruptly losing power while other circuits remain on (phase loss).",
+        "GFCI outlets in kitchens, bathrooms, or garages that refuse to reset or trip intermittently.",
       ]}
       process={[
-        { title: "Dispatch", desc: "Call us anytime. We'll dispatch a licensed electrician to your Tuscaloosa location promptly to address your electrical repair needs." },
-        { title: "Diagnose", desc: "We perform a thorough inspection and electrical troubleshooting to accurately identify the root cause of the problem." },
-        { title: "Quote", desc: "We explain the issue in plain English and provide a firm, upfront price to fix it before any work begins." },
-        { title: "Repair", desc: "We complete the electrical repair cleanly, safely, and entirely up to Tuscaloosa building and electrical codes." },
+        { title: "Dispatch", desc: "Call (205) 634-8185. We discuss your electrical symptoms and dispatch an electrician promptly." },
+        { title: "Diagnostic Evaluation", desc: "We inspect the affected circuits with precision meters to locate the true root cause." },
+        { title: "Firm Upfront Quote", desc: "We explain the repair in plain English and provide a firm, itemized price before touching a wire." },
+        { title: "Code-Compliant Repair", desc: "We complete the repair cleanly to local code, test the entire circuit, and leave your home clean." },
       ]}
       faqs={[
-        { q: "Is a tripped breaker dangerous?", a: "A breaker trips to protect you from an overload or short circuit. If it happens frequently, it indicates a serious underlying electrical issue that needs professional troubleshooting and breaker repair." },
-        { q: "Why do my lights flicker when the AC turns on?", a: "This usually means your electrical panel is struggling with the sudden voltage drop. It could require a dedicated circuit, electrical panel repair, or a panel upgrade." },
-        { q: "Can I replace an outlet myself?", a: "While possible, DIY electrical repair carries a high risk of shock or creating fire hazards if wired incorrectly. You should always hire a qualified residential electrician in Tuscaloosa for outlet repair and installation." },
-        { q: "Do you handle electrical emergencies?", a: "Yes. Call us immediately for your electrical emergency in Tuscaloosa. Availability varies by location and technician availability, but we always strive to respond to sparking panels and power loss as quickly as possible." },
+        { q: "Is a frequently tripping breaker dangerous?", a: "Yes. A breaker trips to prevent wires from overheating and catching fire. If it trips repeatedly, it indicates a serious circuit overload, short circuit, or failing breaker that requires professional diagnostic testing." },
+        { q: "Why do my lights flicker when the air conditioner turns on?", a: "This is common during hot Alabama summers when an AC compressor draws a massive starting surge. It often signals an overloaded circuit, loose neutral connection, or the need for a dedicated circuit or panel upgrade." },
+        { q: "Can I replace a dead outlet myself?", a: "While simple on the surface, incorrect polarity, loose terminal screws, or missing ground wires create serious shock and fire hazards. Having a licensed residential electrician inspect and replace outlets ensures code compliance." },
+        { q: "How quickly do you respond to electrical emergencies in Tuscaloosa?", a: "For hazardous emergencies (smoking panels, sparks, burning smells, or sudden loss of essential power), we prioritize same-day emergency dispatch. Non-urgent repairs are scheduled within 24–48 hours." },
       ]}
       related={[
-        { to: "/wiring-upgrades-tuscaloosa-al", label: "Wiring Upgrades" },
-        { to: "/panel-upgrades-tuscaloosa-al", label: "Panel Upgrades" },
-        { to: "/outdoor-wiring-tuscaloosa-al", label: "Outdoor Wiring" },
+        { to: "/panel-upgrades-tuscaloosa-al", label: "Electrical Panel Upgrades" },
+        { to: "/wiring-upgrades-tuscaloosa-al", label: "Wiring & Rewiring Upgrades" },
+        { to: "/emergency-electrician-tuscaloosa-al", label: "Emergency Electrical Services" },
+        { to: "/outdoor-wiring-tuscaloosa-al", label: "Outdoor Wiring & Lighting" },
       ]}
     >
       <h2>Electrical Repair Services We Handle</h2>

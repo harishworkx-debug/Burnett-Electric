@@ -12,9 +12,9 @@ import { BUSINESS, IMG } from "@/lib/business";
 export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
-      { title: "Electrical Services in Tuscaloosa | Burnett Electric" },
-      { name: "description", content: "Residential electrical repairs, wiring upgrades, lighting, and home installations in Tuscaloosa, AL. Call (205) 634-8185 to schedule an expert electrician." },
-      { property: "og:title", content: "Electrical Services in Tuscaloosa | Burnett Electric" },
+      { title: "Electrical Services in Tuscaloosa, AL | Burnett Electric" },
+      { name: "description", content: "Comprehensive residential electrical repairs, wiring upgrades, lighting, and home installations in Tuscaloosa, AL. Call (205) 634-8185." },
+      { property: "og:title", content: "Electrical Services in Tuscaloosa, AL | Burnett Electric" },
       { property: "og:description", content: "Residential repairs, wiring upgrades, lighting, and outdoor electrical services." },
       { property: "og:url", content: "https://www.burnettelectrictuscaloosa.com/services" },
       { property: "og:image", content: `https://www.burnettelectrictuscaloosa.com${IMG.electrician}` },

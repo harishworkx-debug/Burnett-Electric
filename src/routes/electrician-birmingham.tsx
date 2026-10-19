@@ -6,9 +6,9 @@ export const Route = createFileRoute("/electrician-birmingham")({
   head: () => ({
     meta: [
       { title: "Residential Electrician in Birmingham, AL | Burnett Electric" },
-      { name: "description", content: "Residential electrical services for homeowners in Birmingham, AL, including repairs, panel upgrades, and wiring." },
-      { property: "og:title", content: "Electrician in Birmingham, AL | Burnett Electric" },
-      { property: "og:description", content: "Residential electrical services for homeowners in Birmingham." },
+      { name: "description", content: "Specialized residential electrical contractor serving Greater Birmingham, AL. Major panel upgrades, historic home rewires & standby generators by appointment." },
+      { property: "og:title", content: "Residential Electrician in Birmingham, AL | Burnett Electric" },
+      { property: "og:description", content: "Specialized residential electrical contractor serving Birmingham, AL for major rewires, panels, and generators." },
       { property: "og:url", content: "https://www.burnettelectrictuscaloosa.com/electrician-birmingham" },
       { property: "og:image", content: `https://www.burnettelectrictuscaloosa.com${IMG.hero}` },
       { name: "twitter:image", content: `https://www.burnettelectrictuscaloosa.com${IMG.hero}` },
@@ -18,48 +18,51 @@ export const Route = createFileRoute("/electrician-birmingham")({
   component: () => (
     <LocationPageLayout
       slug="electrician-birmingham"
-      metaDescription="Residential electrical services for homeowners in Birmingham, AL."
-      h1="Expert Electrician in Birmingham, AL"
+      metaDescription="Specialized residential electrical contractor serving Greater Birmingham, AL for major projects."
+      h1="Residential Electrician in Birmingham, AL"
       city="Birmingham"
       hero={IMG.hero}
-      intro="This site provides Birmingham homeowners with expert residential electrical services."
-      landmarks={["Downtown Birmingham", "Hoover", "Vestavia Hills", "Homewood", "Mountain Brook", "UAB Campus"]}
+      intro="Burnett Electric delivers specialized residential electrical services to homeowners across Greater Birmingham. We focus on major scheduled projects—including historic plaster rewiring, 200A/400A panel upgrades, and standby generator installations."
+      landmarks={["Downtown Birmingham", "Hoover", "Vestavia Hills", "Homewood", "Mountain Brook", "Highland Park", "Forest Park"]}
       benefits={[
-        { title: "Major Residential Projects", desc: "We handle large-scale home wiring, panel upgrades, and comprehensive electrical troubleshooting for homes across the Birmingham metro." },
-        { title: "Historic Home Expertise", desc: "We specialize in safely updating outdated electrical systems in classic homes without damaging historic architecture." },
-        { title: "Backup Power Solutions", desc: "We install whole-home generators to keep your Birmingham property running during severe storm outages." },
-        { title: "Smart Home Integration", desc: "Expert installation of EV chargers, smart lighting, and modern electrical conveniences." },
-        { title: "Safety Inspections", desc: "Thorough electrical safety checks for older homes or real estate transactions." },
-        { title: "Reliable Dispatch", desc: "We regularly travel the I-20/59 corridor to deliver our top-rated electrical services to Birmingham homeowners." },
+        { title: "Major Residential Projects", desc: "Specializing in large-scale residential rewiring, 200A/400A panel upgrades, and comprehensive electrical modernizations." },
+        { title: "Historic Plaster Expertise", desc: "Decades of experience updating outdated electrical systems in classic historic homes without destroying historic plaster architecture." },
+        { title: "Standby Power Solutions", desc: "Turnkey installation of whole-home standby generators to protect Birmingham homes during severe storm power outages." },
+        { title: "Scheduled Appointments", desc: "We travel the I-20/59 corridor for pre-scheduled, major residential installations with clear upfront pricing." },
+        { title: "Full Code Compliance", desc: "Licensed in Alabama and strictly compliant with local municipal permitting and National Electrical Code standards." },
+        { title: "EV Charger Installations", desc: "Dedicated high-amp 240V charging station installations for garages and residential carports across the metro area." },
       ]}
       faqs={[
-        { q: "Do you travel from Tuscaloosa to Birmingham for residential service?", a: "Yes, we regularly dispatch our licensed electricians to the Greater Birmingham area for major repairs, rewires, and panel upgrades." },
-        { q: "Are your electricians licensed to work in Birmingham?", a: "Absolutely. Our electricians are fully licensed, insured, and highly trained to meet all local building codes across Alabama, including Birmingham and its surrounding municipalities." },
-        { q: "Can you upgrade the electrical panel in my historic home?", a: "Yes, we specialize in upgrading electrical panels and rewiring older homes in neighborhoods like Forest Park and Highland Park to safely handle modern electrical demands." },
-        { q: "Do you install whole-home generators?", a: "Yes. With Birmingham's unpredictable severe weather, we frequently install and maintain residential backup generators to keep your home safe and powered." },
+        { q: "What types of electrical work do you take in Birmingham?", a: "Because we dispatch from West Alabama, our Birmingham services are specialized for major scheduled residential projects: complete home rewiring, 200A/400A service panel replacements, and whole-home standby generator installations." },
+        { q: "Are your electricians licensed to work in Birmingham municipalities?", a: "Yes. Burnett Electric is fully licensed, insured, and certified to meet all building and electrical code requirements across Alabama, including Birmingham, Mountain Brook, Homewood, and Hoover." },
+        { q: "Can you upgrade the electrical panel in my historic Birmingham home?", a: "Yes. We specialize in upgrading fuse boxes and outdated panels in neighborhoods like Forest Park and Highland Park to safely accommodate modern electrical loads without damaging original architectural details." },
+        { q: "Do you install whole-home backup generators?", a: "Yes. We install and service Generac whole-home standby generators with automatic transfer switches to keep your power on during severe weather." },
       ]}
     >
-      <h2>Expert Electrical Services for the Birmingham Metro Area</h2>
+      <h2>Specialized Residential Electrical Services for Greater Birmingham</h2>
       <p>
-        While Burnett Electric is proudly based in the Tuscaloosa area, our reputation for honest pricing, meticulous safety standards, and unmatched electrical troubleshooting frequently brings us down the I-20/59 corridor to serve the <strong>Greater Birmingham Metro Area</strong>. From the bustling neighborhoods around <strong>UAB</strong> to the scenic, winding roads of <strong>Over the Mountain</strong> communities, we are committed to providing Birmingham homeowners with premium residential electrical solutions.
+        While Burnett Electric is headquartered in West Alabama, our reputation for honest pricing, meticulous code compliance, and careful craftsmanship frequently brings us up the I-20/59 corridor to serve the <strong>Greater Birmingham Metro Area</strong>.
+      </p>
+      <p>
+        <strong>Service Scope Notice:</strong> To ensure high standards and reliability, our Birmingham availability is focused on <em>major scheduled residential projects</em>—including comprehensive <a href="/panel-upgrades-tuscaloosa-al">electrical panel upgrades</a>, <a href="/wiring-upgrades-tuscaloosa-al">historic home rewiring</a>, and <a href="/generator-installation-tuscaloosa-al">whole-home standby generator installations</a>.
       </p>
 
-      <h3>Specializing in Birmingham's Historic Homes</h3>
+      <h3>Historic Home Rewiring in Highland Park & Forest Park</h3>
       <p>
-        Birmingham boasts some of the most beautiful historic neighborhoods in the state, including <strong>Highland Park</strong>, <strong>Forest Park</strong>, and <strong>Southside</strong>. However, the electrical systems hiding behind those plaster walls—such as outdated knob-and-tube wiring, old fuse boxes, and ungrounded circuits—were never designed for modern electrical loads.
+        Birmingham is celebrated for its historic architecture, from Victorian and Craftsman homes in <strong>Highland Park</strong> to stately properties in <strong>Forest Park</strong> and <strong>Southside</strong>. However, the original electrical systems behind those plaster walls—such as knob-and-tube wiring, ungrounded receptacles, and 60-amp fuse boxes—pose genuine fire risks under modern loads.
       </p>
       <p>
-        Our electricians have extensive experience safely navigating the challenges of historic home renovations. We perform non-invasive rewires, upgrade electrical panels, and ensure your classic home meets modern safety codes without compromising its historic charm.
-      </p>
-
-      <h3>Serving the "Over the Mountain" Communities</h3>
-      <p>
-        We frequently dispatch our crews to communities south of Red Mountain, including <strong>Homewood</strong>, <strong>Mountain Brook</strong>, <strong>Vestavia Hills</strong>, and <strong>Hoover</strong>. Whether you need a Level 2 EV charger installed in your garage, intricate landscape lighting for your backyard, or a smart home integration upgrade, we deliver the high-end, detail-oriented work these neighborhoods expect.
+        Our electricians specialize in non-invasive copper rewiring techniques. We route modern grounded Romex cables, install Arc-Fault Circuit Interrupters (AFCI), and preserve your historic woodwork and plaster.
       </p>
 
-      <h3>Storm Preparedness and Generators</h3>
+      <h3>Serving Homewood, Mountain Brook & Over the Mountain</h3>
       <p>
-        Severe thunderstorms and occasional tornadoes are a reality in the Birmingham valley. Power outages can last for hours or even days. We help Birmingham homeowners prepare for the worst by installing reliable, whole-home standby generators and whole-home surge protectors. When the grid goes down, we make sure your family stays comfortable and secure.
+        We regularly complete scheduled electrical modernizations in Over the Mountain communities—including <strong>Homewood</strong>, <strong>Mountain Brook</strong>, <strong>Vestavia Hills</strong>, and <strong>Hoover</strong>. Whether you need a 400-amp service heavy-up for a luxury renovation, dedicated <a href="/ev-charger-installation-tuscaloosa-al">Level 2 EV charger wiring</a>, or sophisticated <a href="/outdoor-wiring-tuscaloosa-al">landscape and security lighting</a>, we deliver the precision work Birmingham homeowners expect.
+      </p>
+
+      <h3>Standby Generators for Storm Resilience</h3>
+      <p>
+        Severe Alabama weather frequently knocks out power across the Birmingham valley. We help homeowners prepare by installing turnkey standby generator systems with automatic transfer switches, ensuring uninterrupted power for HVAC, refrigeration, and home security.
       </p>
     </LocationPageLayout>
   )

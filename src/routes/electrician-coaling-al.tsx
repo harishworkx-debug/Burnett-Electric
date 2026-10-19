@@ -6,9 +6,9 @@ export const Route = createFileRoute("/electrician-coaling-al")({
   head: () => ({
     meta: [
       { title: "Electrician in Coaling, AL | Burnett Electric" },
-      { name: "description", content: "residential electrical services in Coaling, AL for repairs, wiring upgrades, and outdoor electrical needs." },
+      { name: "description", content: "Licensed residential electrician serving Coaling, AL. Safe electrical repairs, panel replacements, wiring & surge protection. Call (205) 634-8185." },
       { property: "og:title", content: "Electrician in Coaling, AL | Burnett Electric" },
-      { property: "og:description", content: "Residential electrical services for homeowners in Coaling, Alabama." },
+      { property: "og:description", content: "Licensed residential electrician serving homeowners in Coaling, Alabama." },
       { property: "og:url", content: "https://www.burnettelectrictuscaloosa.com/electrician-coaling-al" },
       { property: "og:image", content: `https://www.burnettelectrictuscaloosa.com${IMG.hero}` },
       { name: "twitter:image", content: `https://www.burnettelectrictuscaloosa.com${IMG.hero}` },
@@ -18,24 +18,34 @@ export const Route = createFileRoute("/electrician-coaling-al")({
   component: () => (
     <LocationPageLayout
       slug="electrician-coaling-al"
-      metaDescription="residential electrical services in Coaling, AL."
-      h1="Residential Electrical Services in Coaling, AL"
+      metaDescription="Licensed residential electrician serving homeowners in Coaling, AL."
+      h1="Residential Electrician in Coaling, AL"
       city="Coaling"
       hero={IMG.hero}
-      intro="This site provides Coaling homeowners with expert residential electrical services."
-      landmarks={["Town of Coaling", "Fleetwood", "Woodland Hills"]}
+      intro="Burnett Electric provides Coaling homeowners with reliable, licensed residential electrical services. From panel modernizations to urgent troubleshooting, our local team is dedicated to your safety."
+      landmarks={["Town of Coaling", "Fleetwood", "Woodland Hills", "US Highway 11"]}
       benefits={[
-        { title: "Residential Service", desc: "schedule an expert residential electrician for Coaling home electrical needs." },
-        { title: "Older-Home Guidance", desc: "Review common wiring questions for Coaling's established neighborhoods." },
-        { title: "Storm-Ready", desc: "Post-storm repairs, surge protection, and generator installs." },
-        { title: "Home Wiring", desc: "Explore rewiring and electrical upgrades for existing residential properties." },
-        { title: "Homeowner Support", desc: "Get information before selecting an expert electrician." },
+        { title: "Prompt Local Response", desc: "Fast dispatch across Coaling and eastern Tuscaloosa County for electrical issues." },
+        { title: "Panel Upgrades", desc: "Upgrading older breaker panels to 200-amp capacity to meet modern household demands safely." },
+        { title: "Whole-Home Surge Protection", desc: "Defending delicate home electronics from severe lightning surges and grid spikes." },
+        { title: "Residential Troubleshooting", desc: "Accurate diagnostic fault testing for dead outlets, tripping breakers, and buzzing switches." },
+        { title: "100% Upfront Pricing", desc: "Written, itemized estimates before work begins. No surprises or hidden trip fees." },
+        { title: "Licensed & Insured", desc: "State-certified electrical contractor strictly adhering to National Electrical Code standards." },
       ]}
       faqs={[
-        { q: "How should I verify an expert electrician in Coaling?", a: "Yes, our electricians are fully licensed, insured, and highly trained for all residential electrical work." },
-        { q: "How can I schedule an electrician in Coaling?", a: "Call us today to schedule an expert residential electrician." },
-        { q: "How quickly can an electrician help?", a: "Availability varies by location, technician availability, and demand, but we always strive to respond as quickly as possible." },
+        { q: "Are your electricians licensed to work in Coaling?", a: "Yes. Burnett Electric is fully licensed, insured, and certified for all residential electrical work in Tuscaloosa County, including the Town of Coaling." },
+        { q: "Do you handle emergency electrical repairs in Coaling?", a: "Yes. For burning odors, smoking panels, or sudden loss of essential power, we prioritize same-day emergency dispatch." },
+        { q: "Can you upgrade the main breaker box in my Coaling home?", a: "Yes. We specialize in 200-amp service heavy-ups, replacing outdated fuse boxes and overcrowded panels with modern Square D equipment." },
+        { q: "How do I book an electrical inspection in Coaling?", a: "Call us at (205) 634-8185 or submit an online request for clear upfront pricing and prompt scheduling." },
       ]}
-    />
+    >
+      <h2>Safe, Dependable Electrical Services in Coaling, AL</h2>
+      <p>
+        Situated in eastern Tuscaloosa County near Fleetwood and Woodland Hills, Coaling features a blend of established family homes and quiet country settings. Modern appliances, HVAC demands, and home workshops often strain older electrical panels in the area.
+      </p>
+      <p>
+        Burnett Electric delivers expert <a href="/panel-upgrades-tuscaloosa-al">panel replacements</a>, <a href="/electrical-repairs-tuscaloosa-al">breaker diagnostics</a>, and <a href="/generator-installation-tuscaloosa-al">standby generator installations</a> to Coaling residents, backed by our 1-year workmanship warranty.
+      </p>
+    </LocationPageLayout>
   ),
 });

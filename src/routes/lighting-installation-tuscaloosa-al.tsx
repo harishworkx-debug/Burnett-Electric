@@ -5,10 +5,10 @@ import { IMG } from "@/lib/business";
 export const Route = createFileRoute("/lighting-installation-tuscaloosa-al")({
   head: () => ({
     meta: [
-      { title: "Lighting Installation & Upgrades in Tuscaloosa, AL | Burnett Electric" },
-      { name: "description", content: "Expert lighting installation in Tuscaloosa, AL. From recessed lighting to outdoor security lights, we brighten up your home and reduce energy costs." },
-      { property: "og:title", content: "Lighting Installation in Tuscaloosa, AL | Burnett Electric" },
-      { property: "og:description", content: "Professional indoor and outdoor lighting installations in Tuscaloosa." },
+      { title: "Lighting & Ceiling Fan Installation in Tuscaloosa, AL | Burnett Electric" },
+      { name: "description", content: "Professional recessed LED lighting, fixtures, and ceiling fan installation in Tuscaloosa, AL. Safe wiring and upfront pricing. Call (205) 634-8185." },
+      { property: "og:title", content: "Lighting & Ceiling Fan Installation in Tuscaloosa, AL | Burnett Electric" },
+      { property: "og:description", content: "Professional indoor lighting, LED retrofits, and ceiling fan installations in Tuscaloosa, AL." },
       { property: "og:url", content: "https://www.burnettelectrictuscaloosa.com/lighting-installation-tuscaloosa-al" },
       { property: "og:image", content: `https://www.burnettelectrictuscaloosa.com${IMG.bulb}` },
       { name: "twitter:image", content: `https://www.burnettelectrictuscaloosa.com${IMG.bulb}` },
@@ -18,10 +18,10 @@ export const Route = createFileRoute("/lighting-installation-tuscaloosa-al")({
   component: () => (
     <ServicePageLayout
       slug="lighting-installation-tuscaloosa-al"
-      metaTitle="Lighting Installation in Tuscaloosa, AL"
-      metaDescription="Expert lighting installation and LED upgrades in Tuscaloosa, AL."
-      h1="Lighting Installation in Tuscaloosa, AL"
-      eyebrow="Brighten Your Space"
+      metaTitle="Lighting & Ceiling Fan Installation in Tuscaloosa, AL | Burnett Electric"
+      metaDescription="Expert lighting installation, recessed LED cans, and ceiling fan wiring in Tuscaloosa, AL."
+      h1="Lighting & Ceiling Fan Installation in Tuscaloosa, AL"
+      eyebrow="Brighten Your Home"
       hero={IMG.bulb}
       intro="The right lighting can transform your home. This site provides Tuscaloosa homeowners with expert residential electrical services for residential lighting design, installation, and LED upgrades."
       benefits={[

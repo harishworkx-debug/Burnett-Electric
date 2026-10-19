@@ -11,10 +11,10 @@ import { BUSINESS, IMG } from "@/lib/business";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact Burnett Electric" },
-      { name: "description", content: "Contact our expert residential electrical service team in Tuscaloosa." },
-      { property: "og:title", content: "Contact Burnett Electric" },
-      { property: "og:description", content: "Request residential electrical service in Tuscaloosa." },
+      { title: "Contact Burnett Electric | Electrician in Tuscaloosa, AL" },
+      { name: "description", content: "Contact Burnett Electric for licensed residential electrical repairs, panel upgrades, and generator installations in Tuscaloosa, AL. Call (205) 634-8185." },
+      { property: "og:title", content: "Contact Burnett Electric | Electrician in Tuscaloosa, AL" },
+      { property: "og:description", content: "Contact Burnett Electric for licensed residential electrical service across Tuscaloosa and West Alabama." },
       { property: "og:url", content: "https://www.burnettelectrictuscaloosa.com/contact" },
       { property: "og:image", content: `https://www.burnettelectrictuscaloosa.com${IMG.worker}` },
       { name: "twitter:image", content: `https://www.burnettelectrictuscaloosa.com${IMG.worker}` },
@@ -37,8 +37,8 @@ function ContactPage() {
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-white">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} className="max-w-3xl">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full glass-dark text-primary text-xs font-semibold uppercase tracking-widest mb-5">Contact Us</div>
-            <h1 className="font-display text-5xl md:text-6xl font-bold leading-[1.05]">Contact an <span className="text-gradient-primary">expert electrician</span></h1>
-            <p className="mt-5 text-lg text-white/80">Call or send a request to schedule an expert residential electrician in Tuscaloosa, Northport, or Birmingham.</p>
+            <h1 className="font-display text-5xl md:text-6xl font-bold leading-[1.05]">Contact <span className="text-gradient-primary">Burnett Electric</span></h1>
+            <p className="mt-5 text-lg text-white/80">Call or send a request to schedule a licensed residential electrician in Tuscaloosa, Northport, and West Alabama.</p>
           </motion.div>
         </div>
       </section>
@@ -91,11 +91,12 @@ function ContactPage() {
                   <span className="block font-medium mt-1">Email: <a href={`mailto:${BUSINESS.email}`} className="font-normal text-primary hover:underline" itemProp="email">{BUSINESS.email}</a></span>
                 </div>
                 <div className="mt-5">
-                  <strong className="block text-secondary mb-1">Serving:</strong>
-                  <span className="block">Tuscaloosa, AL</span>
-                  <span className="block">Northport, AL</span>
-                  <span className="block">Buhl, AL</span>
-                  <span className="block">Birmingham, AL</span>
+                  <strong className="block text-secondary mb-1">Service Coverage:</strong>
+                  <span className="block">Tuscaloosa & Northport</span>
+                  <span className="block">Buhl & Coker</span>
+                  <span className="block">Cottondale, Vance & Coaling</span>
+                  <span className="block">Brookwood & Moundville</span>
+                  <span className="block">Birmingham (Major Scheduled Projects)</span>
                 </div>
               </div>
             </div>

@@ -5,10 +5,10 @@ import { IMG } from "@/lib/business";
 export const Route = createFileRoute("/emergency-electrician-tuscaloosa-al")({
   head: () => ({
     meta: [
-      { title: "Emergency Residential Electrical Services in Tuscaloosa, AL | Burnett Electric" },
-      { name: "description", content: "Schedule a residential electrician in Tuscaloosa for outages, sparking outlets, and electrical hazards." },
-      { property: "og:title", content: "Emergency Residential Electrical Services in Tuscaloosa, AL | Burnett Electric" },
-      { property: "og:description", content: "Residential emergency electrical services in Tuscaloosa." },
+      { title: "Emergency Electrician in Tuscaloosa, AL | Burnett Electric" },
+      { name: "description", content: "Priority emergency electrician in Tuscaloosa, AL. Fast response for sparking panels, burning odors, and hazardous power loss. Call (205) 634-8185." },
+      { property: "og:title", content: "Emergency Electrician in Tuscaloosa, AL | Burnett Electric" },
+      { property: "og:description", content: "Priority residential emergency electrical repairs in Tuscaloosa, AL." },
       { property: "og:url", content: "https://www.burnettelectrictuscaloosa.com/emergency-electrician-tuscaloosa-al" },
       { property: "og:image", content: `https://www.burnettelectrictuscaloosa.com${IMG.repair}` },
       { name: "twitter:image", content: `https://www.burnettelectrictuscaloosa.com${IMG.repair}` },
@@ -18,10 +18,10 @@ export const Route = createFileRoute("/emergency-electrician-tuscaloosa-al")({
   component: () => (
     <ServicePageLayout
       slug="emergency-electrician-tuscaloosa-al"
-      metaTitle="Emergency Residential Electrical Services in Tuscaloosa, AL"
-      metaDescription="Residential emergency electrical services in Tuscaloosa, AL."
-      h1="Emergency Residential Electrical Services in Tuscaloosa, AL"
-      eyebrow="Fast Response When You Need It"
+      metaTitle="Emergency Electrician in Tuscaloosa, AL | Burnett Electric"
+      metaDescription="Priority residential emergency electrical repairs in Tuscaloosa, AL."
+      h1="Emergency Electrician in Tuscaloosa, AL"
+      eyebrow="Priority Emergency Response"
       hero={IMG.repair}
       intro="For a sparking panel, sudden power loss, or storm damage, Call us today to schedule an expert residential electrician."
       benefits={[

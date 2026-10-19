@@ -48,6 +48,20 @@ export default {
   async fetch(request: Request, env: unknown, ctx: unknown) {
     try {
       const url = new URL(request.url);
+
+      // Enforce preferred canonical host (non-www to www)
+      if (url.hostname === "burnettelectrictuscaloosa.com") {
+        const canonicalUrl = `https://www.burnettelectrictuscaloosa.com${url.pathname}${url.search}`;
+        return new Response(null, {
+          status: 301,
+          headers: {
+            Location: canonicalUrl,
+            "Cache-Control": "public, max-age=31536000, immutable",
+          },
+        });
+      }
+
+      // Enforce trailing slash removal
       if (url.pathname.length > 1 && url.pathname.endsWith("/")) {
         const cleanUrl = url.origin + url.pathname.slice(0, -1) + url.search;
         return new Response(null, {
