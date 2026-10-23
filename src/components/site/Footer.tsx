@@ -77,12 +77,15 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-14 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/50">
+        <div className="mt-14 pt-6 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-white/60">
           <div>© {new Date().getFullYear()} Burnett Electric. All rights reserved.</div>
-          <div className="flex gap-5">
-            <a href="#" className="hover:text-primary">Privacy</a>
-            <a href="#" className="hover:text-primary">Terms</a>
-            <a href="#" className="hover:text-primary">Sitemap</a>
+          <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2">
+            <Link to="/" className="hover:text-primary">Home</Link>
+            <Link to="/about" className="hover:text-primary">About Us</Link>
+            <Link to="/services" className="hover:text-primary">Services</Link>
+            <Link to="/reviews" className="hover:text-primary">Reviews</Link>
+            <Link to="/contact" className="hover:text-primary">Contact</Link>
+            <a href="/sitemap.xml" className="hover:text-primary">XML Sitemap</a>
           </div>
         </div>
         

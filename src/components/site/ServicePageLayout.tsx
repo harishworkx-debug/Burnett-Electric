@@ -173,6 +173,26 @@ export function ServicePageLayout({
               <Link key={r.to} to={r.to} className="px-5 py-2.5 rounded-full bg-card border border-border hover:border-primary hover:text-primary shadow-card font-medium text-secondary transition">{r.label}</Link>
             ))}
           </div>
+
+          <div className="mt-12 pt-8 border-t border-border/60">
+            <div className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-4">Areas We Serve Across Alabama</div>
+            <div className="flex flex-wrap justify-center gap-2">
+              {[
+                { to: "/electrician-northport", label: "Northport, AL" },
+                { to: "/electrician-birmingham", label: "Birmingham, AL" },
+                { to: "/electrician-buhl", label: "Buhl, AL" },
+                { to: "/electrician-cottondale-al", label: "Cottondale, AL" },
+                { to: "/electrician-vance-al", label: "Vance, AL" },
+                { to: "/electrician-coaling-al", label: "Coaling, AL" },
+                { to: "/electrician-moundville-al", label: "Moundville, AL" },
+                { to: "/electrician-brookwood-al", label: "Brookwood, AL" },
+              ].map((l) => (
+                <Link key={l.to} to={l.to as any} className="px-4 py-1.5 rounded-full bg-background border border-border/70 hover:border-primary text-sm text-secondary hover:text-primary transition">
+                  {l.label}
+                </Link>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 

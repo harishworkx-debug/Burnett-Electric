@@ -143,6 +143,49 @@ export function LocationPageLayout({
         </div>
       </section>
 
+      <section className="py-16 bg-surface border-t border-border">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
+          <SectionHeading eyebrow="Comprehensive Services" title={`Electrical Services Available in ${city}, AL`} />
+          <div className="mt-8 flex flex-wrap justify-center gap-3">
+            {[
+              { to: "/electrical-repairs-tuscaloosa-al", label: "Electrical Repairs" },
+              { to: "/wiring-upgrades-tuscaloosa-al", label: "Wiring Upgrades" },
+              { to: "/panel-upgrades-tuscaloosa-al", label: "Panel Upgrades" },
+              { to: "/generator-installation-tuscaloosa-al", label: "Generator Installation" },
+              { to: "/lighting-installation-tuscaloosa-al", label: "Lighting & Fans" },
+              { to: "/ev-charger-installation-tuscaloosa-al", label: "EV Charger Installation" },
+              { to: "/emergency-electrician-tuscaloosa-al", label: "Emergency Electrician" },
+              { to: "/smart-home-installation-tuscaloosa-al", label: "Smart Home Setup" },
+              { to: "/outdoor-wiring-tuscaloosa-al", label: "Outdoor Wiring" },
+            ].map((s) => (
+              <Link key={s.to} to={s.to as any} className="px-5 py-2.5 rounded-full bg-card border border-border hover:border-primary hover:text-primary text-secondary font-medium shadow-card transition">
+                {s.label}
+              </Link>
+            ))}
+          </div>
+
+          <div className="mt-12 pt-8 border-t border-border/60">
+            <div className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-4">Nearby Areas We Also Serve</div>
+            <div className="flex flex-wrap justify-center gap-2">
+              {[
+                { to: "/electrician-northport", label: "Northport, AL" },
+                { to: "/electrician-birmingham", label: "Birmingham, AL" },
+                { to: "/electrician-buhl", label: "Buhl, AL" },
+                { to: "/electrician-cottondale-al", label: "Cottondale, AL" },
+                { to: "/electrician-vance-al", label: "Vance, AL" },
+                { to: "/electrician-coaling-al", label: "Coaling, AL" },
+                { to: "/electrician-moundville-al", label: "Moundville, AL" },
+                { to: "/electrician-brookwood-al", label: "Brookwood, AL" },
+              ].filter(loc => !loc.label.toLowerCase().includes(city.toLowerCase())).map((l) => (
+                <Link key={l.to} to={l.to as any} className="px-4 py-1.5 rounded-full bg-background border border-border/70 hover:border-primary text-sm text-secondary hover:text-primary transition">
+                  {l.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       <CTASection title={`Need an Electrician in ${city}, AL?`} />
       <Footer />
     </div>
