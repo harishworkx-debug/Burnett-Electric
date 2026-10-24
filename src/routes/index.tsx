@@ -10,7 +10,7 @@ import { FloatingCTA } from "@/components/site/FloatingCTA";
 import { SectionHeading } from "@/components/site/SectionHeading";
 import { FAQ } from "@/components/site/FAQ";
 import { CTASection } from "@/components/site/CTASection";
-import { JsonLd, localBusinessSchema, organizationSchema } from "@/components/site/JsonLd";
+import { JsonLd, localBusinessSchema, organizationSchema, siteNavigationSchema } from "@/components/site/JsonLd";
 import { BUSINESS, IMG } from "@/lib/business";
 
 export const Route = createFileRoute("/")({
@@ -32,6 +32,7 @@ export const Route = createFileRoute("/")({
   }),
   component: HomePage,
 });
+
 
 const stats = [
   { value: "4.9 ★", label: "128+ Google Reviews" },
@@ -119,6 +120,7 @@ function HomePage() {
       <JsonLd data={[
         localBusinessSchema,
         organizationSchema,
+        siteNavigationSchema,
         { "@context": "https://schema.org", "@type": "WebSite", "name": "Burnett Electric", "url": "https://www.burnettelectrictuscaloosa.com/" },
         { "@context": "https://schema.org", "@type": "WebPage", "name": "Electrician in Tuscaloosa, AL", "url": "https://www.burnettelectrictuscaloosa.com/" },
         {

@@ -29,7 +29,9 @@ import { Route as OutdoorWiringTuscaloosaAlRouteImport } from './routes/outdoor-
 import { Route as PanelUpgradesTuscaloosaAlRouteImport } from './routes/panel-upgrades-tuscaloosa-al'
 import { Route as ReviewsRouteImport } from './routes/reviews'
 import { Route as RobotsDottxtRouteImport } from './routes/robots[.]txt'
+import { Route as RssDotxmlRouteImport } from './routes/rss[.]xml'
 import { Route as ServicesRouteImport } from './routes/services'
+import { Route as SitemapRouteImport } from './routes/sitemap'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as SmartHomeInstallationTuscaloosaAlRouteImport } from './routes/smart-home-installation-tuscaloosa-al'
 import { Route as WiringUpgradesTuscaloosaAlRouteImport } from './routes/wiring-upgrades-tuscaloosa-al'
@@ -141,9 +143,19 @@ const RobotsDottxtRoute = RobotsDottxtRouteImport.update({
   path: '/robots.txt',
   getParentRoute: () => rootRouteImport,
 } as any)
+const RssDotxmlRoute = RssDotxmlRouteImport.update({
+  id: '/rss.xml',
+  path: '/rss.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ServicesRoute = ServicesRouteImport.update({
   id: '/services',
   path: '/services',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SitemapRoute = SitemapRouteImport.update({
+  id: '/sitemap',
+  path: '/sitemap',
   getParentRoute: () => rootRouteImport,
 } as any)
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
@@ -185,7 +197,9 @@ export interface FileRoutesByFullPath {
   '/panel-upgrades-tuscaloosa-al': typeof PanelUpgradesTuscaloosaAlRoute
   '/reviews': typeof ReviewsRoute
   '/robots.txt': typeof RobotsDottxtRoute
+  '/rss.xml': typeof RssDotxmlRoute
   '/services': typeof ServicesRoute
+  '/sitemap': typeof SitemapRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/smart-home-installation-tuscaloosa-al': typeof SmartHomeInstallationTuscaloosaAlRoute
   '/wiring-upgrades-tuscaloosa-al': typeof WiringUpgradesTuscaloosaAlRoute
@@ -211,7 +225,9 @@ export interface FileRoutesByTo {
   '/panel-upgrades-tuscaloosa-al': typeof PanelUpgradesTuscaloosaAlRoute
   '/reviews': typeof ReviewsRoute
   '/robots.txt': typeof RobotsDottxtRoute
+  '/rss.xml': typeof RssDotxmlRoute
   '/services': typeof ServicesRoute
+  '/sitemap': typeof SitemapRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/smart-home-installation-tuscaloosa-al': typeof SmartHomeInstallationTuscaloosaAlRoute
   '/wiring-upgrades-tuscaloosa-al': typeof WiringUpgradesTuscaloosaAlRoute
@@ -238,7 +254,9 @@ export interface FileRoutesById {
   '/panel-upgrades-tuscaloosa-al': typeof PanelUpgradesTuscaloosaAlRoute
   '/reviews': typeof ReviewsRoute
   '/robots.txt': typeof RobotsDottxtRoute
+  '/rss.xml': typeof RssDotxmlRoute
   '/services': typeof ServicesRoute
+  '/sitemap': typeof SitemapRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/smart-home-installation-tuscaloosa-al': typeof SmartHomeInstallationTuscaloosaAlRoute
   '/wiring-upgrades-tuscaloosa-al': typeof WiringUpgradesTuscaloosaAlRoute
@@ -266,7 +284,9 @@ export interface FileRouteTypes {
     | '/panel-upgrades-tuscaloosa-al'
     | '/reviews'
     | '/robots.txt'
+    | '/rss.xml'
     | '/services'
+    | '/sitemap'
     | '/sitemap.xml'
     | '/smart-home-installation-tuscaloosa-al'
     | '/wiring-upgrades-tuscaloosa-al'
@@ -292,7 +312,9 @@ export interface FileRouteTypes {
     | '/panel-upgrades-tuscaloosa-al'
     | '/reviews'
     | '/robots.txt'
+    | '/rss.xml'
     | '/services'
+    | '/sitemap'
     | '/sitemap.xml'
     | '/smart-home-installation-tuscaloosa-al'
     | '/wiring-upgrades-tuscaloosa-al'
@@ -318,7 +340,9 @@ export interface FileRouteTypes {
     | '/panel-upgrades-tuscaloosa-al'
     | '/reviews'
     | '/robots.txt'
+    | '/rss.xml'
     | '/services'
+    | '/sitemap'
     | '/sitemap.xml'
     | '/smart-home-installation-tuscaloosa-al'
     | '/wiring-upgrades-tuscaloosa-al'
@@ -345,7 +369,9 @@ export interface RootRouteChildren {
   PanelUpgradesTuscaloosaAlRoute: typeof PanelUpgradesTuscaloosaAlRoute
   ReviewsRoute: typeof ReviewsRoute
   RobotsDottxtRoute: typeof RobotsDottxtRoute
+  RssDotxmlRoute: typeof RssDotxmlRoute
   ServicesRoute: typeof ServicesRoute
+  SitemapRoute: typeof SitemapRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   SmartHomeInstallationTuscaloosaAlRoute: typeof SmartHomeInstallationTuscaloosaAlRoute
   WiringUpgradesTuscaloosaAlRoute: typeof WiringUpgradesTuscaloosaAlRoute
@@ -493,11 +519,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof RobotsDottxtRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/rss.xml': {
+      id: '/rss.xml'
+      path: '/rss.xml'
+      fullPath: '/rss.xml'
+      preLoaderRoute: typeof RssDotxmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/services': {
       id: '/services'
       path: '/services'
       fullPath: '/services'
       preLoaderRoute: typeof ServicesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sitemap': {
+      id: '/sitemap'
+      path: '/sitemap'
+      fullPath: '/sitemap'
+      preLoaderRoute: typeof SitemapRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/sitemap.xml': {
@@ -547,7 +587,9 @@ const rootRouteChildren: RootRouteChildren = {
   PanelUpgradesTuscaloosaAlRoute: PanelUpgradesTuscaloosaAlRoute,
   ReviewsRoute: ReviewsRoute,
   RobotsDottxtRoute: RobotsDottxtRoute,
+  RssDotxmlRoute: RssDotxmlRoute,
   ServicesRoute: ServicesRoute,
+  SitemapRoute: SitemapRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   SmartHomeInstallationTuscaloosaAlRoute:
     SmartHomeInstallationTuscaloosaAlRoute,

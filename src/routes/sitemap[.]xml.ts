@@ -36,10 +36,11 @@ export const Route = createFileRoute("/sitemap.xml")({
           { path: "/electrician-coaling-al", changefreq: "weekly", priority: "0.8" },
           { path: "/electrician-moundville-al", changefreq: "weekly", priority: "0.8" },
           { path: "/electrician-brookwood-al", changefreq: "weekly", priority: "0.8" },
+          { path: "/sitemap", changefreq: "weekly", priority: "0.8" },
         ];
 
         // Use actual meaningful content update date instead of request-time new Date()
-        const LASTMOD_DATE = "2026-10-23";
+        const LASTMOD_DATE = "2026-10-24";
         const xml = [
           `<?xml version="1.0" encoding="UTF-8"?>`,
           `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">`,

@@ -128,7 +128,13 @@
   </url>
   <url>
     <loc>https://www.burnettelectrictuscaloosa.com/electrician-brookwood-al</loc>
-    <lastmod>2026-10-23</lastmod>
+    <lastmod>2026-10-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.burnettelectrictuscaloosa.com/sitemap</loc>
+    <lastmod>2026-10-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>

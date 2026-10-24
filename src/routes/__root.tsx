@@ -66,6 +66,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
       { rel: "icon", href: "/favicon.png", type: "image/png" },
       { rel: "apple-touch-icon", href: "/apple-touch-icon.png" },
+      { rel: "alternate", type: "application/rss+xml", title: "Burnett Electric RSS Feed", href: "https://www.burnettelectrictuscaloosa.com/rss.xml" },
     ],
   }),
   shellComponent: RootShell,

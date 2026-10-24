@@ -85,7 +85,9 @@ export function Footer() {
             <Link to="/services" className="hover:text-primary">Services</Link>
             <Link to="/reviews" className="hover:text-primary">Reviews</Link>
             <Link to="/contact" className="hover:text-primary">Contact</Link>
+            <Link to="/sitemap" className="hover:text-primary">HTML Sitemap</Link>
             <a href="/sitemap.xml" className="hover:text-primary">XML Sitemap</a>
+            <a href="/rss.xml" className="hover:text-primary">RSS Feed</a>
           </div>
         </div>
         
