@@ -140,7 +140,7 @@ function HomePage() {
 
         <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-32 pb-20 w-full">
           <div className="grid lg:grid-cols-12 gap-10 items-center">
-            <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="lg:col-span-8 text-white">
+            <motion.div initial={false} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="lg:col-span-8 text-white">
               <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-dark text-primary text-xs font-semibold uppercase tracking-widest mb-6">
                 <Zap className="h-3.5 w-3.5" fill="currentColor" /> Serving Tuscaloosa • Northport • Buhl & Surrounding West AL
               </div>
@@ -168,7 +168,7 @@ function HomePage() {
               </div>
             </motion.div>
 
-            <motion.div initial={{ opacity: 0, x: 40 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.15 }} className="lg:col-span-4">
+            <motion.div initial={false} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.15 }} className="lg:col-span-4">
               <div className="glass rounded-3xl p-6 shadow-elegant animate-float">
                 <div className="flex items-center gap-2">
                   <div className="flex">{[...Array(5)].map((_, i) => <Star key={i} className="h-4 w-4 fill-primary text-primary" />)}</div>

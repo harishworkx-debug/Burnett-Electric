@@ -8,6 +8,8 @@ import { FloatingCTA } from "@/components/site/FloatingCTA";
 import { SectionHeading } from "@/components/site/SectionHeading";
 import { BUSINESS, IMG } from "@/lib/business";
 
+import { JsonLd } from "@/components/site/JsonLd";
+
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
@@ -28,6 +30,29 @@ function ContactPage() {
   const [sent, setSent] = useState(false);
   return (
     <div className="bg-background text-foreground">
+      <JsonLd data={[
+        {
+          "@context": "https://schema.org",
+          "@type": "ContactPage",
+          "name": "Contact Burnett Electric",
+          "url": "https://www.burnettelectrictuscaloosa.com/contact",
+          "description": "Contact Burnett Electric for licensed residential electrical repairs, panel upgrades, and generator installations in Tuscaloosa, AL.",
+          "mainEntity": {
+            "@type": "Electrician",
+            "name": "Burnett Electric",
+            "telephone": "+1-205-634-8185",
+            "url": "https://www.burnettelectrictuscaloosa.com/"
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.burnettelectrictuscaloosa.com/" },
+            { "@type": "ListItem", "position": 2, "name": "Contact", "item": "https://www.burnettelectrictuscaloosa.com/contact" }
+          ]
+        }
+      ]} />
       <Header />
       <FloatingCTA />
 
@@ -35,7 +60,7 @@ function ContactPage() {
         <div className="absolute inset-0 gradient-dark" />
         <div className="absolute inset-0 opacity-30" style={{ backgroundImage: "radial-gradient(circle at 30% 40%, #F4B400 0%, transparent 50%)" }} />
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-white">
-          <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} className="max-w-3xl">
+          <motion.div initial={false} animate={{ opacity: 1, y: 0 }} className="max-w-3xl">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full glass-dark text-primary text-xs font-semibold uppercase tracking-widest mb-5">Contact Us</div>
             <h1 className="font-display text-5xl md:text-6xl font-bold leading-[1.05]">Contact <span className="text-gradient-primary">Burnett Electric</span></h1>
             <p className="mt-5 text-lg text-white/80">Call or send a request to schedule a licensed residential electrician in Tuscaloosa, Northport, and West Alabama.</p>

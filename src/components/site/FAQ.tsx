@@ -11,7 +11,7 @@ export function FAQ({ items }: { items: { q: string; a: string }[] }) {
         return (
           <motion.div
             key={i}
-            initial={{ opacity: 0, y: 20 }}
+            initial={false}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: i * 0.05 }}

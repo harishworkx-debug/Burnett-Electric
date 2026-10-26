@@ -13,9 +13,9 @@ export function CTASection({
       <div className="absolute inset-0 opacity-30"
         style={{ backgroundImage: "radial-gradient(circle at 15% 40%, #F4B400 0%, transparent 45%), radial-gradient(circle at 85% 70%, #2563EB 0%, transparent 45%)" }} />
       <motion.div
-        initial={{ opacity: 0, y: 40 }}
+        initial={false}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-100px" }}
+        viewport={{ once: true }}
         transition={{ duration: 0.6 }}
         className="relative mx-auto max-w-4xl px-4 text-center text-white"
       >

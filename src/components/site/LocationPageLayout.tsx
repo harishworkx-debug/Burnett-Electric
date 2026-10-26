@@ -64,7 +64,7 @@ export function LocationPageLayout({
         </div>
 
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 text-white mt-12">
-          <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
+          <motion.div initial={false} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full glass-dark text-primary text-xs font-semibold uppercase tracking-widest mb-5">
               <MapPin className="h-3.5 w-3.5" /> Serving {city}, Alabama
             </div>
@@ -102,7 +102,7 @@ export function LocationPageLayout({
               </div>
             </div>
           </div>
-          <motion.img initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} src={IMG.city} alt={`${city} Alabama`} loading="lazy" className="w-full h-[440px] object-cover rounded-3xl shadow-elegant" />
+          <motion.img initial={false} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} src={IMG.city} alt={`${city} Alabama`} loading="lazy" className="w-full h-[440px] object-cover rounded-3xl shadow-elegant" />
         </div>
       </section>
 
@@ -119,7 +119,7 @@ export function LocationPageLayout({
           <SectionHeading eyebrow="Residential coverage" title={`electrical services for homeowners in ${city}`} subtitle="Hire an expert electrician for residential repairs, upgrades, and installations." />
           <div className="mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {benefits.map((b, i) => (
-              <motion.div key={i} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.05 }} className="p-7 rounded-2xl bg-card shadow-card border border-border hover:border-primary/40 hover:-translate-y-1 transition-all">
+              <motion.div key={i} initial={false} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.05 }} className="p-7 rounded-2xl bg-card shadow-card border border-border hover:border-primary/40 hover:-translate-y-1 transition-all">
                 <h3 className="font-display font-semibold text-lg text-secondary">{b.title}</h3>
                 <p className="mt-2 text-muted-foreground text-sm leading-relaxed">{b.desc}</p>
               </motion.div>

@@ -81,7 +81,7 @@ export function ServicePageLayout({
         </div>
 
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 text-white mt-12">
-          <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
+          <motion.div initial={false} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full glass-dark text-primary text-xs font-semibold uppercase tracking-widest mb-5">
               <Zap className="h-3.5 w-3.5" /> {eyebrow}
             </div>
@@ -112,7 +112,7 @@ export function ServicePageLayout({
           <SectionHeading eyebrow="Residential support" title="Why Homeowners Choose Our Expert Electricians" />
           <div className="mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {benefits.map((b, i) => (
-              <motion.div key={i} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.05 }} className="p-7 rounded-2xl bg-card shadow-card border border-border hover:shadow-elegant hover:-translate-y-1 transition-all">
+              <motion.div key={i} initial={false} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.05 }} className="p-7 rounded-2xl bg-card shadow-card border border-border hover:shadow-elegant hover:-translate-y-1 transition-all">
                 <div className="h-11 w-11 rounded-xl gradient-primary flex items-center justify-center shadow-glow mb-4">
                   <ShieldCheck className="h-5 w-5 text-secondary" />
                 </div>
@@ -126,7 +126,7 @@ export function ServicePageLayout({
 
       <section className="py-20 bg-surface">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-14 items-center">
-          <motion.img initial={{ opacity: 0, x: -40 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} src={IMG.repair} alt="Electrician diagnosing issue" loading="lazy" className="w-full h-[420px] object-cover rounded-3xl shadow-elegant" />
+          <motion.img initial={false} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} src={IMG.repair} alt="Electrician diagnosing issue" loading="lazy" className="w-full h-[420px] object-cover rounded-3xl shadow-elegant" />
           <div>
             <SectionHeading center={false} eyebrow="Common problems" title="Signs you need this service" />
             <ul className="mt-8 space-y-4">

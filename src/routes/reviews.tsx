@@ -50,7 +50,7 @@ function ReviewsPage() {
         <div className="absolute inset-0 gradient-dark" />
         <div className="absolute inset-0 opacity-30" style={{ backgroundImage: "radial-gradient(circle at 50% 40%, #F4B400 0%, transparent 50%)" }} />
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-white text-center">
-          <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }}>
+          <motion.div initial={false} animate={{ opacity: 1, y: 0 }}>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full glass-dark text-primary text-xs font-semibold uppercase tracking-widest mb-5">Real Reviews</div>
             <h1 className="font-display text-5xl md:text-6xl font-bold">Loved by <span className="text-gradient-primary">West Alabama</span></h1>
             <div className="mt-6 inline-flex items-center gap-3 glass-dark px-6 py-4 rounded-2xl">

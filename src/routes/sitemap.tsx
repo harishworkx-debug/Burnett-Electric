@@ -88,7 +88,7 @@ function SitemapPage() {
           <div className="mb-4">
             <Breadcrumbs items={[{ label: "Sitemap" }]} />
           </div>
-          <motion.div initial={{ opacity: 0, y: 25 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="max-w-3xl">
+          <motion.div initial={false} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="max-w-3xl">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full glass-dark text-primary text-xs font-semibold uppercase tracking-widest mb-4">
               <FileCode2 className="h-3.5 w-3.5" /> Site Index & Navigation Directory
             </div>
