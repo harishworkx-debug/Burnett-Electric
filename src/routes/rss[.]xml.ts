@@ -28,92 +28,92 @@ const items: RssItem[] = [
   {
     path: "/reviews",
     title: "Customer Reviews | Burnett Electric Tuscaloosa",
-    description: "Verified 5-star customer ratings and testimonials from homeowners in Tuscaloosa, Northport, and Buhl.",
+    description: "Read real 5-star reviews from verified homeowners across Tuscaloosa, Northport, and Buhl, Alabama.",
   },
   {
     path: "/contact",
-    title: "Contact Burnett Electric | Request Electrical Service",
-    description: "Schedule a licensed residential electrician in Tuscaloosa, Northport, or Buhl. Call or text (205) 634-8185.",
+    title: "Contact Burnett Electric | Request an Estimate",
+    description: "Get in touch with Burnett Electric for honest upfront estimates and prompt residential electrical service.",
   },
   {
     path: "/electrical-repairs-tuscaloosa-al",
-    title: "Electrical Repairs in Tuscaloosa, AL | Burnett Electric",
-    description: "Expert troubleshooting for tripping breakers, faulty outlets, flickering lights, and dedicated circuit repairs.",
+    title: "Electrical Repairs & Troubleshooting in Tuscaloosa, AL",
+    description: "Fast diagnostics and code-compliant fixes for flickering lights, tripped breakers, dead outlets, and short circuits.",
   },
   {
     path: "/wiring-upgrades-tuscaloosa-al",
-    title: "Wiring Upgrades & Home Rewiring | Tuscaloosa, AL",
-    description: "Whole-home copper rewiring, knob-and-tube removal, and aluminum wiring modernizations.",
-  },
-  {
-    path: "/panel-upgrades-tuscaloosa-al",
-    title: "Panel Upgrades & Fuse Box Replacement | Tuscaloosa, AL",
-    description: "Modernize your electrical service to a safe 200-amp or 400-amp panel with whole-home surge protection.",
-  },
-  {
-    path: "/generator-installation-tuscaloosa-al",
-    title: "Generator Installation & Interlocks | Tuscaloosa, AL",
-    description: "Whole-home standby generator installations and manual transfer switch kits for severe weather outage resilience.",
-  },
-  {
-    path: "/lighting-installation-tuscaloosa-al",
-    title: "Lighting & Ceiling Fan Installation | Tuscaloosa, AL",
-    description: "Recessed LED cans, ceiling fans, dimmer controls, and modern home lighting design.",
-  },
-  {
-    path: "/ev-charger-installation-tuscaloosa-al",
-    title: "Level 2 EV Charger Installation | Tuscaloosa, AL",
-    description: "Dedicated 240V charging circuit and electric vehicle charger installation for garages and driveways.",
-  },
-  {
-    path: "/emergency-electrician-tuscaloosa-al",
-    title: "Emergency Electrician Services | Tuscaloosa, AL",
-    description: "Rapid response dispatch for smoking panels, burning plastic smells, and sudden partial power loss.",
-  },
-  {
-    path: "/smart-home-installation-tuscaloosa-al",
-    title: "Smart Home & Automation Wiring | Tuscaloosa, AL",
-    description: "Professional installation of smart light switches, automated thermostats, and home theater circuits.",
+    title: "Residential Wiring Upgrades & Rewiring in Tuscaloosa, AL",
+    description: "Non-invasive whole-home rewiring, aluminum wiring mitigation, and knob-and-tube updates for older homes.",
   },
   {
     path: "/outdoor-wiring-tuscaloosa-al",
-    title: "Outdoor Wiring & Security Lighting | Tuscaloosa, AL",
-    description: "Landscape lighting, weatherproof GFCI outlets, hot tub wiring, and security floodlights.",
+    title: "Outdoor & Outbuilding Wiring in Tuscaloosa, AL",
+    description: "Underground conduit trenching, barn wiring, workshop power subpanels, and landscape security lighting.",
+  },
+  {
+    path: "/generator-installation-tuscaloosa-al",
+    title: "Whole-Home Standby Generator Installation in Tuscaloosa, AL",
+    description: "Automatic standby power solutions with transfer switch installation to keep homes running during severe storms.",
+  },
+  {
+    path: "/panel-upgrades-tuscaloosa-al",
+    title: "200A Electrical Panel Upgrades in Tuscaloosa, AL",
+    description: "Heavy-up service replacements, 100A-to-200A upgrades, and whole-home surge protection for modern electric loads.",
+  },
+  {
+    path: "/lighting-installation-tuscaloosa-al",
+    title: "Interior & Exterior Lighting Installation in Tuscaloosa, AL",
+    description: "Recessed LED cans, under-cabinet lighting, ceiling fans, and security flood fixtures for residential homes.",
+  },
+  {
+    path: "/ev-charger-installation-tuscaloosa-al",
+    title: "Level 2 EV Charger Installation in Tuscaloosa, AL",
+    description: "Dedicated 240V circuits and home electric vehicle charger installations for Tesla, Ford, and universal EVs.",
+  },
+  {
+    path: "/emergency-electrician-tuscaloosa-al",
+    title: "Emergency Residential Electrician in Tuscaloosa, AL",
+    description: "Urgent response for burning odors, sparking breaker boxes, storm-damaged weatherheads, and sudden power failure.",
+  },
+  {
+    path: "/smart-home-installation-tuscaloosa-al",
+    title: "Smart Home Electrical Installation in Tuscaloosa, AL",
+    description: "Smart switches, dimmers, smart thermostats, and automation hub integration for modern homes.",
   },
   {
     path: "/electrician-northport",
-    title: "Residential Electrician in Northport, AL | Burnett Electric",
-    description: "Licensed residential electrician serving Northport with panel upgrades, historic rewires, and repair visits.",
-  },
-  {
-    path: "/electrician-buhl",
-    title: "Residential Electrician in Buhl, AL | Burnett Electric",
-    description: "Fast hometown dispatch in Buhl for farm workshops, residential troubleshooting, and standby generators.",
+    title: "Electrician in Northport, AL | Burnett Electric",
+    description: "Panel modernizations, historic home rewiring, and residential electrical repair in Northport.",
   },
   {
     path: "/electrician-birmingham",
-    title: "Electrician Services in Birmingham Metro, AL | Burnett Electric",
-    description: "Major scheduled rewiring, panel replacements, and high-capacity electrical projects across the Birmingham area.",
+    title: "Residential Electrician in Birmingham, AL | Burnett Electric",
+    description: "Major scheduled rewires, 400A panel upgrades, and whole-home generator installations in Birmingham.",
+  },
+  {
+    path: "/electrician-buhl",
+    title: "Hometown Electrician in Buhl, AL | Burnett Electric",
+    description: "Our hometown electrical base serving Buhl, Romulus, and Elora with prompt troubleshooting and outbuilding wiring.",
   },
   {
     path: "/electrician-cottondale-al",
     title: "Electrician in Cottondale, AL | Burnett Electric",
-    description: "Prompt residential troubleshooting, circuit repairs, and safe panel modernizations in Cottondale.",
+    description: "Prompt residential electrical service, aluminum wiring remediation, and panel upgrades in Cottondale.",
   },
   {
     path: "/electrician-vance-al",
     title: "Electrician in Vance, AL | Burnett Electric",
-    description: "Licensed electrical repairs, EV charger stations, and surge protection along the Vance I-20 corridor.",
+    description: "Surge protection, EV chargers, subpanels, and residential electrical repairs in Vance.",
   },
   {
     path: "/electrician-coaling-al",
     title: "Electrician in Coaling, AL | Burnett Electric",
-    description: "Residential electrical services, 200A panel heavy-ups, and safe troubleshooting in Coaling.",
+    description: "Residential breaker repairs, 200A service upgrades, and backup generator wiring in Coaling.",
   },
   {
     path: "/electrician-moundville-al",
     title: "Electrician in Moundville, AL | Burnett Electric",
-    description: "Weatherhead storm repair, service mast fixes, and residential maintenance in Moundville.",
+    description: "Storm service mast repairs, breaker box replacements, and electrical troubleshooting in Moundville.",
   },
   {
     path: "/electrician-brookwood-al",
@@ -131,7 +131,7 @@ export const Route = createFileRoute("/rss.xml")({
   server: {
     handlers: {
       GET: async () => {
-        const buildDate = "Fri, 23 Oct 2026 12:00:00 GMT";
+        const buildDate = "Thu, 29 Oct 2026 12:00:00 GMT";
 
         const xml = [
           `<?xml version="1.0" encoding="UTF-8"?>`,
