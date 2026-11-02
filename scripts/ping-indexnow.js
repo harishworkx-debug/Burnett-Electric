@@ -1,6 +1,6 @@
 /**
  * IndexNow Automatic Submission Script for Burnett Electric
- * Submits all website URLs directly to IndexNow (Bing, Yandex, etc.)
+ * Submits all active indexable website URLs directly to IndexNow (Bing, Yandex, etc.)
  * Run with: npm run indexnow
  */
 
@@ -14,12 +14,11 @@ const URL_LIST = [
   `https://${HOST}/about`,
   `https://${HOST}/reviews`,
   `https://${HOST}/contact`,
-  `https://${HOST}/sitemap`,
   `https://${HOST}/electrical-repairs-tuscaloosa-al`,
   `https://${HOST}/wiring-upgrades-tuscaloosa-al`,
-  `https://${HOST}/outdoor-wiring-tuscaloosa-al`,
-  `https://${HOST}/generator-installation-tuscaloosa-al`,
   `https://${HOST}/panel-upgrades-tuscaloosa-al`,
+  `https://${HOST}/generator-installation-tuscaloosa-al`,
+  `https://${HOST}/outdoor-wiring-tuscaloosa-al`,
   `https://${HOST}/lighting-installation-tuscaloosa-al`,
   `https://${HOST}/ev-charger-installation-tuscaloosa-al`,
   `https://${HOST}/emergency-electrician-tuscaloosa-al`,
@@ -27,11 +26,7 @@ const URL_LIST = [
   `https://${HOST}/electrician-northport`,
   `https://${HOST}/electrician-birmingham`,
   `https://${HOST}/electrician-buhl`,
-  `https://${HOST}/electrician-cottondale-al`,
-  `https://${HOST}/electrician-vance-al`,
-  `https://${HOST}/electrician-coaling-al`,
-  `https://${HOST}/electrician-moundville-al`,
-  `https://${HOST}/electrician-brookwood-al`,
+  `https://${HOST}/sitemap`,
 ];
 
 async function submitIndexNow() {
@@ -42,7 +37,7 @@ async function submitIndexNow() {
     urlList: URL_LIST,
   };
 
-  console.log(`Submitting ${URL_LIST.length} URLs to IndexNow...`);
+  console.log(`Submitting ${URL_LIST.length} active indexable URLs to IndexNow...`);
 
   try {
     const response = await fetch("https://api.indexnow.org/indexnow", {
