@@ -87,6 +87,27 @@ export const Route = createFileRoute("/wiring-upgrades-tuscaloosa-al")({
         <li><strong>Dedicated Copper Grounding Circuits:</strong> Pulling new 12/2 or 14/2 Romex cable with solid copper equipment grounding conductors directly back to the main service panel bus bar.</li>
         <li><strong>GFCI Branch Circuit Protection:</strong> Installing Ground Fault Circuit Interrupter (GFCI) receptacles at the start of a branch circuit, providing life-safety shock protection and legal 3-prong device acceptance marked with official 'No Equipment Ground' labels.</li>
       </ol>
+
+      <h2>Real Historic Rewiring Projects in Tuscaloosa</h2>
+      <div className="space-y-6 my-6 not-prose">
+        <div className="p-6 rounded-2xl bg-card border border-border shadow-card flex flex-col sm:flex-row gap-5 items-start">
+          <img
+            src={IMG.wiring}
+            alt="Non-invasive historic home copper rewiring in Audubon Place Tuscaloosa"
+            className="w-full sm:w-44 h-36 object-cover rounded-xl shrink-0 border border-border"
+            loading="lazy"
+          />
+          <div className="flex-1">
+            <div className="flex items-center justify-between flex-wrap gap-2">
+              <span className="font-display font-bold text-lg text-secondary">Audubon Place — 1930s Historic Craftsman Full Rewire</span>
+              <span className="px-3 py-1 rounded-full text-xs font-semibold bg-primary/10 text-secondary">Plaster Preserved</span>
+            </div>
+            <p className="text-sm text-muted-foreground mt-2 leading-relaxed">
+              Decommissioned active knob-and-tube wiring throughout a two-story Craftsman home near University Blvd. Accessed wall bays cleanly from the attic crawlspace and basement, routing grounded Romex NM-B cable to 32 new tamper-resistant receptacles and AFCI breakers with zero damage to original lath-and-plaster walls.
+            </p>
+          </div>
+        </div>
+      </div>
     </ServicePageLayout>
   ),
 });

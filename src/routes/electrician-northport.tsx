@@ -90,8 +90,64 @@ export const Route = createFileRoute("/electrician-northport")({
 
       <h2>Real Local Service Examples in Northport</h2>
       <p>
-        We are deeply embedded in the local community. Recently in the <em>Huntington Place</em> neighborhood, we upgraded an overloaded 100A fuse box to a modern 200A Square D breaker panel with whole-home surge suppression. In the <em>Northwood Lake</em> area, we installed a dedicated 50-amp conduit run for a Tesla Level 2 wall connector. Near the <em>Kentuck Art Center</em>, our team responded to an emergency call to repair a sparking main disconnect, ensuring the homeowner's safety before the weekend.
+        We are deeply embedded in the local Northport community. Here are recent examples of residential projects completed across Northport neighborhoods:
       </p>
+
+      <div className="space-y-6 my-6 not-prose">
+        <div className="p-6 rounded-2xl bg-card border border-border shadow-card flex flex-col sm:flex-row gap-5 items-start">
+          <img
+            src={IMG.panel}
+            alt="Square D 200-amp breaker panel upgrade in Huntington Place Northport"
+            className="w-full sm:w-44 h-36 object-cover rounded-xl shrink-0 border border-border"
+            loading="lazy"
+          />
+          <div className="flex-1">
+            <div className="flex items-center justify-between flex-wrap gap-2">
+              <span className="font-display font-bold text-lg text-secondary">Huntington Place — 100A to 200A Service Heavy-Up</span>
+              <span className="px-3 py-1 rounded-full text-xs font-semibold bg-primary/10 text-secondary">Permitted & Inspected</span>
+            </div>
+            <p className="text-sm text-muted-foreground mt-2 leading-relaxed">
+              Upgraded an overloaded 1980s 100-amp panel to a modern 200-amp Square D QO panel with Type 2 whole-home surge suppression. Coordinated morning Alabama Power disconnect and passed City of Northport municipal inspection the same afternoon.
+            </p>
+          </div>
+        </div>
+
+        <div className="p-6 rounded-2xl bg-card border border-border shadow-card flex flex-col sm:flex-row gap-5 items-start">
+          <img
+            src={IMG.wiring}
+            alt="Level 2 EV charger installation in Northwood Lake Northport"
+            className="w-full sm:w-44 h-36 object-cover rounded-xl shrink-0 border border-border"
+            loading="lazy"
+          />
+          <div className="flex-1">
+            <div className="flex items-center justify-between flex-wrap gap-2">
+              <span className="font-display font-bold text-lg text-secondary">Northwood Lake — Dedicated 50A EV Charger Circuit</span>
+              <span className="px-3 py-1 rounded-full text-xs font-semibold bg-primary/10 text-secondary">EV Infrastructure</span>
+            </div>
+            <p className="text-sm text-muted-foreground mt-2 leading-relaxed">
+              Installed a dedicated 50-amp 240V EMT conduit branch run from the main basement panel to the attached garage, mounting a Tesla Wall Connector with full circuit protection.
+            </p>
+          </div>
+        </div>
+
+        <div className="p-6 rounded-2xl bg-card border border-border shadow-card flex flex-col sm:flex-row gap-5 items-start">
+          <img
+            src={IMG.repair}
+            alt="Emergency service disconnect repair near Kentuck Art Center in Downtown Northport"
+            className="w-full sm:w-44 h-36 object-cover rounded-xl shrink-0 border border-border"
+            loading="lazy"
+          />
+          <div className="flex-1">
+            <div className="flex items-center justify-between flex-wrap gap-2">
+              <span className="font-display font-bold text-lg text-secondary">Downtown Northport (Kentuck District) — Emergency Disconnect Repair</span>
+              <span className="px-3 py-1 rounded-full text-xs font-semibold bg-primary/10 text-secondary">Emergency Response</span>
+            </div>
+            <p className="text-sm text-muted-foreground mt-2 leading-relaxed">
+              Responded to an urgent call regarding a buzzing, sparking exterior meter disconnect switch on a historic home. Replaced the corroded lug block and stabilized neutral voltage to prevent phase loss.
+            </p>
+          </div>
+        </div>
+      </div>
 
       <h2>Serving Northport and Surrounding Communities</h2>
       <p>

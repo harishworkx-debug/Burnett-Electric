@@ -7,7 +7,7 @@ export const Route = createFileRoute("/electrician-brookwood-al")({
     meta: [
       { title: "Electrician in Brookwood, AL | Burnett Electric" },
       { name: "description", content: "Licensed residential electrician serving Brookwood, AL. Electrical repairs, panel upgrades, surge protection, and generator wiring. Call (205) 634-8185." },
-      { name: "robots", content: "noindex, follow" },
+      { name: "robots", content: "index, follow" },
       { property: "og:title", content: "Electrician in Brookwood, AL | Burnett Electric" },
       { property: "og:description", content: "Licensed residential electrical services for homeowners in Brookwood, Alabama." },
       { property: "og:url", content: "https://www.burnettelectrictuscaloosa.com/electrician-brookwood-al" },

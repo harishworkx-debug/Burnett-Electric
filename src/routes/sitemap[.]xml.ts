@@ -13,7 +13,7 @@ export const Route = createFileRoute("/sitemap.xml")({
   server: {
     handlers: {
       GET: async () => {
-        // High-priority indexable pages: Core services and primary locations
+        // High-priority indexable pages: Core services, company identity, and primary hubs (Northport, Buhl, Birmingham)
         const entries: SitemapEntry[] = [
           { path: "/", changefreq: "weekly", priority: "1.0" },
           { path: "/services", changefreq: "weekly", priority: "0.9" },

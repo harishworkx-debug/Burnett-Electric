@@ -55,34 +55,58 @@ export const Route = createFileRoute("/electrician-birmingham")({
       </p>
 
       <div className="space-y-6 my-8 not-prose">
-        <div className="p-6 rounded-2xl bg-card border border-border shadow-card">
-          <div className="flex items-center justify-between flex-wrap gap-2">
-            <h3 className="font-display font-bold text-lg text-secondary">Highland Park — 1924 Craftsman Historic Copper Rewire</h3>
-            <span className="px-3 py-1 rounded-full text-xs font-semibold bg-primary/10 text-secondary">Historic Preservation</span>
+        <div className="p-6 rounded-2xl bg-card border border-border shadow-card flex flex-col sm:flex-row gap-5 items-start">
+          <img
+            src={IMG.wiring}
+            alt="Historic Craftsman copper rewiring project in Highland Park, Birmingham AL"
+            className="w-full sm:w-48 h-40 object-cover rounded-xl shrink-0 border border-border"
+            loading="lazy"
+          />
+          <div className="flex-1">
+            <div className="flex items-center justify-between flex-wrap gap-2">
+              <h3 className="font-display font-bold text-lg text-secondary">Highland Park — 1924 Craftsman Historic Copper Rewire</h3>
+              <span className="px-3 py-1 rounded-full text-xs font-semibold bg-primary/10 text-secondary">Historic Preservation</span>
+            </div>
+            <p className="text-sm text-muted-foreground mt-3 leading-relaxed">
+              A homeowner in historic Highland Park purchased a two-story 1924 Craftsman home with original knob-and-tube wiring concealed behind lath-and-plaster walls. Previous contractors insisted on opening large drywall channels across every room. Burnett Electric executed a non-invasive rewire by accessing wall bays through the unfinished basement and attic crawlspace, replacing obsolete wiring with grounded copper Romex and installing a 200A Square D QO panel with AFCI breakers—saving the homeowner thousands in historic plaster restoration.
+            </p>
           </div>
-          <p className="text-sm text-muted-foreground mt-3 leading-relaxed">
-            A homeowner in historic Highland Park purchased a two-story 1924 Craftsman home with original knob-and-tube wiring concealed behind lath-and-plaster walls. Previous contractors insisted on opening large drywall channels across every room. Burnett Electric executed a non-invasive rewire by accessing wall bays through the unfinished basement and attic crawlspace, replacing obsolete wiring with grounded copper Romex and installing a 200A Square D QO panel with AFCI breakers—saving the homeowner thousands in historic plaster restoration.
-          </p>
         </div>
 
-        <div className="p-6 rounded-2xl bg-card border border-border shadow-card">
-          <div className="flex items-center justify-between flex-wrap gap-2">
-            <h3 className="font-display font-bold text-lg text-secondary">Mountain Brook — 400A Heavy-Up for Luxury Renovation</h3>
-            <span className="px-3 py-1 rounded-full text-xs font-semibold bg-primary/10 text-secondary">High-Capacity Service</span>
+        <div className="p-6 rounded-2xl bg-card border border-border shadow-card flex flex-col sm:flex-row gap-5 items-start">
+          <img
+            src={IMG.panel}
+            alt="400A service heavy-up panel installation in Mountain Brook AL"
+            className="w-full sm:w-48 h-40 object-cover rounded-xl shrink-0 border border-border"
+            loading="lazy"
+          />
+          <div className="flex-1">
+            <div className="flex items-center justify-between flex-wrap gap-2">
+              <h3 className="font-display font-bold text-lg text-secondary">Mountain Brook — 400A Heavy-Up for Luxury Renovation</h3>
+              <span className="px-3 py-1 rounded-full text-xs font-semibold bg-primary/10 text-secondary">High-Capacity Service</span>
+            </div>
+            <p className="text-sm text-muted-foreground mt-3 leading-relaxed">
+              During an extensive kitchen and master suite remodel in Mountain Brook, the existing 200A service could not accommodate two new 5-ton high-efficiency heat pumps, an induction cooktop, and two Level 2 EV charging stations. We engineered and installed a 400A dual-panel service entrance with utility coordination through Alabama Power Metro Division and municipal inspection sign-off.
+            </p>
           </div>
-          <p className="text-sm text-muted-foreground mt-3 leading-relaxed">
-            During an extensive kitchen and master suite remodel in Mountain Brook, the existing 200A service could not accommodate two new 5-ton high-efficiency heat pumps, an induction cooktop, and two Level 2 EV charging stations. We engineered and installed a 400A dual-panel service entrance with utility coordination through Alabama Power Metro Division and municipal inspection sign-off.
-          </p>
         </div>
 
-        <div className="p-6 rounded-2xl bg-card border border-border shadow-card">
-          <div className="flex items-center justify-between flex-wrap gap-2">
-            <h3 className="font-display font-bold text-lg text-secondary">Vestavia Hills — Turnkey 24kW Standby Generator Installation</h3>
-            <span className="px-3 py-1 rounded-full text-xs font-semibold bg-primary/10 text-secondary">Storm Resilience</span>
+        <div className="p-6 rounded-2xl bg-card border border-border shadow-card flex flex-col sm:flex-row gap-5 items-start">
+          <img
+            src={IMG.outdoor}
+            alt="Standby generator and outdoor wiring installation in Vestavia Hills AL"
+            className="w-full sm:w-48 h-40 object-cover rounded-xl shrink-0 border border-border"
+            loading="lazy"
+          />
+          <div className="flex-1">
+            <div className="flex items-center justify-between flex-wrap gap-2">
+              <h3 className="font-display font-bold text-lg text-secondary">Vestavia Hills — Turnkey 24kW Standby Generator Installation</h3>
+              <span className="px-3 py-1 rounded-full text-xs font-semibold bg-primary/10 text-secondary">Storm Resilience</span>
+            </div>
+            <p className="text-sm text-muted-foreground mt-3 leading-relaxed">
+              Located on a wooded hillside lot in Vestavia Hills, the home experienced recurring multi-day power outages whenever severe thunderstorm winds downed oak branches across neighborhood power lines. We installed a 24kW Generac whole-home standby generator with a 200A automatic transfer switch (ATS), providing seamless emergency power for the entire household within 10 seconds of grid failure.
+            </p>
           </div>
-          <p className="text-sm text-muted-foreground mt-3 leading-relaxed">
-            Located on a wooded hillside lot in Vestavia Hills, the home experienced recurring multi-day power outages whenever severe thunderstorm winds downed oak branches across neighborhood power lines. We installed a 24kW Generac whole-home standby generator with a 200A automatic transfer switch (ATS), providing seamless emergency power for the entire household within 10 seconds of grid failure.
-          </p>
         </div>
       </div>
 

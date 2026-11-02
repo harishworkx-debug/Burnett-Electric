@@ -1,6 +1,6 @@
 /**
  * IndexNow Automatic Submission Script for Burnett Electric
- * Submits all active indexable website URLs directly to IndexNow (Bing, Yandex, etc.)
+ * Submits all website URLs directly to IndexNow (Bing, Yandex, etc.)
  * Run with: npm run indexnow
  */
 
@@ -26,6 +26,11 @@ const URL_LIST = [
   `https://${HOST}/electrician-northport`,
   `https://${HOST}/electrician-birmingham`,
   `https://${HOST}/electrician-buhl`,
+  `https://${HOST}/electrician-cottondale-al`,
+  `https://${HOST}/electrician-vance-al`,
+  `https://${HOST}/electrician-coaling-al`,
+  `https://${HOST}/electrician-moundville-al`,
+  `https://${HOST}/electrician-brookwood-al`,
   `https://${HOST}/sitemap`,
 ];
 

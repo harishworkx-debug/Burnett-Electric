@@ -7,7 +7,7 @@ export const Route = createFileRoute("/electrician-vance-al")({
     meta: [
       { title: "Electrician in Vance, AL | Burnett Electric" },
       { name: "description", content: "Licensed residential electrician serving Vance, AL. Breaker panel upgrades, EV chargers, surge protection & home repairs. Call (205) 634-8185." },
-      { name: "robots", content: "noindex, follow" },
+      { name: "robots", content: "index, follow" },
       { property: "og:title", content: "Electrician in Vance, AL | Burnett Electric" },
       { property: "og:description", content: "Licensed residential electrician serving homeowners in Vance, Alabama." },
       { property: "og:url", content: "https://www.burnettelectrictuscaloosa.com/electrician-vance-al" },

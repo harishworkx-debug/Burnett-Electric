@@ -106,25 +106,41 @@ export const Route = createFileRoute("/panel-upgrades-tuscaloosa-al")({
         We stand behind our craftsmanship with real, verifiable local projects across our community:
       </p>
 
-      <div className="space-y-4 my-6 not-prose">
-        <div className="p-6 rounded-2xl bg-card border border-border">
-          <div className="flex items-center justify-between flex-wrap gap-2">
-            <span className="font-display font-bold text-lg text-secondary">Huntington Place, Northport — 100A to 200A Heavy-Up</span>
-            <span className="px-3 py-1 rounded-full text-xs font-semibold bg-primary/10 text-secondary">Completed in 1 Day</span>
+      <div className="space-y-6 my-6 not-prose">
+        <div className="p-6 rounded-2xl bg-card border border-border shadow-card flex flex-col sm:flex-row gap-5 items-start">
+          <img
+            src={IMG.panel}
+            alt="Completed 200-amp Square D panel upgrade in Northport AL"
+            className="w-full sm:w-44 h-36 object-cover rounded-xl shrink-0 border border-border"
+            loading="lazy"
+          />
+          <div className="flex-1">
+            <div className="flex items-center justify-between flex-wrap gap-2">
+              <span className="font-display font-bold text-lg text-secondary">Huntington Place, Northport — 100A to 200A Heavy-Up</span>
+              <span className="px-3 py-1 rounded-full text-xs font-semibold bg-primary/10 text-secondary">Completed in 1 Day</span>
+            </div>
+            <p className="text-sm text-muted-foreground mt-2 leading-relaxed">
+              The homeowner purchased a modern Tesla Model Y and wanted a Level 2 48-amp home charger, but their 1982 100-amp panel was already at maximum load. We pulled the permit through the City of Northport, coordinated morning disconnect with Alabama Power, installed a 200-amp Square D QO panel with a Type 2 surge protector, and passed municipal inspection by 3:30 PM with power fully restored.
+            </p>
           </div>
-          <p className="text-sm text-muted-foreground mt-2 leading-relaxed">
-            The homeowner purchased a modern Tesla Model Y and wanted a Level 2 48-amp home charger, but their 1982 100-amp panel was already at maximum load. We pulled the permit through the City of Northport, coordinated morning disconnect with Alabama Power, installed a 200-amp Square D QO panel with a Type 2 surge protector, and passed municipal inspection by 3:30 PM with power fully restored.
-          </p>
         </div>
 
-        <div className="p-6 rounded-2xl bg-card border border-border">
-          <div className="flex items-center justify-between flex-wrap gap-2">
-            <span className="font-display font-bold text-lg text-secondary">Pinehurst Historic District, Tuscaloosa — FPE Panel Replacement</span>
-            <span className="px-3 py-1 rounded-full text-xs font-semibold bg-primary/10 text-secondary">Insurance Requirement</span>
+        <div className="p-6 rounded-2xl bg-card border border-border shadow-card flex flex-col sm:flex-row gap-5 items-start">
+          <img
+            src={IMG.repair}
+            alt="Federal Pacific panel replacement in Pinehurst Historic District Tuscaloosa"
+            className="w-full sm:w-44 h-36 object-cover rounded-xl shrink-0 border border-border"
+            loading="lazy"
+          />
+          <div className="flex-1">
+            <div className="flex items-center justify-between flex-wrap gap-2">
+              <span className="font-display font-bold text-lg text-secondary">Pinehurst Historic District, Tuscaloosa — FPE Panel Replacement</span>
+              <span className="px-3 py-1 rounded-full text-xs font-semibold bg-primary/10 text-secondary">Insurance Requirement</span>
+            </div>
+            <p className="text-sm text-muted-foreground mt-2 leading-relaxed">
+              During a homeowner's insurance renewal inspection, an insurance underwriter flagged an original Federal Pacific Stab-Lok panel. We completed a clean service change, routed new grounding conductors to two 8-foot ground rods, relabeled all circuits accurately, and provided the homeowner with a signed municipal inspection certificate to preserve their insurance policy.
+            </p>
           </div>
-          <p className="text-sm text-muted-foreground mt-2 leading-relaxed">
-            During a homeowner's insurance renewal inspection, an insurance underwriter flagged an original Federal Pacific Stab-Lok panel. We completed a clean service change, routed new grounding conductors to two 8-foot ground rods, relabeled all circuits accurately, and provided the homeowner with a signed municipal inspection certificate to preserve their insurance policy.
-          </p>
         </div>
       </div>
 

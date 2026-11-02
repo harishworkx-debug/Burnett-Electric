@@ -149,6 +149,49 @@ export const Route = createFileRoute("/electrical-repairs-tuscaloosa-al")({
         A ceiling fan that wobbles, hums loudly, or refuses to turn on may have underlying wiring issues. We don't just install fans; we repair the complex wiring, wall switches, and remote control receivers that power them, ensuring quiet and efficient operation.
       </p>
 
+      <h2>Real Troubleshooting & Repair Projects in Tuscaloosa</h2>
+      <p>
+        Here are examples of diagnostic troubleshooting and repairs completed recently by our West Alabama crew:
+      </p>
+
+      <div className="space-y-6 my-6 not-prose">
+        <div className="p-6 rounded-2xl bg-card border border-border shadow-card flex flex-col sm:flex-row gap-5 items-start">
+          <img
+            src={IMG.repair}
+            alt="Emergency breaker and neutral wire repair in Tuscaloosa County"
+            className="w-full sm:w-44 h-36 object-cover rounded-xl shrink-0 border border-border"
+            loading="lazy"
+          />
+          <div className="flex-1">
+            <div className="flex items-center justify-between flex-wrap gap-2">
+              <span className="font-display font-bold text-lg text-secondary">Cottondale — Emergency Burnt Neutral & Breaker Diagnostic</span>
+              <span className="px-3 py-1 rounded-full text-xs font-semibold bg-primary/10 text-secondary">Same-Day Dispatch</span>
+            </div>
+            <p className="text-sm text-muted-foreground mt-2 leading-relaxed">
+              A homeowner reported a strong electrical burning odor and flickering power across several kitchen circuits. Our technician arrived within 90 minutes, scanned the panel with infrared thermal imaging, located a dangerously scorched neutral terminal on a dual-pole breaker, trimmed back heat-damaged insulation, re-terminated to torque specs, and restored safe power without requiring a full panel replacement.
+            </p>
+          </div>
+        </div>
+
+        <div className="p-6 rounded-2xl bg-card border border-border shadow-card flex flex-col sm:flex-row gap-5 items-start">
+          <img
+            src={IMG.wiring}
+            alt="Circuit tracing and back-stabbed outlet remediation in historic Tuscaloosa home"
+            className="w-full sm:w-44 h-36 object-cover rounded-xl shrink-0 border border-border"
+            loading="lazy"
+          />
+          <div className="flex-1">
+            <div className="flex items-center justify-between flex-wrap gap-2">
+              <span className="font-display font-bold text-lg text-secondary">Downtown Tuscaloosa — Intermittent Circuit & Receptacle Trace</span>
+              <span className="px-3 py-1 rounded-full text-xs font-semibold bg-primary/10 text-secondary">Diagnostic Isolation</span>
+            </div>
+            <p className="text-sm text-muted-foreground mt-2 leading-relaxed">
+              Power was cutting in and out unpredictably in two bedrooms. Using digital pulse signal tracers, we tracked down a failed push-in back-stabbed wire behind an outlet in the master bedroom that had worked loose over decades. We replaced the faulty devices with commercial-grade side-screwed receptacles, eliminating the intermittent arc hazard.
+            </p>
+          </div>
+        </div>
+      </div>
+
       <h2>When You Need an Emergency Electrician</h2>
       <p>
         Not all electrical repairs can wait until the next business day. You should call an emergency electrician in Tuscaloosa immediately if you experience:
