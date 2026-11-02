@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { motion } from "framer-motion";
-import { ArrowRight, Wrench, Cable, Building2, Lamp, CheckCircle2, Phone, Zap, ShieldCheck, Plug, Home, Siren, Wifi, Fan, Droplet, Flame, ShieldAlert, Lightbulb, MonitorPlay, Cpu, BatteryCharging, Factory } from "lucide-react";
+import { Award, ArrowRight, Wrench, Cable, Building2, Lamp, CheckCircle2, Phone, Zap, ShieldCheck, Plug, Home, Siren, Wifi, Fan, Droplet, Flame, ShieldAlert, Lightbulb, MonitorPlay, Cpu, BatteryCharging, Factory } from "lucide-react";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { FloatingCTA } from "@/components/site/FloatingCTA";
@@ -128,6 +128,80 @@ function ServicesPage() {
               </div>
             </motion.div>
           ))}
+        </div>
+      </section>
+
+      {/* GENUINE SERVICE PROCESS & STANDARDS */}
+      <section className="py-24 bg-surface border-t border-border">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <SectionHeading
+            eyebrow="Genuine Service Standards"
+            title="How We Deliver Professional Electrical Work"
+            subtitle="Transparent pricing, high-grade copper equipment, and strict National Electrical Code compliance on every residential project."
+          />
+
+          <div className="mt-16 grid lg:grid-cols-3 gap-8">
+            <div className="p-8 rounded-3xl bg-card border border-border shadow-card flex flex-col justify-between">
+              <div>
+                <div className="h-12 w-12 rounded-2xl gradient-primary flex items-center justify-center text-secondary mb-6 shadow-glow">
+                  <ShieldCheck className="h-6 w-6" />
+                </div>
+                <h3 className="font-display font-bold text-xl text-secondary">Diagnostic Accuracy First</h3>
+                <p className="mt-3 text-sm text-muted-foreground leading-relaxed">
+                  We don't guess at electrical faults or start cutting drywall blindly. Our technicians use digital multimeters, circuit tracers, and thermal imaging to isolate the exact point of resistance, short circuit, or loose neutral.
+                </p>
+                <ul className="mt-6 space-y-2.5 text-xs text-secondary font-medium">
+                  <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-primary shrink-0" /> Full panel & breaker stab inspection</li>
+                  <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-primary shrink-0" /> Load calculations per NEC Article 220</li>
+                  <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-primary shrink-0" /> Grounding & bonding verification</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="p-8 rounded-3xl bg-card border border-border shadow-card flex flex-col justify-between">
+              <div>
+                <div className="h-12 w-12 rounded-2xl gradient-primary flex items-center justify-center text-secondary mb-6 shadow-glow">
+                  <Zap className="h-6 w-6" />
+                </div>
+                <h3 className="font-display font-bold text-xl text-secondary">Premium Materials Only</h3>
+                <p className="mt-3 text-sm text-muted-foreground leading-relaxed">
+                  We refuse to cut corners with cheap builder-grade components. Every breaker, panel enclosure, and cable we install is manufactured to commercial-grade tolerances from top American and global brands.
+                </p>
+                <ul className="mt-6 space-y-2.5 text-xs text-secondary font-medium">
+                  <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-primary shrink-0" /> Square D QO & Siemens copper-bus panels</li>
+                  <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-primary shrink-0" /> Pure solid copper Romex branch wiring</li>
+                  <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-primary shrink-0" /> Type 2 Whole-Home Surge Protectors</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="p-8 rounded-3xl bg-card border border-border shadow-card flex flex-col justify-between">
+              <div>
+                <div className="h-12 w-12 rounded-2xl gradient-primary flex items-center justify-center text-secondary mb-6 shadow-glow">
+                  <Award className="h-6 w-6" />
+                </div>
+                <h3 className="font-display font-bold text-xl text-secondary">Permitting & Power Company Coordination</h3>
+                <p className="mt-3 text-sm text-muted-foreground leading-relaxed">
+                  Heavy electrical jobs like panel replacements and standby generators require municipal building permits and utility coordination. We pull all permits and manage Alabama Power disconnect/reconnect tickets.
+                </p>
+                <ul className="mt-6 space-y-2.5 text-xs text-secondary font-medium">
+                  <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-primary shrink-0" /> City of Tuscaloosa & Northport permits</li>
+                  <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-primary shrink-0" /> Alabama Power meter disconnects handled</li>
+                  <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-primary shrink-0" /> Official municipal electrical pass certificate</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-14 p-8 rounded-3xl bg-card border border-border">
+            <div className="max-w-3xl">
+              <div className="text-xs font-bold uppercase tracking-wider text-primary">Service Scope Transparency</div>
+              <h4 className="font-display text-2xl font-bold text-secondary mt-1">Dedicated Purely to Residential Property Owners</h4>
+              <p className="text-sm text-muted-foreground mt-3 leading-relaxed">
+                Burnett Electric works exclusively with homeowners, residential landlords, and residential renovation projects. By keeping our focus 100% on homes, our service vans stay fully stocked with residential circuit breakers, GFCI outlets, and Romex wire, ensuring we resolve your electrical needs without the multi-day delays common with commercial contractors.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 

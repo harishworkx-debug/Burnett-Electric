@@ -235,6 +235,88 @@ function HomePage() {
         </div>
       </section>
 
+      {/* BUSINESS IDENTITY / MEET THE OWNER */}
+      <section className="py-24 bg-card border-y border-border">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-12 gap-12 items-center">
+            <div className="lg:col-span-5 relative">
+              <div className="relative rounded-3xl overflow-hidden shadow-elegant border border-border">
+                <img
+                  src={IMG.crew}
+                  alt="Shad Burnett and the Burnett Electric team in West Alabama"
+                  loading="lazy"
+                  className="w-full h-[460px] object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-secondary/80 via-transparent to-transparent" />
+                <div className="absolute bottom-6 left-6 right-6 text-white">
+                  <div className="font-display font-bold text-2xl">Shad Burnett</div>
+                  <div className="text-primary text-sm font-semibold">Owner & Licensed Alabama Electrician</div>
+                  <div className="text-xs text-white/80 mt-1 flex items-center gap-1">
+                    <MapPin className="h-3.5 w-3.5 text-primary shrink-0" />
+                    Headquartered at 15953 Annie Bell Dr, Buhl, AL
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="lg:col-span-7 space-y-6 text-foreground">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-secondary text-xs font-bold uppercase tracking-wider">
+                <ShieldCheck className="h-4 w-4 text-primary" /> West Alabama's Dedicated Residential Contractor
+              </div>
+              <h2 className="font-display text-3xl sm:text-4xl font-bold text-secondary leading-tight">
+                Clear Identity, Honest Workmanship & Zero Surprises
+              </h2>
+              <p className="text-muted-foreground leading-relaxed">
+                Burnett Electric is an independently owned and operated residential electrical contracting company founded by <strong>Shad Burnett</strong>. Unlike national franchises or commercial shops that treat residential homeowners as an afterthought, our business was built specifically to solve single-family electrical challenges across Tuscaloosa County.
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                When you call us, you talk directly with professionals who live and work here in West Alabama. We do not dispatch inexperienced helpers or hand off your home to third-party subcontractors. Every service panel upgrade, whole-house rewire, and emergency troubleshooting call is handled or directly inspected under Shad's personal oversight to ensure full compliance with the latest <strong>National Electrical Code (NEC)</strong>.
+              </p>
+
+              <div className="grid sm:grid-cols-2 gap-4 pt-2">
+                <div className="p-4 rounded-xl bg-surface border border-border">
+                  <div className="font-semibold text-secondary flex items-center gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-primary" />
+                    Alabama Licensed & Insured
+                  </div>
+                  <p className="text-xs text-muted-foreground mt-1">Full state licensing, general liability, and workers' compensation coverage for complete peace of mind.</p>
+                </div>
+                <div className="p-4 rounded-xl bg-surface border border-border">
+                  <div className="font-semibold text-secondary flex items-center gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-primary" />
+                    100% Upfront Itemized Quotes
+                  </div>
+                  <p className="text-xs text-muted-foreground mt-1">Written pricing before any work begins. No surprise travel fees or unquoted add-ons.</p>
+                </div>
+                <div className="p-4 rounded-xl bg-surface border border-border">
+                  <div className="font-semibold text-secondary flex items-center gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-primary" />
+                    1-Year Workmanship Warranty
+                  </div>
+                  <p className="text-xs text-muted-foreground mt-1">Every panel installation, circuit run, and rewiring job is backed by our full 12-month guarantee.</p>
+                </div>
+                <div className="p-4 rounded-xl bg-surface border border-border">
+                  <div className="font-semibold text-secondary flex items-center gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-primary" />
+                    Local West Alabama Dispatch
+                  </div>
+                  <p className="text-xs text-muted-foreground mt-1">Daily dispatch across Tuscaloosa, Northport, and Buhl with scheduled major projects across West AL.</p>
+                </div>
+              </div>
+
+              <div className="pt-2 flex flex-wrap gap-4">
+                <Link to="/about" className="inline-flex items-center gap-2 px-6 py-3 rounded-full gradient-primary text-secondary font-semibold shadow-glow hover:scale-105 transition">
+                  Read Our Company Story <ArrowRight className="h-4 w-4" />
+                </Link>
+                <a href={BUSINESS.phoneHref} className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-card border border-border font-semibold text-secondary hover:border-primary transition">
+                  <Phone className="h-4 w-4 text-primary" /> Speak With Shad — {BUSINESS.phone}
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* WHY CHOOSE US */}
       <section className="py-24 bg-surface relative overflow-hidden">
         <motion.div style={{ y: y2 }} className="absolute -right-32 -top-32 w-96 h-96 rounded-full opacity-20 blur-3xl gradient-primary" />

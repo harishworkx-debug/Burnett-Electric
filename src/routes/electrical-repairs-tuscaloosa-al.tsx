@@ -60,6 +60,60 @@ export const Route = createFileRoute("/electrical-repairs-tuscaloosa-al")({
         { to: "/outdoor-wiring-tuscaloosa-al", label: "Outdoor Wiring & Lighting" },
       ]}
     >
+      <h2>Our Systematic 4-Step Electrical Troubleshooting Process</h2>
+      <p>
+        Electrical problems can be hazardous and stressful. At Burnett Electric, we don't guess at wiring faults or replace components blindly hoping to stumble upon the answer. Every residential service call in Tuscaloosa follows a disciplined, instrument-guided diagnostic protocol:
+      </p>
+      <div className="grid sm:grid-cols-2 gap-4 my-6 not-prose">
+        <div className="p-5 rounded-2xl bg-card border border-border">
+          <div className="font-display font-bold text-base text-secondary flex items-center gap-2">
+            <span className="h-7 w-7 rounded-lg gradient-primary text-secondary flex items-center justify-center text-xs font-bold">1</span>
+            Initial Circuit & Voltage Mapping
+          </div>
+          <p className="text-xs text-muted-foreground mt-2 leading-relaxed">
+            We measure line-to-neutral, line-to-ground, and neutral-to-ground voltages under load using Fluke True-RMS multimeters to detect floating neutrals, high resistance, or open grounds.
+          </p>
+        </div>
+        <div className="p-5 rounded-2xl bg-card border border-border">
+          <div className="font-display font-bold text-base text-secondary flex items-center gap-2">
+            <span className="h-7 w-7 rounded-lg gradient-primary text-secondary flex items-center justify-center text-xs font-bold">2</span>
+            Thermal Imaging & Connection Scans
+          </div>
+          <p className="text-xs text-muted-foreground mt-2 leading-relaxed">
+            Using handheld thermal infrared cameras, we scan breaker bus connections, main lugs, and accessible junction boxes to spot dangerous micro-arcing and heat buildup before insulation melts.
+          </p>
+        </div>
+        <div className="p-5 rounded-2xl bg-card border border-border">
+          <div className="font-display font-bold text-base text-secondary flex items-center gap-2">
+            <span className="h-7 w-7 rounded-lg gradient-primary text-secondary flex items-center justify-center text-xs font-bold">3</span>
+            Circuit Tracing Behind Drywall
+          </div>
+          <p className="text-xs text-muted-foreground mt-2 leading-relaxed">
+            With digital pulse tracers, we trace wiring pathways through walls without opening drywall, locating junction box splices, buried splices, and broken conductors cleanly.
+          </p>
+        </div>
+        <div className="p-5 rounded-2xl bg-card border border-border">
+          <div className="font-display font-bold text-base text-secondary flex items-center gap-2">
+            <span className="h-7 w-7 rounded-lg gradient-primary text-secondary flex items-center justify-center text-xs font-bold">4</span>
+            Clear Written Quote & Repair
+          </div>
+          <p className="text-xs text-muted-foreground mt-2 leading-relaxed">
+            We show you the exact fault, explain the root cause in plain English, and provide a fixed-price itemized quote before replacing a single part or touching a wire.
+          </p>
+        </div>
+      </div>
+
+      <h2>Common Tuscaloosa-Specific Electrical Failure Modes We Fix</h2>
+      <p>
+        West Alabama's climate and regional housing stock present distinct electrical challenges. Decades of troubleshooting homes from Downtown Tuscaloosa to Northport and Lake Tuscaloosa have given our team deep familiarity with these specific issues:
+      </p>
+      <ul>
+        <li><strong>Flickering Lights During AC Compressor Cycling:</strong> Tuscaloosa summers push central air units to their limits. If your lights dim significantly when your HVAC kicks on, it often indicates a loose main utility neutral, high resistance on the meter lugs, or an undersized 100A service requiring a dedicated sub-circuit.</li>
+        <li><strong>Failed "Back-Stabbed" Receptacles:</strong> Many 1980s and 1990s subdivisions in West Alabama used spring-tensioned push-in wire terminals on outlets. Over time, seasonal thermal expansion weakens these internal clips, resulting in dead downstream outlets, intermittent power, or scorching. We convert these to reliable screw-terminal side-wire connections.</li>
+        <li><strong>Nuisance Tripping on Dual-Function AFCI/GFCI Breakers:</strong> Modern arc-fault breakers are sensitive to shared neutrals, damaged appliance cords, or moisture in crawl spaces. We isolate the branch circuit to clear false trips while ensuring true arc hazards are remediated.</li>
+        <li><strong>Outdoor Weatherhead & Meter Corrosion:</strong> Severe thunderstorms, heavy humidity, and wind-blown rain can corrode main service mast weatherheads and outdoor disconnect switches, risking phase loss or water intrusion directly into the electrical panel.</li>
+      </ul>
+
       <h2>Electrical Repair Services We Handle</h2>
       <p>
         When a switch stops working or an outlet goes dead, it’s not just an inconvenience—it can be a serious fire hazard. As a trusted residential electrician in Tuscaloosa, we handle a wide variety of electrical repairs to keep your home safe and fully functional. Our comprehensive electrical troubleshooting ensures that we fix the root cause, not just the symptom.

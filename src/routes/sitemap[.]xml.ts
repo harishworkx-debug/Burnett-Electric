@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import type { } from "@tanstack/react-start";
-//
+
 const BASE_URL = "https://www.burnettelectrictuscaloosa.com";
 
 interface SitemapEntry {
@@ -13,6 +13,7 @@ export const Route = createFileRoute("/sitemap.xml")({
   server: {
     handlers: {
       GET: async () => {
+        // High-priority indexable pages: Core services and primary locations
         const entries: SitemapEntry[] = [
           { path: "/", changefreq: "weekly", priority: "1.0" },
           { path: "/services", changefreq: "weekly", priority: "0.9" },
@@ -21,9 +22,9 @@ export const Route = createFileRoute("/sitemap.xml")({
           { path: "/contact", changefreq: "monthly", priority: "0.8" },
           { path: "/electrical-repairs-tuscaloosa-al", changefreq: "weekly", priority: "0.9" },
           { path: "/wiring-upgrades-tuscaloosa-al", changefreq: "weekly", priority: "0.9" },
-          { path: "/outdoor-wiring-tuscaloosa-al", changefreq: "weekly", priority: "0.9" },
-          { path: "/generator-installation-tuscaloosa-al", changefreq: "weekly", priority: "0.9" },
           { path: "/panel-upgrades-tuscaloosa-al", changefreq: "weekly", priority: "0.9" },
+          { path: "/generator-installation-tuscaloosa-al", changefreq: "weekly", priority: "0.9" },
+          { path: "/outdoor-wiring-tuscaloosa-al", changefreq: "weekly", priority: "0.9" },
           { path: "/lighting-installation-tuscaloosa-al", changefreq: "weekly", priority: "0.9" },
           { path: "/ev-charger-installation-tuscaloosa-al", changefreq: "weekly", priority: "0.9" },
           { path: "/emergency-electrician-tuscaloosa-al", changefreq: "weekly", priority: "0.9" },
@@ -31,16 +32,10 @@ export const Route = createFileRoute("/sitemap.xml")({
           { path: "/electrician-northport", changefreq: "weekly", priority: "0.8" },
           { path: "/electrician-birmingham", changefreq: "weekly", priority: "0.8" },
           { path: "/electrician-buhl", changefreq: "weekly", priority: "0.8" },
-          { path: "/electrician-cottondale-al", changefreq: "weekly", priority: "0.8" },
-          { path: "/electrician-vance-al", changefreq: "weekly", priority: "0.8" },
-          { path: "/electrician-coaling-al", changefreq: "weekly", priority: "0.8" },
-          { path: "/electrician-moundville-al", changefreq: "weekly", priority: "0.8" },
-          { path: "/electrician-brookwood-al", changefreq: "weekly", priority: "0.8" },
           { path: "/sitemap", changefreq: "weekly", priority: "0.8" },
         ];
 
-        // Use actual meaningful content update date instead of request-time new Date()
-        const LASTMOD_DATE = "2026-10-29";
+        const LASTMOD_DATE = "2026-11-02";
         const xml = [
           `<?xml version="1.0" encoding="UTF-8"?>`,
           `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">`,

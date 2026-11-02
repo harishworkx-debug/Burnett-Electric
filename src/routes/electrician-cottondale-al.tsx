@@ -7,7 +7,7 @@ export const Route = createFileRoute("/electrician-cottondale-al")({
     meta: [
       { title: "Electrician in Cottondale, AL | Burnett Electric" },
       { name: "description", content: "Local residential electrician in Cottondale, AL. Fast repairs, breaker replacements, wiring upgrades, and outdoor lighting. Call (205) 634-8185." },
-      { name: "robots", content: "index, follow" },
+      { name: "robots", content: "noindex, follow" },
       { property: "og:title", content: "Electrician in Cottondale, AL | Burnett Electric" },
       { property: "og:description", content: "Licensed residential electrician serving homeowners in Cottondale, Alabama." },
       { property: "og:url", content: "https://www.burnettelectrictuscaloosa.com/electrician-cottondale-al" },

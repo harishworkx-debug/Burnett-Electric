@@ -7,7 +7,7 @@ export const Route = createFileRoute("/electrician-coaling-al")({
     meta: [
       { title: "Electrician in Coaling, AL | Burnett Electric" },
       { name: "description", content: "Licensed residential electrician serving Coaling, AL. Safe electrical repairs, panel replacements, wiring & surge protection. Call (205) 634-8185." },
-      { name: "robots", content: "index, follow" },
+      { name: "robots", content: "noindex, follow" },
       { property: "og:title", content: "Electrician in Coaling, AL | Burnett Electric" },
       { property: "og:description", content: "Licensed residential electrician serving homeowners in Coaling, Alabama." },
       { property: "og:url", content: "https://www.burnettelectrictuscaloosa.com/electrician-coaling-al" },
