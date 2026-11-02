@@ -7,6 +7,7 @@ export const Route = createFileRoute("/wiring-upgrades-tuscaloosa-al")({
     meta: [
       { title: "Wiring & Rewiring in Tuscaloosa, AL | Burnett Electric" },
       { name: "description", content: "Safe whole-home rewiring, knob-and-tube removal, and aluminum wiring updates in Tuscaloosa, AL. Modernize your home safely. Call (205) 634-8185." },
+      { name: "robots", content: "index, follow" },
       { property: "og:title", content: "Wiring & Rewiring in Tuscaloosa, AL | Burnett Electric" },
       { property: "og:description", content: "Safe and reliable whole-home rewiring and electrical updates in Tuscaloosa, AL." },
       { property: "og:url", content: "https://www.burnettelectrictuscaloosa.com/wiring-upgrades-tuscaloosa-al" },

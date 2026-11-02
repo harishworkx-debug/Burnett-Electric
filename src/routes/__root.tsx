@@ -49,8 +49,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { name: "robots", content: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" },
-      { name: "googlebot", content: "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" },
+      { name: "robots", content: "index, follow" },
+      { name: "googlebot", content: "index, follow" },
       { name: "theme-color", content: "#F4B400" },
       { name: "author", content: "Burnett Electric" },
       { name: "twitter:card", content: "summary_large_image" },

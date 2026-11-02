@@ -7,6 +7,7 @@ export const Route = createFileRoute("/lighting-installation-tuscaloosa-al")({
     meta: [
       { title: "Lighting & Ceiling Fan Installation in Tuscaloosa, AL | Burnett Electric" },
       { name: "description", content: "Professional recessed LED lighting, fixtures, and ceiling fan installation in Tuscaloosa, AL. Safe wiring and upfront pricing. Call (205) 634-8185." },
+      { name: "robots", content: "index, follow" },
       { property: "og:title", content: "Lighting & Ceiling Fan Installation in Tuscaloosa, AL | Burnett Electric" },
       { property: "og:description", content: "Professional indoor lighting, LED retrofits, and ceiling fan installations in Tuscaloosa, AL." },
       { property: "og:url", content: "https://www.burnettelectrictuscaloosa.com/lighting-installation-tuscaloosa-al" },

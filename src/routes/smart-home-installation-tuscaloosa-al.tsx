@@ -7,6 +7,7 @@ export const Route = createFileRoute("/smart-home-installation-tuscaloosa-al")({
     meta: [
       { title: "Smart Home Electrical Installation in Tuscaloosa, AL | Burnett Electric" },
       { name: "description", content: "Professional smart home electrical installation in Tuscaloosa, AL. Smart switches, smart thermostats, video doorbells, and automated lighting." },
+      { name: "robots", content: "index, follow" },
       { property: "og:title", content: "Smart Home Electrical Installation in Tuscaloosa, AL | Burnett Electric" },
       { property: "og:description", content: "Expert installation of smart switches, lighting, and home automation in Tuscaloosa, AL." },
       { property: "og:url", content: "https://www.burnettelectrictuscaloosa.com/smart-home-installation-tuscaloosa-al" },

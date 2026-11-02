@@ -6,7 +6,8 @@ export const Route = createFileRoute("/electrical-repairs-tuscaloosa-al")({
   head: () => ({
     meta: [
       { title: "Electrical Repairs in Tuscaloosa, AL | Burnett Electric" },
-      { name: "description", content: "Fast, licensed residential electrical repairs in Tuscaloosa, AL. Safe fixes for tripping breakers, flickering lights, GFCI outlets, and wiring. Call (205) 634-8185." },
+      { name: "description", content: "Need electrical repairs in Tuscaloosa, AL? Contact Burnett Electric for residential electrical troubleshooting and repair." },
+      { name: "robots", content: "index, follow" },
       { property: "og:title", content: "Electrical Repairs in Tuscaloosa, AL | Burnett Electric" },
       { property: "og:description", content: "Residential troubleshooting, breaker repair, and outlet repairs in Tuscaloosa, AL." },
       { property: "og:url", content: "https://www.burnettelectrictuscaloosa.com/electrical-repairs-tuscaloosa-al" },

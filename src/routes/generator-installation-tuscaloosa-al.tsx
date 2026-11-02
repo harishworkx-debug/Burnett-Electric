@@ -7,6 +7,7 @@ export const Route = createFileRoute("/generator-installation-tuscaloosa-al")({
     meta: [
       { title: "Generator Installation in Tuscaloosa, AL | Burnett Electric" },
       { name: "description", content: "Residential whole-home generator installations in Tuscaloosa, AL for storm-related backup power." },
+      { name: "robots", content: "index, follow" },
       { property: "og:title", content: "Generator Installation in Tuscaloosa, AL | Burnett Electric" },
       { property: "og:description", content: "Residential standby generator installations in Tuscaloosa." },
       { property: "og:url", content: "https://www.burnettelectrictuscaloosa.com/generator-installation-tuscaloosa-al" },

@@ -7,6 +7,7 @@ export const Route = createFileRoute("/electrician-moundville-al")({
     meta: [
       { title: "Electrician in Moundville, AL | Burnett Electric" },
       { name: "description", content: "Licensed residential electrician in Moundville, AL. Weatherhead storm repair, breaker replacements, rewiring & generators. Call (205) 634-8185." },
+      { name: "robots", content: "index, follow" },
       { property: "og:title", content: "Electrician in Moundville, AL | Burnett Electric" },
       { property: "og:description", content: "Licensed residential electrician serving homeowners in Moundville, Alabama." },
       { property: "og:url", content: "https://www.burnettelectrictuscaloosa.com/electrician-moundville-al" },

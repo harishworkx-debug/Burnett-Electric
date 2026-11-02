@@ -7,6 +7,7 @@ export const Route = createFileRoute("/electrician-birmingham")({
     meta: [
       { title: "Residential Electrician in Birmingham, AL | Burnett Electric" },
       { name: "description", content: "Specialized residential electrical contractor serving Greater Birmingham, AL. Major panel upgrades, historic home rewires & standby generators by appointment." },
+      { name: "robots", content: "index, follow" },
       { property: "og:title", content: "Residential Electrician in Birmingham, AL | Burnett Electric" },
       { property: "og:description", content: "Specialized residential electrical contractor serving Birmingham, AL for major rewires, panels, and generators." },
       { property: "og:url", content: "https://www.burnettelectrictuscaloosa.com/electrician-birmingham" },

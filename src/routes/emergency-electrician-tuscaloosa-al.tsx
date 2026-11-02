@@ -7,6 +7,7 @@ export const Route = createFileRoute("/emergency-electrician-tuscaloosa-al")({
     meta: [
       { title: "Emergency Electrician in Tuscaloosa, AL | Burnett Electric" },
       { name: "description", content: "Priority emergency electrician in Tuscaloosa, AL. Fast response for sparking panels, burning odors, and hazardous power loss. Call (205) 634-8185." },
+      { name: "robots", content: "index, follow" },
       { property: "og:title", content: "Emergency Electrician in Tuscaloosa, AL | Burnett Electric" },
       { property: "og:description", content: "Priority residential emergency electrical repairs in Tuscaloosa, AL." },
       { property: "og:url", content: "https://www.burnettelectrictuscaloosa.com/emergency-electrician-tuscaloosa-al" },

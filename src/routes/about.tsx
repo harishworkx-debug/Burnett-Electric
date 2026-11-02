@@ -34,6 +34,7 @@ export const Route = createFileRoute("/about")({
         content:
           "Meet Shad Burnett, owner of Burnett Electric. Providing honest, licensed residential electrical services, panel upgrades, rewiring & safety inspections across Tuscaloosa & West Alabama.",
       },
+      { name: "robots", content: "index, follow" },
       { property: "og:title", content: "About Burnett Electric | Licensed Electrician in Tuscaloosa, AL" },
       {
         property: "og:description",

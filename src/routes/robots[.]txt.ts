@@ -9,7 +9,6 @@ export const Route = createFileRoute("/robots.txt")({
 Allow: /
 
 Sitemap: https://www.burnettelectrictuscaloosa.com/sitemap.xml
-Sitemap: https://www.burnettelectrictuscaloosa.com/rss.xml
 `;
         return new Response(content, {
           headers: {

@@ -7,6 +7,7 @@ export const Route = createFileRoute("/electrician-buhl")({
     meta: [
       { title: "Local Electrician in Buhl, AL | Burnett Electric" },
       { name: "description", content: "Your local residential electrician based right in Buhl, AL. Fast repairs, barn/workshop power, whole-home generators & panel upgrades. Call (205) 634-8185." },
+      { name: "robots", content: "index, follow" },
       { property: "og:title", content: "Local Electrician in Buhl, AL | Burnett Electric" },
       { property: "og:description", content: "Licensed residential electrician based in Buhl, AL. Fast local dispatch, rural wiring, and generator installs." },
       { property: "og:url", content: "https://www.burnettelectrictuscaloosa.com/electrician-buhl" },

@@ -7,6 +7,7 @@ export const Route = createFileRoute("/outdoor-wiring-tuscaloosa-al")({
     meta: [
       { title: "Outdoor Wiring & Lighting in Tuscaloosa, AL | Burnett Electric" },
       { name: "description", content: "Enhance your home's exterior with professional outdoor wiring, landscape lighting, and security systems. Licensed electricians serving Tuscaloosa, AL." },
+      { name: "robots", content: "index, follow" },
       { property: "og:title", content: "Outdoor Wiring & Lighting in Tuscaloosa, AL | Burnett Electric" },
       { property: "og:description", content: "Custom landscape lighting and safe outdoor electrical installations in Tuscaloosa." },
       { property: "og:url", content: "https://www.burnettelectrictuscaloosa.com/outdoor-wiring-tuscaloosa-al" },

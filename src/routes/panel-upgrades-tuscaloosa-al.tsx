@@ -7,6 +7,7 @@ export const Route = createFileRoute("/panel-upgrades-tuscaloosa-al")({
     meta: [
       { title: "Electrical Panel Upgrades in Tuscaloosa, AL | Burnett Electric" },
       { name: "description", content: "Professional electrical panel upgrades in Tuscaloosa, AL. Replace outdated fuse boxes and ensure your home's electrical system can handle modern demands safely." },
+      { name: "robots", content: "index, follow" },
       { property: "og:title", content: "Electrical Panel Upgrades in Tuscaloosa, AL | Burnett Electric" },
       { property: "og:description", content: "Safe and reliable electrical panel upgrades for homes in Tuscaloosa." },
       { property: "og:url", content: "https://www.burnettelectrictuscaloosa.com/panel-upgrades-tuscaloosa-al" },

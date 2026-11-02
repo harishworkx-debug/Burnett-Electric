@@ -15,6 +15,7 @@ export const Route = createFileRoute("/sitemap")({
     meta: [
       { title: "Website Directory & Sitemap | Burnett Electric" },
       { name: "description", content: "Complete directory of residential electrical services, regional service locations, and resources for Burnett Electric in Tuscaloosa, AL." },
+      { name: "robots", content: "index, follow" },
       { property: "og:title", content: "Website Directory & Sitemap | Burnett Electric" },
       { property: "og:description", content: "Explore all residential electrical services, Tuscaloosa County service areas, and company information." },
       { property: "og:url", content: "https://www.burnettelectrictuscaloosa.com/sitemap" },

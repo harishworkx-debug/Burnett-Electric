@@ -18,6 +18,7 @@ export const Route = createFileRoute("/")({
     meta: [
       { title: "Electrician in Tuscaloosa, AL | Burnett Electric" },
       { name: "description", content: "Burnett Electric provides residential electrical repairs, wiring, panel upgrades, lighting, generators and EV charger installation in Tuscaloosa, AL. Call (205) 634-8185." },
+      { name: "robots", content: "index, follow" },
       { property: "og:title", content: "Electrician in Tuscaloosa, AL | Burnett Electric" },
       { property: "og:description", content: "Licensed & insured residential electrical services for homeowners across Tuscaloosa, Northport, and West Alabama." },
       { property: "og:url", content: "https://www.burnettelectrictuscaloosa.com/" },

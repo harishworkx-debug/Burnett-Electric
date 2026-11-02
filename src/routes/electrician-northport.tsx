@@ -7,6 +7,7 @@ export const Route = createFileRoute("/electrician-northport")({
     meta: [
       { title: "Electrician in Northport, AL | Burnett Electric" },
       { name: "description", content: "Licensed residential electrician in Northport, AL. Panel upgrades, whole-home rewiring, EV charger installs & fast repairs. Call (205) 634-8185." },
+      { name: "robots", content: "index, follow" },
       { property: "og:title", content: "Electrician in Northport, AL | Burnett Electric" },
       { property: "og:description", content: "Licensed residential electrical services for homeowners in Northport, Alabama." },
       { property: "og:url", content: "https://www.burnettelectrictuscaloosa.com/electrician-northport" },

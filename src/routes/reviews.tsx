@@ -14,6 +14,7 @@ export const Route = createFileRoute("/reviews")({
     meta: [
       { title: "Customer Reviews | Burnett Electric | Tuscaloosa, AL" },
       { name: "description", content: "Read verified customer reviews for Burnett Electric. See what Tuscaloosa and West Alabama homeowners say about our residential electrical work." },
+      { name: "robots", content: "index, follow" },
       { property: "og:title", content: "Customer Reviews | Burnett Electric | Tuscaloosa, AL" },
       { property: "og:description", content: "Read authentic customer reviews for Burnett Electric from homeowners across West Alabama." },
       { property: "og:url", content: "https://www.burnettelectrictuscaloosa.com/reviews" },
