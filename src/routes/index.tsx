@@ -232,6 +232,11 @@ function HomePage() {
               </motion.div>
             ))}
           </div>
+          <div className="mt-12 text-center">
+            <Link to="/services" className="inline-flex items-center gap-2 px-8 py-4 rounded-full gradient-primary text-secondary font-semibold shadow-glow hover:scale-105 transition">
+              View All Residential Services <ArrowRight className="h-4 w-4" />
+            </Link>
+          </div>
         </div>
       </section>
 

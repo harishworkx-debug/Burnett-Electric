@@ -28,47 +28,47 @@ export const Route = createFileRoute("/services")({
 
 const services = [
   {
-    icon: Wrench, title: "Electrical Repairs", to: "/electrical-repairs-tuscaloosa-al", img: IMG.repair,
+    icon: Wrench, title: "Electrical Repairs", anchorText: "Electrical Repairs in Tuscaloosa", to: "/electrical-repairs-tuscaloosa-al", img: IMG.repair,
     desc: "Fast, safe repairs for breakers, outlets, panels, flickering lights, and dedicated circuits.",
     benefits: ["Residential diagnostics", "GFCI outlet installs", "Electrical troubleshooting", "Dedicated circuits"],
   },
   {
-    icon: Cable, title: "Wiring Upgrades", to: "/wiring-upgrades-tuscaloosa-al", img: IMG.wiring,
+    icon: Cable, title: "Wiring Upgrades", anchorText: "Wiring Upgrades in Tuscaloosa", to: "/wiring-upgrades-tuscaloosa-al", img: IMG.wiring,
     desc: "Whole-home rewires, aluminum wiring replacement, and mobile home electrical upgrades.",
     benefits: ["Knob & tube removal", "Aluminum-to-copper", "Mobile home wiring", "Insurance approved"],
   },
   {
-    icon: ShieldCheck, title: "Panel Upgrades", to: "/panel-upgrades-tuscaloosa-al", img: IMG.panel,
+    icon: ShieldCheck, title: "Panel Upgrades", anchorText: "Electrical Panel Upgrades", to: "/panel-upgrades-tuscaloosa-al", img: IMG.panel,
     desc: "Upgrade to 200 or 400 amps. Replace dangerous fuse boxes and install whole-home surge protection.",
     benefits: ["Increased capacity", "Code compliance", "Federal Pacific removal", "Surge protection ready"],
   },
   {
-    icon: Lightbulb, title: "Lighting & Fan Installation", to: "/lighting-installation-tuscaloosa-al", img: IMG.bulb,
+    icon: Lightbulb, title: "Lighting & Fan Installation", anchorText: "Lighting Installation", to: "/lighting-installation-tuscaloosa-al", img: IMG.bulb,
     desc: "Recessed lighting, LED upgrades, ceiling fans, exhaust fans, and smoke detectors.",
     benefits: ["LED retrofits & cans", "Ceiling & exhaust fans", "Smoke & CO detectors", "Energy savings"],
   },
   {
-    icon: Lamp, title: "Outdoor Wiring", to: "/outdoor-wiring-tuscaloosa-al", img: IMG.outdoor,
+    icon: Lamp, title: "Outdoor Wiring", anchorText: "Outdoor Wiring", to: "/outdoor-wiring-tuscaloosa-al", img: IMG.outdoor,
     desc: "Landscape lighting, security floodlights, pool lighting, and hot tub wiring.",
     benefits: ["Weatherproof installs", "Landscape & security", "Pool & hot tub wiring", "GFCI protection"],
   },
   {
-    icon: Wifi, title: "Smart Home Installation", to: "/smart-home-installation-tuscaloosa-al", img: IMG.home,
+    icon: Wifi, title: "Smart Home Installation", anchorText: "Smart Home Installation", to: "/smart-home-installation-tuscaloosa-al", img: IMG.home,
     desc: "Professional installation of smart switches, automated systems, and home theater wiring.",
     benefits: ["Home theater wiring", "Hardwired cameras", "Smart thermostats", "Seamless integration"],
   },
   {
-    icon: Zap, title: "Generator Installation", to: "/generator-installation-tuscaloosa-al", img: IMG.home,
+    icon: Zap, title: "Generator Installation", anchorText: "Generator Installation", to: "/generator-installation-tuscaloosa-al", img: IMG.home,
     desc: "Whole-home standby generators to keep your power on during severe weather outages.",
     benefits: ["Automatic transfer switch", "Sizing calculation", "Gas coordination", "Turnkey installation"],
   },
   {
-    icon: BatteryCharging, title: "EV Charger Installation", to: "/ev-charger-installation-tuscaloosa-al", img: IMG.wiring,
+    icon: BatteryCharging, title: "EV Charger Installation", anchorText: "EV Charger Installation", to: "/ev-charger-installation-tuscaloosa-al", img: IMG.wiring,
     desc: "Level 2 charging stations installed at your home for convenient overnight charging.",
     benefits: ["Dedicated 240V circuits", "Tesla Wall Connectors", "Load calculations", "Permitted & inspected"],
   },
   {
-    icon: Siren, title: "Emergency Residential Electrical Services", to: "/emergency-electrician-tuscaloosa-al", img: IMG.repair,
+    icon: Siren, title: "Emergency Residential Electrical Services", anchorText: "Emergency Electrician", to: "/emergency-electrician-tuscaloosa-al", img: IMG.repair,
     desc: "Immediate response for sparking panels, partial power loss, and dangerous electrical faults.",
     benefits: ["Rapid response", "Fully stocked vans", "Storm damage repair", "Safety prioritized"],
   }
@@ -119,7 +119,7 @@ function ServicesPage() {
                 </ul>
                 <div className="mt-8 flex flex-wrap gap-3">
                   <Link to={s.to} className="inline-flex items-center gap-2 px-6 py-3 rounded-full gradient-primary text-secondary font-semibold shadow-glow hover:scale-105 transition">
-                    Explore {s.title} <ArrowRight className="h-4 w-4" />
+                    {(s as any).anchorText || s.title} <ArrowRight className="h-4 w-4" />
                   </Link>
                   <a href={BUSINESS.phoneHref} className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-card border border-border shadow-card text-secondary font-semibold hover:border-primary transition">
                     <Phone className="h-4 w-4" /> {BUSINESS.phone}

@@ -40,7 +40,7 @@ export function LocationPageLayout({
           "@context": "https://schema.org", "@type": "BreadcrumbList",
           "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.burnettelectrictuscaloosa.com/" },
-            { "@type": "ListItem", "position": 2, "name": "Locations", "item": "https://www.burnettelectrictuscaloosa.com/#service-areas" },
+            { "@type": "ListItem", "position": 2, "name": "Locations", "item": "https://www.burnettelectrictuscaloosa.com/sitemap" },
             { "@type": "ListItem", "position": 3, "name": city, "item": url },
           ]
         },
@@ -59,7 +59,7 @@ export function LocationPageLayout({
         </motion.div>
         <div className="absolute top-24 left-0 right-0 z-10 pt-4">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <Breadcrumbs items={[{ label: "Locations" }, { label: city }]} />
+            <Breadcrumbs items={[{ label: "Service Areas", to: "/sitemap" }, { label: city }]} />
           </div>
         </div>
 
