@@ -167,6 +167,7 @@ function AboutPage() {
               telephone: "+1-205-634-8185",
               url: "https://www.burnettelectrictuscaloosa.com/",
               priceRange: "$$",
+              sameAs: ["https://www.google.com/maps?cid=3032549216766434657"],
               address: {
                 "@type": "PostalAddress",
                 streetAddress: "15953 Annie Bell Dr",
@@ -466,13 +467,21 @@ function AboutPage() {
             ))}
           </div>
 
-          <div className="text-center mt-10">
+          <div className="flex flex-wrap items-center justify-center gap-4 mt-10">
             <Link
               to="/reviews"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-card border border-border font-semibold text-secondary hover:border-primary shadow-card transition"
             >
-              Read All Verified Google Reviews <ArrowRight className="h-4 w-4" />
+              Read All Testimonials <ArrowRight className="h-4 w-4" />
             </Link>
+            <a
+              href="https://www.google.com/maps?cid=3032549216766434657"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-full gradient-primary font-semibold text-secondary shadow-glow hover:scale-105 transition"
+            >
+              Verify on Google Maps (4.9 ★) <ExternalLink className="h-4 w-4" />
+            </a>
           </div>
         </div>
       </section>
