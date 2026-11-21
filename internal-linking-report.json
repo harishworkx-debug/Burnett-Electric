@@ -1,0 +1,157 @@
+[
+  {
+    "source": "/",
+    "destination": "/contact",
+    "isValidDestination": true
+  },
+  {
+    "source": "/",
+    "destination": "/services",
+    "isValidDestination": true
+  },
+  {
+    "source": "/",
+    "destination": "/about",
+    "isValidDestination": true
+  },
+  {
+    "source": "/",
+    "destination": "/reviews",
+    "isValidDestination": true
+  },
+  {
+    "source": "/about",
+    "destination": "/contact",
+    "isValidDestination": true
+  },
+  {
+    "source": "/about",
+    "destination": "/reviews",
+    "isValidDestination": true
+  },
+  {
+    "source": "/electrician-northport",
+    "destination": "/wiring-upgrades-tuscaloosa-al",
+    "isValidDestination": true
+  },
+  {
+    "source": "/electrician-northport",
+    "destination": "/panel-upgrades-tuscaloosa-al",
+    "isValidDestination": true
+  },
+  {
+    "source": "/electrician-northport",
+    "destination": "/panel-upgrades-tuscaloosa-al",
+    "isValidDestination": true
+  },
+  {
+    "source": "/electrician-northport",
+    "destination": "/ev-charger-installation-tuscaloosa-al",
+    "isValidDestination": true
+  },
+  {
+    "source": "/electrician-northport",
+    "destination": "/electrical-repairs-tuscaloosa-al",
+    "isValidDestination": true
+  },
+  {
+    "source": "/electrician-northport",
+    "destination": "/generator-installation-tuscaloosa-al",
+    "isValidDestination": true
+  },
+  {
+    "source": "/electrician-buhl",
+    "destination": "/outdoor-wiring-tuscaloosa-al",
+    "isValidDestination": true
+  },
+  {
+    "source": "/electrician-buhl",
+    "destination": "/generator-installation-tuscaloosa-al",
+    "isValidDestination": true
+  },
+  {
+    "source": "/electrician-buhl",
+    "destination": "/panel-upgrades-tuscaloosa-al",
+    "isValidDestination": true
+  },
+  {
+    "source": "/electrician-buhl",
+    "destination": "/electrical-repairs-tuscaloosa-al",
+    "isValidDestination": true
+  },
+  {
+    "source": "/electrician-cottondale-al",
+    "destination": "/electrical-repairs-tuscaloosa-al",
+    "isValidDestination": true
+  },
+  {
+    "source": "/electrician-cottondale-al",
+    "destination": "/panel-upgrades-tuscaloosa-al",
+    "isValidDestination": true
+  },
+  {
+    "source": "/electrician-cottondale-al",
+    "destination": "/ev-charger-installation-tuscaloosa-al",
+    "isValidDestination": true
+  },
+  {
+    "source": "/electrician-vance-al",
+    "destination": "/panel-upgrades-tuscaloosa-al",
+    "isValidDestination": true
+  },
+  {
+    "source": "/electrician-vance-al",
+    "destination": "/ev-charger-installation-tuscaloosa-al",
+    "isValidDestination": true
+  },
+  {
+    "source": "/electrician-vance-al",
+    "destination": "/electrical-repairs-tuscaloosa-al",
+    "isValidDestination": true
+  },
+  {
+    "source": "/electrician-coaling-al",
+    "destination": "/panel-upgrades-tuscaloosa-al",
+    "isValidDestination": true
+  },
+  {
+    "source": "/electrician-coaling-al",
+    "destination": "/electrical-repairs-tuscaloosa-al",
+    "isValidDestination": true
+  },
+  {
+    "source": "/electrician-coaling-al",
+    "destination": "/generator-installation-tuscaloosa-al",
+    "isValidDestination": true
+  },
+  {
+    "source": "/electrician-moundville-al",
+    "destination": "/electrical-repairs-tuscaloosa-al",
+    "isValidDestination": true
+  },
+  {
+    "source": "/electrician-moundville-al",
+    "destination": "/panel-upgrades-tuscaloosa-al",
+    "isValidDestination": true
+  },
+  {
+    "source": "/electrician-brookwood-al",
+    "destination": "/panel-upgrades-tuscaloosa-al",
+    "isValidDestination": true
+  },
+  {
+    "source": "/electrician-brookwood-al",
+    "destination": "/electrical-repairs-tuscaloosa-al",
+    "isValidDestination": true
+  },
+  {
+    "source": "/electrician-brookwood-al",
+    "destination": "/wiring-upgrades-tuscaloosa-al",
+    "isValidDestination": true
+  },
+  {
+    "source": "/electrician-brookwood-al",
+    "destination": "/generator-installation-tuscaloosa-al",
+    "isValidDestination": true
+  }
+]

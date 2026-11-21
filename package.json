@@ -5,9 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite dev",
-    "build": "vite build",
+    "build": "vite build && node scripts/ensure-netlify-publish.cjs",
     "build:dev": "vite build --mode development",
     "preview": "vite preview",
+    "validate:seo": "node scripts/validate-seo.cjs",
     "lint": "eslint .",
     "format": "prettier --write .",
     "indexnow": "node scripts/ping-indexnow.js"
