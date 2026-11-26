@@ -16,7 +16,7 @@ export function FloatingCTA() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0 }}
-          className="fixed bottom-5 right-5 z-[60] flex flex-col items-end gap-3"
+          className="fixed bottom-5 right-5 z-[999999] flex flex-col items-end gap-3"
         >
           <motion.a
             href={BUSINESS.phoneHref}

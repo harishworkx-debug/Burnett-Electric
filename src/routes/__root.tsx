@@ -78,8 +78,77 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 function RootShell({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <head><HeadContent /></head>
-      <body>{children}<Scripts /></body>
+      <head>
+        <HeadContent />
+        <style
+          dangerouslySetInnerHTML={{
+            __html: `
+              iframe[src*="netlify"],
+              iframe[title*="netlify" i],
+              netlify-drawer,
+              #netlify-badge,
+              .netlify-badge,
+              [class*="netlify-drawer"],
+              [id*="netlify-feedback"],
+              [data-netlify-drawer] {
+                display: none !important;
+                pointer-events: none !important;
+                visibility: hidden !important;
+                opacity: 0 !important;
+                position: absolute !important;
+                z-index: -999999 !important;
+                transform: scale(0) !important;
+                clip-path: inset(100%) !important;
+              }
+            `,
+          }}
+        />
+      </head>
+      <body>
+        {children}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                function purgeNetlifyWidgets() {
+                  var targets = [
+                    'iframe[src*="netlify"]',
+                    'iframe[title*="netlify" i]',
+                    'netlify-drawer',
+                    '#netlify-badge',
+                    '.netlify-badge',
+                    '[class*="netlify-drawer"]',
+                    '[id*="netlify-feedback"]',
+                    '[data-netlify-drawer]'
+                  ];
+                  targets.forEach(function(selector) {
+                    var elements = document.querySelectorAll(selector);
+                    elements.forEach(function(el) {
+                      el.style.setProperty('display', 'none', 'important');
+                      el.style.setProperty('pointer-events', 'none', 'important');
+                      el.style.setProperty('opacity', '0', 'important');
+                      el.style.setProperty('visibility', 'hidden', 'important');
+                      if (el.parentNode) {
+                        try { el.parentNode.removeChild(el); } catch (e) {}
+                      }
+                    });
+                  });
+                }
+                purgeNetlifyWidgets();
+                if (typeof MutationObserver !== 'undefined') {
+                  new MutationObserver(purgeNetlifyWidgets).observe(document.documentElement, {
+                    childList: true,
+                    subtree: true
+                  });
+                }
+                window.addEventListener('DOMContentLoaded', purgeNetlifyWidgets);
+                window.addEventListener('load', purgeNetlifyWidgets);
+              })();
+            `,
+          }}
+        />
+        <Scripts />
+      </body>
     </html>
   );
 }

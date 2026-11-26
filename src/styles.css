@@ -125,3 +125,22 @@
   100% { transform: translateX(-50%); }
 }
 @utility animate-marquee { animation: marquee 30s linear infinite; }
+
+/* Netlify Badge, Drawer & Third-Party Floating Widget Suppression */
+iframe[src*="netlify"],
+iframe[title*="netlify" i],
+netlify-drawer,
+#netlify-badge,
+.netlify-badge,
+[class*="netlify-drawer"],
+[id*="netlify-feedback"],
+[data-netlify-drawer] {
+  display: none !important;
+  pointer-events: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  position: absolute !important;
+  z-index: -999999 !important;
+  transform: scale(0) !important;
+  clip-path: inset(100%) !important;
+}
